@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Task</title>
+
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+            text-align: center;
+        }
+
+        .gallery{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .box{
+            border: 5px solid black;
+            padding: 5px;
+        }
+
+        .box img{
+            width: 300px;
+            height: 200px;
+        }
+
+        .card{
+            display: flex;
+            align-items: center;
+            border: 4px solid black;
+            width: 550px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        .card img{
+            width: 300px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .info{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Task 1 - Display 5 Images</h2>
+
+    <div class="gallery">
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcxgk1g-6P62sAPBEuiv8T9sT4rA9qkgxKqTV2JjxSQ&s=10" alt="Image 1">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueVM4dx3vNWgmUI67ocrEnuJmUswi8z5f7isqgzEoAg&s=10" alt="Image 2">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmT5_8uUXnGdPIYtZyvgDKhRAKf1BcbyP1sjUQaUXhHA&s=10" alt="Image 3">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueVM4dx3vNWgmUI67ocrEnuJmUswi8z5f7isqgzEoAg&s=10" alt="Image 4">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTt1gkEvLUa53zW1aZKSicBYiMRBflDHxZ0B29q7QGNQ&s=10" alt="Image 5">
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>Task 2 - Image with Information</h2>
+
+    <div class="card">
+        <img src="https://greggvanourek.com/wp-content/uploads/2023/08/Nature-path-by-water-trees-and-mountains-AdobeStock_291242770-scaled.jpeg" alt="Nature">
+        <div class="info">
+            <h3>Nature</h3>
+            <p>Nature is beautiful and full of greenery. It provides fresh air and a peaceful environment.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="Mountain">
+        <div class="info">
+            <h3>Mountain</h3>
+            <p>Mountains are high landforms covered with rocks and sometimes snow. They attract many tourists.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueVM4dx3vNWgmUI67ocrEnuJmUswi8z5f7isqgzEoAg&s=10" alt="Beach">
+        <div class="info">
+            <h3>Beach</h3>
+            <p>Beaches are relaxing places with sand and sea. People enjoy swimming and spending time there.</p>
+        </div>
+    </div>
+
+</body>
+</html>
