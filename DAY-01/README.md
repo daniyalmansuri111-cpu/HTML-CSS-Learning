@@ -1,65 +1,127 @@
-My Profile
+# 👤 Personal Profile Page
 
-A simple personal profile webpage created using HTML and CSS.
+A simple and clean **Personal Profile Page** created using **HTML and CSS**. This project showcases personal information, skills, education, and social media profiles in a card-style layout.
 
-About the Project
+## 📌 About the Project
 
-This project is a basic profile card that displays personal information,skills, education, and social links. It is designed as abeginner-friendly HTML and CSS project for practicing webpage structureand styling.
+This project is a beginner-friendly profile webpage created to practice the fundamentals of **HTML and CSS**.
 
-Features
+The page contains:
 
-Profile picture
+* 👤 Profile picture
+* 📝 Name and professional title
+* 📖 About Me section
+* 🛠️ Skills section
+* 🎓 Education details
+* 🔗 GitHub and LinkedIn links
+* 📩 Contact Me button
 
-Personal name and title
+## 🛠️ Technologies Used
 
-About Me section
+* **HTML5** – Used to create the structure and content of the profile page.
+* **CSS3** – Used to style the profile card, image, buttons, colors, spacing, and hover effects.
 
-Skills list
+## 📂 Project Structure
 
-Education details
-
-GitHub and LinkedIn links
-
-Contact Me button
-
-Responsive viewport setup
-
-Styled profile card with rounded corners and shadow
-
-Technologies Used
-
-HTML5 -- Used to create the structure and content of thewebpage.
-
-CSS3 -- Used to style the profile card, image, buttons, links,colors, spacing, and layout.
-
-Project Files
-
-My-Profile/
+```text
+Profile-Page/
 │
-├── index(3).html
-├── style(2).css
+├── index.html
+├── style.css
 └── README.md
+```
 
-HTML Structure
+## 🎨 Design
 
-The HTML file contains the main profile information, including theprofile image, name, career title, About Me section, skills, education,GitHub and LinkedIn links, and Contact Me button.fileciteturn0file0L13-L16 fileciteturn0file0L24-L36
+The webpage uses a simple card-based design with:
 
-CSS Styling
+* Light gray background
+* White profile container
+* Rounded corners
+* Box shadow
+* Circular profile image
+* Royal blue headings and links
+* Green Contact Me button
+* Hover effects on links and button
 
-The CSS creates a centered white profile card with rounded corners and ashadow. It also styles the profile image, headings, skills, sociallinks, and Contact Me button. fileciteturn0file1L8-L14fileciteturn0file1L18-L20 fileciteturn0file1L62-L69
+## ✨ Features
 
-How to Run
+### 👤 Profile Section
 
-Download or clone this project.
+Displays the profile picture, name, and professional title.
 
-Keep index(3).html and style(2).css in the same folder.
+### 📖 About Me
 
-Open index(3).html in a web browser.
+Contains a short introduction and career goal.
 
-The profile webpage will be displayed.
+### 🛠️ Skills
 
-Author
+Displays the current technical skills:
 
-Daniyal Pinjari
+* HTML
+* CSS
+* Java
+* Spring Boot
+
+### 🎓 Education
+
+Displays the BCA qualification from **Dr. D. Y. Patil ACS College**.
+
+### 🔗 Social Links
+
+Includes links to:
+
+* GitHub
+* LinkedIn
+
+### 📩 Contact Button
+
+A styled **Contact Me** button is included at the bottom of the profile card.
+
+## 🚀 How to Run
+
+1. Download or clone this repository.
+2. Open the project folder in **Visual Studio Code**.
+3. Make sure `index.html` and `style.css` are in the same folder.
+4. Open `index.html` in your browser.
+5. You can also use the **Live Server** extension in VS Code.
+
+## 📚 What I Learned
+
+Through this project, I practiced:
+
+* HTML page structure
+* HTML headings and paragraphs
+* Images
+* Lists
+* Links
+* Buttons
+* CSS classes
+* CSS box model
+* Border radius
+* Box shadows
+* Colors
+* Hover effects
+* Basic webpage layout
+
+## 🔮 Future Improvements
+
+* Add responsive design for mobile devices
+* Add more interactive buttons
+* Add a projects section
+* Add a contact form
+* Improve animations
+* Add JavaScript functionality
+* Add dark mode
+
+## 👨‍💻 Author
+
+**Daniyal Pinjari**
 
 BCA Graduate | Future Full Stack Developer
+
+---
+
+⭐ **If you like this project, consider giving the repository a star!**
+
+**Built with ❤️ using HTML & CSS**
