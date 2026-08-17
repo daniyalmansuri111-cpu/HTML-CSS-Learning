@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <span class="logo-icon">₹</span>
+              Expense Tracker
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transactions">
+                            Transactions
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">
+                            Categories
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="profile-btn">
+                    D
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main class="container py-5">
+
+        <div class="welcome-section mb-5">
+
+            <div>
+                <p class="small-title">
+                    MONDAY, 17 AUGUST 2026
+                </p>
+
+                <h1>
+                    Good evening, <span>Daniyal</span> 👋
+                </h1>
+
+                <p>
+                    Here's your financial overview for this month.
+                </p>
+            </div>
+
+            <button class="add-btn">
+                + Add Transaction
+            </button>
+
+        </div>
+
+
+        <div class="row g-4 mb-4">
+
+            <div class="col-lg-4">
+
+                <div class="balance-card">
+
+                    <div class="card-top">
+                        <span>Total Balance</span>
+
+                        <div class="icon-circle">
+                            ₹
+                        </div>
+                    </div>
+
+                    <h2>₹25,000</h2>
+
+                    <p class="positive">
+                        ↑ 8.4% <span>from last month</span>
+                    </p>
+
+                    <div class="balance-line"></div>
+
+                    <div class="balance-bottom">
+                        <span>Monthly target</span>
+                        <strong>₹30,000</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 83%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="stat-card income-card">
+
+                    <div class="card-top">
+
+                        <div>
+                            <span>Total Income</span>
+                            <h2>₹40,000</h2>
+                        </div>
+
+                        <div class="stat-icon income-icon">
+                            ↗
+                        </div>
+
+                    </div>
+
+                    <p class="positive">
+                        + ₹3,200
+                        <span>this month</span>
+                    </p>
+
+                    <div class="mini-chart">
+                        <span style="height:35%"></span>
+                        <span style="height:55%"></span>
+                        <span style="height:45%"></span>
+                        <span style="height:70%"></span>
+                        <span style="height:60%"></span>
+                        <span style="height:85%"></span>
+                        <span style="height:100%"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="stat-card expense-card">
+
+                    <div class="card-top">
+
+                        <div>
+                            <span>Total Expenses</span>
+                            <h2>₹15,000</h2>
+                        </div>
+
+                        <div class="stat-icon expense-icon">
+                            ↘
+                        </div>
+
+                    </div>
+
+                    <p class="negative">
+                        - ₹1,450
+                        <span>this month</span>
+                    </p>
+
+                    <div class="mini-chart expense-chart">
+                        <span style="height:75%"></span>
+                        <span style="height:50%"></span>
+                        <span style="height:65%"></span>
+                        <span style="height:40%"></span>
+                        <span style="height:70%"></span>
+                        <span style="height:45%"></span>
+                        <span style="height:55%"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-lg-7">
+
+                <div class="dashboard-card h-100">
+
+                    <div class="section-header">
+
+                        <div>
+                            <h3>Spending Overview</h3>
+                            <p>Your expenses this month</p>
+                        </div>
+
+                        <select>
+                            <option>August 2026</option>
+                            <option>July 2026</option>
+                            <option>June 2026</option>
+                        </select>
+
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="chart-lines">
+                            <span>₹10k</span>
+                            <span>₹7.5k</span>
+                            <span>₹5k</span>
+                            <span>₹2.5k</span>
+                            <span>₹0</span>
+                        </div>
+
+                        <div class="bars">
+
+                            <div class="bar-item">
+                                <div class="bar" style="height:35%"></div>
+                                <small>Mon</small>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar" style="height:55%"></div>
+                                <small>Tue</small>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar" style="height:45%"></div>
+                                <small>Wed</small>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar" style="height:75%"></div>
+                                <small>Thu</small>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar" style="height:60%"></div>
+                                <small>Fri</small>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar active-bar" style="height:90%"></div>
+                                <small>Sat</small>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar" style="height:50%"></div>
+                                <small>Sun</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-5" id="categories">
+
+                <div class="dashboard-card h-100">
+
+                    <div class="section-header">
+
+                        <div>
+                            <h3>Top Categories</h3>
+                            <p>Where your money goes</p>
+                        </div>
+
+                        <span class="more-btn">•••</span>
+
+                    </div>
+
+
+                    <div class="category-item">
+
+                        <div class="category-left">
+                            <div class="category-icon food">
+                                🍔
+                            </div>
+
+                            <div>
+                                <strong>Food</strong>
+                                <small>32% of spending</small>
+                            </div>
+                        </div>
+
+                        <strong>₹4,800</strong>
+
+                    </div>
+
+
+                    <div class="category-item">
+
+                        <div class="category-left">
+                            <div class="category-icon travel">
+                                🚌
+                            </div>
+
+                            <div>
+                                <strong>Travel</strong>
+                                <small>18% of spending</small>
+                            </div>
+                        </div>
+
+                        <strong>₹2,700</strong>
+
+                    </div>
+
+
+                    <div class="category-item">
+
+                        <div class="category-left">
+                            <div class="category-icon shopping">
+                                🛍️
+                            </div>
+
+                            <div>
+                                <strong>Shopping</strong>
+                                <small>15% of spending</small>
+                            </div>
+                        </div>
+
+                        <strong>₹2,250</strong>
+
+                    </div>
+
+
+                    <div class="category-item">
+
+                        <div class="category-left">
+                            <div class="category-icon bills">
+                                ⚡
+                            </div>
+
+                            <div>
+                                <strong>Bills</strong>
+                                <small>12% of spending</small>
+                            </div>
+                        </div>
+
+                        <strong>₹1,800</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-card" id="transactions">
+
+            <div class="section-header">
+
+                <div>
+                    <h3>Recent Transactions</h3>
+                    <p>Your latest financial activity</p>
+                </div>
+
+                <button class="view-btn">
+                    View All →
+                </button>
+
+            </div>
+
+
+            <div class="table-responsive">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>TRANSACTION</th>
+                            <th>CATEGORY</th>
+                            <th>DATE</th>
+                            <th>TYPE</th>
+                            <th>AMOUNT</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <div class="transaction-name">
+                                    <div class="transaction-icon">
+                                        🍔
+                                    </div>
+
+                                    <div>
+                                        <strong>Hostel Food</strong>
+                                        <small>Daily meal</small>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tag food-tag">
+                                    Food
+                                </span>
+                            </td>
+
+                            <td>
+                                16 Aug 2026
+                            </td>
+
+                            <td>
+                                <span class="expense-label">
+                                    Expense
+                                </span>
+                            </td>
+
+                            <td class="amount-expense">
+                                - ₹2,500
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="transaction-name">
+
+                                    <div class="transaction-icon">
+                                        💼
+                                    </div>
+
+                                    <div>
+                                        <strong>Monthly Salary</strong>
+                                        <small>August salary</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tag income-tag">
+                                    Salary
+                                </span>
+                            </td>
+
+                            <td>
+                                15 Aug 2026
+                            </td>
+
+                            <td>
+                                <span class="income-label">
+                                    Income
+                                </span>
+                            </td>
+
+                            <td class="amount-income">
+                                + ₹40,000
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="transaction-name">
+
+                                    <div class="transaction-icon">
+                                        🛍️
+                                    </div>
+
+                                    <div>
+                                        <strong>New Shoes</strong>
+                                        <small>Shopping</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tag shopping-tag">
+                                    Shopping
+                                </span>
+                            </td>
+
+                            <td>
+                                13 Aug 2026
+                            </td>
+
+                            <td>
+                                <span class="expense-label">
+                                    Expense
+                                </span>
+                            </td>
+
+                            <td class="amount-expense">
+                                - ₹3,000
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="transaction-name">
+
+                                    <div class="transaction-icon">
+                                        🚌
+                                    </div>
+
+                                    <div>
+                                        <strong>Bus Pass</strong>
+                                        <small>Monthly pass</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tag travel-tag">
+                                    Travel
+                                </span>
+                            </td>
+
+                            <td>
+                                10 Aug 2026
+                            </td>
+
+                            <td>
+                                <span class="expense-label">
+                                    Expense
+                                </span>
+                            </td>
+
+                            <td class="amount-expense">
+                                - ₹1,200
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-card add-transaction-card mt-4">
+
+            <div>
+                <h3>Quick Add</h3>
+                <p>Record your next expense</p>
+            </div>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="What did you spend on?"
+                >
+
+                <input
+                    type="number"
+                    placeholder="₹ Amount"
+                >
+
+                <select>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Education</option>
+                    <option>Other</option>
+                </select>
+
+                <button type="button">
+                    Add Expense
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+                    <strong>Expense Tracker</strong>
+                    <p>
+                        Simple. Smart. Financial.
+                    </p>
+                </div>
+
+                <span>
+                    © 2026 Expense Tracker. All rights reserved.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
