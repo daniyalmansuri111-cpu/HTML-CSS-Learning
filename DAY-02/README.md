@@ -1,6 +1,8 @@
 # My First Calculator 🧮
-
 A simple calculator built with **HTML, CSS, and JavaScript** as a beginner project. This was made while learning HTML and CSS, and it's a great first project for practicing the basics of front-end web development.
+
+## 🌐 Live Demo
+👉 [View Live Website](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/DAY-02/)
 
 ## What it does
 
