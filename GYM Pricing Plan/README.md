@@ -1,8 +1,9 @@
 # 🏋️ Gym Membership Plans
-
 A modern and responsive **Gym Membership Pricing Plans** webpage built using HTML and CSS.
-
 The website features a gym-themed background, dark overlay, transparent pricing cards, hover effects, and three different membership plans.
+
+## 🌐 Live Demo
+👉 [View Live Website](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/GYM%20Pricing%20Plan/)
 
 ## ✨ Features
 
