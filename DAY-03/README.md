@@ -2,9 +2,6 @@
 ## Overview
 This project is a simple HTML and CSS assignment demonstrating image layouts using Flexbox. It consists of two tasks completed in a single HTML file with internal CSS.
 
-## 🌐 Live Demo
-👉 [View Live Website](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/DAY-03/)
-
 ## Task 1
 - Display 5 images in a single row.
 - Each image is placed inside its own `<div>`.
