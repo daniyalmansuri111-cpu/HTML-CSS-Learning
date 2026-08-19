@@ -1,7 +1,9 @@
 # 🛍️✨ ShopEase – Online Shopping Landing Page
 > 🛒 **Everything You Need, In One Place!**
 > A modern, clean, and responsive e-commerce landing page built with **HTML, CSS & Bootstrap**. 🚀
-
+---
+## 🚀 Live Demo
+🔗 [🌐 View Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/E-Commerce%20Home%20Page/)
 ---
 
 ## 🌟 Features
