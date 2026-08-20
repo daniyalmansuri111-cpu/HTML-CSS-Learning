@@ -1,124 +1,252 @@
-NOIRÉ — Modern Fragrance
+🖤 NOIRÉ — Modern Fragrance
 
-A cinematic, dark luxury fragrance landing page built with React, Vite, TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
+✨ A cinematic fragrance landing page built around dark luxury, warm cream typography, atmospheric imagery, and smooth motion.
 
-✨ Features
+🌙 About the Project
 
-🖤 Dark, cinematic luxury design
+NOIRÉ is a modern fragrance landing page designed to feel dark, elegant, intimate, and cinematic.
 
-🌹 Warm cream typography and elegant visual styling
+The website combines editorial typography, immersive visuals, subtle animations, and a luxury-inspired color palette to create a premium fragrance brand experience.
 
-🎬 Smooth Framer Motion animations
+✨ Highlights
 
-🖼️ Atmospheric imagery and visual sections
+🖤 Dark luxury aesthetic
 
-📱 Fully responsive layout
+🌹 Atmospheric fragrance visuals
 
-⚡ Fast Vite development setup
+🎬 Smooth entrance and scroll animations
 
-🎨 Tailwind CSS styling
+✨ Interactive visual elements
 
-✨ Lucide React icons
+🎨 Warm cream and charcoal color palette
 
-🔤 Almarai and Instrument Serif typography
+🔤 Elegant editorial typography
 
-🌙 Modern fragrance-focused storytelling
+📱 Fully responsive design
+
+⚡ Fast Vite development environment
+
+🧩 Reusable React components
+
+➡️ Lucide React icons
+
+🎞️ Framer Motion animations
 
 🛠️ Tech Stack
 
-React 18
+Technology
 
-TypeScript
+Purpose
 
-Vite
+⚛️ React 18
 
-Tailwind CSS
+UI development
 
-Framer Motion
+📘 TypeScript
 
-Lucide React
+Type-safe development
 
-Google Fonts
+⚡ Vite
 
-The project uses Framer Motion and Lucide React as dependencies, with Tailwind CSS and Vite configured for the development/build workflow.
+Development & production build
 
-🚀 Run Locally
+🎨 Tailwind CSS
 
-npm install
-npm run dev
+Styling & responsive layout
 
-Open the local URL shown in your terminal.
+🎬 Framer Motion
 
-📦 Build for Production
+Animations & interactions
 
-npm run build
+✨ Lucide React
 
-To preview the production build:
+Interface icons
 
-npm run preview
+🔤 Google Fonts
 
-🌐 Live Demo
+Almarai & Instrument Serif
 
-Add your GitHub Pages link here after deployment:
+The project configuration includes React, Framer Motion, Lucide React, Tailwind CSS, TypeScript, and Vite. fileciteturn2file1L6-L25
 
-Live Demo: https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/
+🎨 Design Direction
 
-📁 Project Structure
+NOIRÉ follows a minimal dark-luxury visual direction.
 
-NOIRE/
-├── src/
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.ts
-├── tsconfig.json
-├── tsconfig.app.json
-└── tsconfig.node.json
+🎨 Color Palette
 
-🎨 Design
+🖤 Black — #000000
 
-NOIRÉ uses a minimal luxury visual direction built around:
+🩶 Dark Charcoal — #212121
 
-Black backgrounds
+🌑 Deep Background — #101010
 
-Warm cream typography
+🕯️ Warm Cream — #DEDBC8
 
-Dark charcoal content cards
+🤍 Primary Text — #E1E0CC
 
-Editorial typography
+🔤 Typography
 
-Large cinematic layouts
+Almarai
+Used as the primary website font.
 
-Atmospheric imagery
+Instrument Serif
+Used for elegant editorial and italic accent text.
 
-Smooth entrance and scroll animations
+The fonts are loaded directly through Google Fonts in the project HTML. fileciteturn2file0L24-L31
 
-The page title and description are configured in index.html for the NOIRÉ fragrance brand.
+🧭 Website Experience
+
+🏠 Hero
+
+The opening experience introduces NOIRÉ with a cinematic luxury presentation.
+
+🌹 Fragrance Story
+
+The content focuses on atmosphere, presence, longevity, and carefully selected fragrance notes.
+
+✨ Feature Sections
+
+Interactive cards highlight key fragrance characteristics and supporting brand information.
+
+📖 Brand Philosophy
+
+Large editorial typography and spacious layouts create a premium fashion/fragrance-inspired feel.
 
 📱 Responsive Design
 
-The landing page is designed to adapt across:
+The landing page is designed for:
 
 📱 Mobile
 
 📲 Tablet
 
-💻 Desktop
+💻 Laptop
+
+🖥️ Desktop
 
 🖥️ Large screens
 
-🔤 Typography
+The layout adapts typography, spacing, cards, and content for different screen sizes.
+
+🚀 Getting Started
+
+1️⃣ Clone the repository
+
+git clone YOUR-GITHUB-REPOSITORY-URL
+
+2️⃣ Enter the project
+
+cd YOUR-REPOSITORY-NAME
+
+3️⃣ Install dependencies
+
+npm install
+
+4️⃣ Start the development server
+
+npm run dev
+
+Open the local URL displayed in your terminal. 🚀
+
+📦 Production Build
+
+Create an optimized production build:
+
+npm run build
+
+Preview the production build locally:
+
+npm run preview
+
+The project's build script runs TypeScript checking followed by the Vite production build. fileciteturn2file1L6-L10
+
+🌐 Live Demo
+
+🚀 Live Demo:
+https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/
+
+💡 Replace the URL above with your GitHub Pages URL after deployment.
+
+📁 Project Structure
+
+NOIRÉ/
+│
+├── 📂 src/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── 📄 index.html
+├── 📄 package.json
+├── 📄 package-lock.json
+├── 📄 tailwind.config.js
+├── 📄 postcss.config.js
+├── 📄 vite.config.ts
+├── 📄 tsconfig.json
+├── 📄 tsconfig.app.json
+└── 📄 tsconfig.node.json
+
+Tailwind is configured to scan the main HTML file and the TypeScript/React source files, with the custom cream primary color and Instrument Serif font family. fileciteturn2file4L3-L19
+
+⚙️ Development
 
 The project uses:
 
-Almarai — primary interface and body font
+React
+   ↓
+TypeScript
+   ↓
+Vite
+   ↓
+Tailwind CSS
+   ↓
+Framer Motion
+   ↓
+Lucide React
 
-Instrument Serif — editorial/italic accent typography
+💎 Why NOIRÉ?
+
+NOIRÉ was designed to demonstrate how a simple product landing page can become a more immersive brand experience through:
+
+✨ Strong visual hierarchy
+🎬 Motion design
+🌑 Dark cinematic styling
+🔤 Editorial typography
+🖼️ Atmospheric imagery
+📱 Responsive layouts
+🧩 Modern React components
+
+📸 Screenshots
+
+Add screenshots of your website here:
+
+📷 Add your screenshots here
+
+You can upload screenshots to your GitHub repository and display them in this section.
+
+🎯 Project Purpose
+
+This project was created as a frontend portfolio project to demonstrate modern web design and development techniques using React, TypeScript, Tailwind CSS, Framer Motion, and Vite.
+
+👨‍💻 Author
+
+Daniyal
+
+Frontend / Web Development Project 🚀
+
+⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+🍴 Fork the project
+📢 Share it
+💡 Use it as inspiration for your own frontend projects
 
 📄 License
 
 This project is created for learning, portfolio, and demonstration purposes.
+
+🖤 NOIRÉ
+
+Dark. Warm. Impossible to forget. ✨
