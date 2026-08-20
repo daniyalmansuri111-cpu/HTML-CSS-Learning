@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travello | Travel Beyond Ordinary</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+        <a href="#" class="logo">
+            Travello<span>.</span>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-9">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#destinations" class="nav-link">Destinations</a>
+            <a href="#experiences" class="nav-link">Experiences</a>
+            <a href="#packages" class="nav-link">Packages</a>
+            <a href="#about" class="nav-link">About</a>
+        </div>
+
+        <a href="#contact" class="nav-button hidden sm:flex">
+            Plan a Trip
+            <span>↗</span>
+        </a>
+
+        <button class="lg:hidden text-white text-2xl">
+            ☰
+        </button>
+
+    </nav>
+</header>
+
+
+<main>
+
+<section id="home" class="hero min-h-screen relative flex items-center">
+
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+
+        <div class="max-w-3xl pt-20">
+
+            <div class="hero-tag">
+                ✦ Travel differently
+            </div>
+
+            <h1 class="hero-title">
+                The world is
+                <span>waiting for you.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover remarkable destinations, authentic experiences
+                and carefully crafted journeys made for curious travelers.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+
+                <a href="#destinations" class="primary-button">
+                    Explore destinations
+                    <span>→</span>
+                </a>
+
+                <a href="#packages" class="secondary-button">
+                    View journeys
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl">
+
+        <div class="search-box">
+
+            <div class="search-field">
+                <div class="search-icon">⌖</div>
+
+                <div>
+                    <span>Destination</span>
+                    <strong>Where do you want to go?</strong>
+                </div>
+            </div>
+
+            <div class="search-divider"></div>
+
+            <div class="search-field">
+                <div class="search-icon">◷</div>
+
+                <div>
+                    <span>Dates</span>
+                    <strong>When are you travelling?</strong>
+                </div>
+            </div>
+
+            <div class="search-divider"></div>
+
+            <div class="search-field">
+                <div class="search-icon">♧</div>
+
+                <div>
+                    <span>Travelers</span>
+                    <strong>2 Travelers</strong>
+                </div>
+            </div>
+
+            <button class="search-button">
+                ⌕
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-white py-10">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <h3 class="stat-number">120+</h3>
+                <p class="stat-label">Destinations</p>
+            </div>
+
+            <div>
+                <h3 class="stat-number">35K+</h3>
+                <p class="stat-label">Happy Travelers</p>
+            </div>
+
+            <div>
+                <h3 class="stat-number">4.9/5</h3>
+                <p class="stat-label">Guest Rating</p>
+            </div>
+
+            <div>
+                <h3 class="stat-number">12+</h3>
+                <p class="stat-label">Years Experience</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="destinations" class="section">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-label">DESTINATIONS</p>
+
+                <h2 class="section-title">
+                    Places that stay with you.
+                </h2>
+            </div>
+
+            <p class="section-description">
+                From peaceful islands to dramatic mountains,
+                discover places worth remembering.
+            </p>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <a href="#" class="destination-card lg:col-span-2 lg:row-span-2 h-[420px] lg:h-[650px]">
+
+                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=90" alt="Bali">
+
+                <div class="destination-content">
+                    <div>
+                        <small>INDONESIA</small>
+                        <h3>Bali</h3>
+                        <p>Beaches · Culture · Wellness</p>
+                    </div>
+
+                    <span class="round-arrow">↗</span>
+                </div>
+
+            </a>
+
+
+            <a href="#" class="destination-card h-[315px]">
+
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=90" alt="Switzerland">
+
+                <div class="destination-content">
+                    <div>
+                        <small>SWITZERLAND</small>
+                        <h3>Swiss Alps</h3>
+                        <p>Mountains · Snow · Nature</p>
+                    </div>
+
+                    <span class="round-arrow">↗</span>
+                </div>
+
+            </a>
+
+
+            <a href="#" class="destination-card h-[315px]">
+
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=90" alt="Paris">
+
+                <div class="destination-content">
+                    <div>
+                        <small>FRANCE</small>
+                        <h3>Paris</h3>
+                        <p>Art · Food · Romance</p>
+                    </div>
+
+                    <span class="round-arrow">↗</span>
+                </div>
+
+            </a>
+
+
+            <a href="#" class="destination-card h-[315px]">
+
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=90" alt="Amalfi Coast">
+
+                <div class="destination-content">
+                    <div>
+                        <small>ITALY</small>
+                        <h3>Amalfi Coast</h3>
+                        <p>Coastline · Food · Romance</p>
+                    </div>
+
+                    <span class="round-arrow">↗</span>
+                </div>
+
+            </a>
+
+
+            <a href="#" class="destination-card h-[315px]">
+
+                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=900&q=90" alt="Santorini">
+
+                <div class="destination-content">
+                    <div>
+                        <small>GREECE</small>
+                        <h3>Santorini</h3>
+                        <p>Sea · Sunsets · Islands</p>
+                    </div>
+
+                    <span class="round-arrow">↗</span>
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="experiences" class="section dark-section">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-label light-label">TRAVEL YOUR WAY</p>
+
+                <h2 class="section-title light-title">
+                    What kind of trip<br>
+                    are you dreaming of?
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+            <div class="experience-card">
+
+                <span class="experience-number">01</span>
+
+                <div class="experience-icon">
+                    ◒
+                </div>
+
+                <h3>Slow Escapes</h3>
+
+                <p>
+                    Beautiful beaches, quiet mornings and
+                    time to simply breathe.
+                </p>
+
+                <a href="#">Explore →</a>
+
+            </div>
+
+
+            <div class="experience-card featured">
+
+                <span class="experience-number">02</span>
+
+                <div class="experience-icon">
+                    ◇
+                </div>
+
+                <h3>Wild Adventures</h3>
+
+                <p>
+                    Mountains, trails and experiences that
+                    take you outside your comfort zone.
+                </p>
+
+                <a href="#">Explore →</a>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <span class="experience-number">03</span>
+
+                <div class="experience-icon">
+                    □
+                </div>
+
+                <h3>City Stories</h3>
+
+                <p>
+                    Discover local food, culture, architecture
+                    and the rhythm of new cities.
+                </p>
+
+                <a href="#">Explore →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="packages" class="section">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-label">CURATED JOURNEYS</p>
+
+                <h2 class="section-title">
+                    Made for unforgettable moments.
+                </h2>
+            </div>
+
+            <a href="#" class="simple-link">
+                View all packages →
+            </a>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+            <article class="package-card">
+
+                <div class="package-image">
+
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=90" alt="Bali">
+
+                    <span>POPULAR</span>
+
+                </div>
+
+                <div class="package-body">
+
+                    <p class="package-location">● BALI, INDONESIA</p>
+
+                    <h3>Island of Dreams</h3>
+
+                    <p class="package-description">
+                        Six days exploring temples, beaches
+                        and hidden corners of Bali.
+                    </p>
+
+                    <div class="package-footer">
+
+                        <div>
+                            <small>From</small>
+                            <strong>₹29,999</strong>
+                        </div>
+
+                        <a href="#">↗</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="package-card">
+
+                <div class="package-image">
+
+                    <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=900&q=90" alt="Switzerland">
+
+                    <span>FEATURED</span>
+
+                </div>
+
+                <div class="package-body">
+
+                    <p class="package-location">● SWITZERLAND</p>
+
+                    <h3>Swiss Alpine Escape</h3>
+
+                    <p class="package-description">
+                        Snow-covered mountains, scenic trains
+                        and peaceful alpine villages.
+                    </p>
+
+                    <div class="package-footer">
+
+                        <div>
+                            <small>From</small>
+                            <strong>₹74,999</strong>
+                        </div>
+
+                        <a href="#">↗</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="package-card">
+
+                <div class="package-image">
+
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=90" alt="Paris">
+
+                </div>
+
+                <div class="package-body">
+
+                    <p class="package-location">● PARIS, FRANCE</p>
+
+                    <h3>Parisian Moments</h3>
+
+                    <p class="package-description">
+                        Art, cafés, beautiful streets and
+                        unforgettable evenings.
+                    </p>
+
+                    <div class="package-footer">
+
+                        <div>
+                            <small>From</small>
+                            <strong>₹54,999</strong>
+                        </div>
+
+                        <a href="#">↗</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="about" class="about-section">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div class="relative">
+
+                <img
+                    src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1000&q=90"
+                    alt="Travelers"
+                    class="about-image"
+                >
+
+                <div class="experience-badge">
+
+                    <strong>12+</strong>
+
+                    <span>
+                        Years of creating<br>
+                        unforgettable journeys
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <p class="section-label">ABOUT TRAVELLO</p>
+
+                <h2 class="about-title">
+                    We believe travel should
+                    <span>feel personal.</span>
+                </h2>
+
+                <p class="about-text">
+                    Travello was created for people who want more
+                    than a holiday. We create journeys that connect
+                    you with places, people and experiences you'll
+                    remember for years.
+                </p>
+
+
+                <div class="space-y-5 my-8">
+
+                    <div class="about-point">
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Thoughtfully curated</strong>
+                            <p>Experiences chosen with care.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-point">
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Simple planning</strong>
+                            <p>Everything organized in one place.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-point">
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Human support</strong>
+                            <p>Real people when you need them.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <a href="#" class="primary-button dark-button">
+                    Our story
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="testimonial-section">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <span class="quote">“</span>
+
+        <h2>
+            The best journeys aren't planned around
+            places. They're planned around moments.
+        </h2>
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            Abuzar Siddiqui · Pune, India
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="py-20 bg-[#f5f1e9]">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="newsletter">
+
+            <div>
+
+                <p class="section-label">TRAVEL INSPIRATION</p>
+
+                <h2>
+                    Your next adventure
+                    starts here.
+                </h2>
+
+                <p>
+                    Get destination ideas, travel inspiration
+                    and exclusive offers in your inbox.
+                </p>
+
+            </div>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                >
+
+                <button>
+                    Subscribe →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <div class="lg:col-span-2">
+
+                <a href="#" class="footer-logo">
+                    Travello<span>.</span>
+                </a>
+
+                <p class="footer-description">
+                    Discover more. Travel further.
+                    Make memories that last.
+                </p>
+
+                <div class="social-links">
+                    <a href="#">◎</a>
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">▶</a>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <a href="#destinations">Destinations</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#packages">Packages</a>
+                <a href="#">Travel Guides</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Company</h4>
+
+                <a href="#about">About Us</a>
+                <a href="#">Our Story</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 Travello. All rights reserved.</span>
+
+            <span>Made for curious travelers.</span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

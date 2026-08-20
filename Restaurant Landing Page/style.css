@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #f10a0a;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.hero {
+    height: 500px;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/054/611/336/small/wide-angle-foodgraphy-for-restaurant-with-copy-space-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    background-color: #f10a0a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    background-color: orange;
+}
+
+.about {
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+.menu {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #fff3e0;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.food:hover {
+    background-color: #ffe0b2;
+}
+
+.food h3 {
+    color: #8b0000;
+    margin-bottom: 15px;
+}
+
+.food p {
+    font-weight: bold;
+}
+
+.contact {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+p{
+font-style: italic;
+font-weight: bold;
+}
+
+.image{
+    height: 200px;
+    width:200px;
+}
+nav {
+    
+    padding: 15px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.logo span {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
