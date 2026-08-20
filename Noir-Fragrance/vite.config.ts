@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/HTML-CSS-Learning/Noir-Fragrance/",
+  base: "/HTML-CSS-Learning/",
 });
