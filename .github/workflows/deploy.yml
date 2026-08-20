@@ -1,4 +1,4 @@
-name: Deploy Noir-Fragrance
+name: Deploy All Projects
 
 on:
   push:
@@ -27,21 +27,35 @@ jobs:
           cache: npm
           cache-dependency-path: Noir-Fragrance/package-lock.json
 
-      - name: Install dependencies
+      - name: Install Noiré dependencies
         working-directory: Noir-Fragrance
         run: npm ci
 
-      - name: Build
+      - name: Build Noiré
         working-directory: Noir-Fragrance
         run: npm run build
+
+      - name: Prepare GitHub Pages
+        run: |
+          mkdir pages
+
+          rsync -av \
+            --exclude='.git' \
+            --exclude='node_modules' \
+            --exclude='Noir-Fragrance' \
+            ./ pages/
+
+          mkdir -p pages/Noir-Fragrance
+
+          cp -r Noir-Fragrance/dist/. pages/Noir-Fragrance/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload build
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Noir-Fragrance/dist
+          path: pages
 
   deploy:
     environment:
@@ -53,6 +67,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
