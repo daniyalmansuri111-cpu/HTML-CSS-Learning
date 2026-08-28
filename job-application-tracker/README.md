@@ -8,7 +8,7 @@ JobTrack is designed to help job seekers organize their applications, track inte
 
 ## 🚀 Live Demo
 
-👉 **[View Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/)**
+👉 **[View Live Demo]([https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/job-application-tracker/?utm_source=chatgpt.com)**
 
 > Live deployment will be updated as the project is published through GitHub Pages.
 
