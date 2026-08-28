@@ -1,11 +1,29 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import AddApplication from "./AddApplication";
+import Dashboard from "./Dashboard";
 import Landing from "./Landing";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/HTML-CSS-Learning/job-application-tracker">
       <Routes>
-        <Route path="/" element={<Landing />} />
+
+        <Route
+          path="/"
+          element={<Landing />}
+        />
+
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
+        />
+
+        <Route
+          path="/add-application"
+          element={<AddApplication />}
+        />
+
       </Routes>
     </BrowserRouter>
   );
