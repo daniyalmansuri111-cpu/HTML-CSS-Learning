@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/065/755/560/small/red-dragon-head-on-transparent-background-free-png.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="glow glow-green"></div>
+<div class="glow glow-orange"></div>
+
+<div class="app">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">
+                <i class="fa-solid fa-chart-pie"></i>
+            </div>
+
+            <div>
+                <strong>Fin<span>Track</span></strong>
+                <small>SMART FINANCE</small>
+            </div>
+        </div>
+
+        <div class="sidebar-balance">
+            <div class="balance-top">
+                <span>AVAILABLE BALANCE</span>
+                <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <strong>₹24,580</strong>
+
+            <div class="balance-bottom">
+                <span><i class="fa-solid fa-arrow-trend-up"></i> 12.8%</span>
+                <small>this month</small>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">OVERVIEW</div>
+
+            <nav class="nav-menu">
+
+                <a href="#" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-receipt"></i>
+                    <span>Transactions</span>
+                    <b>12</b>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Accounts</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">MANAGEMENT</div>
+
+            <nav class="nav-menu">
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Team</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-building"></i>
+                    <span>Companies</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Reports</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+        <div class="sidebar-widget">
+
+            <div class="widget-heading">
+                <span>MONTHLY BUDGET</span>
+                <strong>72%</strong>
+            </div>
+
+            <div class="progress">
+                <span></span>
+            </div>
+
+            <div class="widget-values">
+                <span>₹13,840 spent</span>
+                <span>₹19,200 limit</span>
+            </div>
+
+        </div>
+
+        <div class="sidebar-widget savings-widget">
+
+            <div class="saving-icon">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+
+            <div class="saving-info">
+                <span>SAVINGS GOAL</span>
+                <strong>₹68,400</strong>
+                <small>68% completed</small>
+            </div>
+
+            <div class="saving-circle">68%</div>
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <img
+                    src="MY photo.png"
+                    alt="Daniyal"
+                >
+
+                <div>
+                    <strong>Daniyal</strong>
+                    <span>Premium Account</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="mobile-menu" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search transactions, accounts..."
+                >
+
+                <kbd>⌘ K</kbd>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button class="top-button">
+                    <i class="fa-regular fa-calendar"></i>
+                </button>
+
+                <button class="top-button notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </button>
+
+                <div class="top-user">
+
+                    <img
+                        src="MY photo.png"
+                        alt="Daniyal"
+                    >
+
+                    <div>
+                        <strong>Daniyal</strong>
+                        <small>Personal</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="dashboard">
+
+            <div class="welcome">
+
+                <div>
+
+                    <div class="eyebrow">
+                        <span></span>
+                        FINANCIAL OVERVIEW
+                    </div>
+
+                    <h1>Good afternoon, Daniyal <em>✦</em></h1>
+
+                    <p>Your money is looking healthy. Here's your latest financial snapshot.</p>
+
+                </div>
+
+                <button class="primary-button" id="addTransactionBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Transaction
+                </button>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card green-card">
+
+                    <div class="stat-head">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+
+                    <span class="stat-label">TOTAL BALANCE</span>
+
+                    <h2>₹24,580<span>.00</span></h2>
+
+                    <div class="stat-change">
+                        <strong><i class="fa-solid fa-arrow-trend-up"></i> 12.8%</strong>
+                        <span>vs last month</span>
+                    </div>
+
+                </div>
+
+                <div class="stat-card orange-card">
+
+                    <div class="stat-head">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+
+                    <span class="stat-label">TOTAL INCOME</span>
+
+                    <h2>₹38,420<span>.00</span></h2>
+
+                    <div class="stat-change">
+                        <strong><i class="fa-solid fa-arrow-trend-up"></i> 8.4%</strong>
+                        <span>vs last month</span>
+                    </div>
+
+                </div>
+
+                <div class="stat-card red-card">
+
+                    <div class="stat-head">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+
+                    <span class="stat-label">TOTAL EXPENSES</span>
+
+                    <h2>₹13,840<span>.00</span></h2>
+
+                    <div class="stat-change">
+                        <strong><i class="fa-solid fa-arrow-trend-down"></i> 4.2%</strong>
+                        <span>vs last month</span>
+                    </div>
+
+                </div>
+
+                <div class="stat-card purple-card">
+
+                    <div class="stat-head">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+
+                    <span class="stat-label">SAVINGS RATE</span>
+
+                    <h2>64<span>.1%</span></h2>
+
+                    <div class="stat-change">
+                        <strong><i class="fa-solid fa-arrow-trend-up"></i> 6.7%</strong>
+                        <span>vs last month</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content-grid">
+
+                <div class="card cashflow-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <div class="title-row">
+                                <div class="title-icon green">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+
+                                <h3>Cash Flow</h3>
+                            </div>
+
+                            <p>Income and expenses over the last 6 months</p>
+
+                        </div>
+
+                        <select>
+                            <option>Last 6 months</option>
+                            <option>Last 12 months</option>
+                            <option>This year</option>
+                        </select>
+
+                    </div>
+
+                    <div class="chart-info">
+
+                        <div>
+                            <span>NET CASH FLOW</span>
+                            <strong>₹24,580</strong>
+                        </div>
+
+                        <div class="chart-legend">
+                            <span><i class="green-dot"></i> Income</span>
+                            <span><i class="orange-dot"></i> Expenses</span>
+                        </div>
+
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="cashFlowChart"></canvas>
+                    </div>
+
+                </div>
+
+                <div class="card spending-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <div class="title-row">
+                                <div class="title-icon orange">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </div>
+
+                                <h3>Spending</h3>
+                            </div>
+
+                            <p>Where your money goes</p>
+
+                        </div>
+
+                        <button class="more-button">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="donut-wrap">
+
+                        <div class="donut">
+                            <canvas id="spendingChart"></canvas>
+
+                            <div class="donut-label">
+                                <span>SPENT</span>
+                                <strong>₹13.8K</strong>
+                                <small>This month</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="legend-list">
+
+                        <div>
+                            <span><i class="dot green"></i> Housing</span>
+                            <strong>32%</strong>
+                        </div>
+
+                        <div>
+                            <span><i class="dot orange"></i> Food & Dining</span>
+                            <strong>24%</strong>
+                        </div>
+
+                        <div>
+                            <span><i class="dot purple"></i> Shopping</span>
+                            <strong>18%</strong>
+                        </div>
+
+                        <div>
+                            <span><i class="dot yellow"></i> Transport</span>
+                            <strong>14%</strong>
+                        </div>
+
+                        <div>
+                            <span><i class="dot gray"></i> Other</span>
+                            <strong>12%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom-grid">
+
+                <div class="card transactions-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <div class="title-row">
+                                <div class="title-icon green">
+                                    <i class="fa-solid fa-receipt"></i>
+                                </div>
+
+                                <h3>Recent Transactions</h3>
+                            </div>
+
+                            <p>Your latest financial activity</p>
+
+                        </div>
+
+                        <button class="view-all">
+                            View all
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="transaction-list" id="transactionsList">
+
+                        <div class="transaction">
+
+                            <div class="transaction-brand apple">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+
+                            <div class="transaction-info">
+                                <strong>Apple Store</strong>
+                                <span>Electronics • Today</span>
+                            </div>
+
+                            <div class="transaction-status completed">Completed</div>
+
+                            <strong class="amount expense">-₹1,299</strong>
+
+                        </div>
+
+                        <div class="transaction">
+
+                            <div class="transaction-brand netflix">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                            <div class="transaction-info">
+                                <strong>Netflix</strong>
+                                <span>Entertainment • Yesterday</span>
+                            </div>
+
+                            <div class="transaction-status completed">Completed</div>
+
+                            <strong class="amount expense">-₹649</strong>
+
+                        </div>
+
+                        <div class="transaction">
+
+                            <div class="transaction-brand nova">N</div>
+
+                            <div class="transaction-info">
+                                <strong>NovaTech</strong>
+                                <span>Salary • Aug 28</span>
+                            </div>
+
+                            <div class="transaction-status received">Received</div>
+
+                            <strong class="amount income">+₹42,000</strong>
+
+                        </div>
+
+                        <div class="transaction">
+
+                            <div class="transaction-brand spotify">
+                                <i class="fa-brands fa-spotify"></i>
+                            </div>
+
+                            <div class="transaction-info">
+                                <strong>Spotify</strong>
+                                <span>Entertainment • Aug 27</span>
+                            </div>
+
+                            <div class="transaction-status completed">Completed</div>
+
+                            <strong class="amount expense">-₹119</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card team-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <div class="title-row">
+                                <div class="title-icon purple">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+
+                                <h3>My Team</h3>
+                            </div>
+
+                            <p>Your finance team</p>
+
+                        </div>
+
+                        <button class="more-button">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="team-list">
+
+                        <div class="team-member">
+
+                            <img
+                                src="photo1.jpg"
+                                alt="Abuzar Sidiqui"
+                            >
+
+                            <div>
+                                <strong>Abuzar Sidiqui</strong>
+                                <span>Financial Advisor</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check online"></i>
+
+                        </div>
+
+                        <div class="team-member">
+
+                            <img
+                                src="photo2.jpg"
+                                alt="Sufiyan Tamboli"
+                            >
+
+                            <div>
+                                <strong>Sufiyan Tamboli</strong>
+                                <span>Account Manager</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check online"></i>
+
+                        </div>
+
+                        <div class="team-member">
+
+                            <img
+                                src="photo3.jpg"
+                                alt="Ayan Tamboli"
+                            >
+
+                            <div>
+                                <strong>Ayan Tamboli</strong>
+                                <span>Finance Analyst</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check online"></i>
+
+                        </div>
+
+                    </div>
+
+                    <button class="invite-button">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Invite teammate
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <div>
+                <span>NEW TRANSACTION</span>
+                <h2>Add transaction</h2>
+                <p>Record your latest financial activity.</p>
+            </div>
+
+            <button id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <form id="transactionForm">
+
+            <label>
+                Transaction Name
+                <input
+                    type="text"
+                    id="transactionName"
+                    placeholder="e.g. Grocery Shopping"
+                    required
+                >
+            </label>
+
+            <div class="form-row">
+
+                <label>
+                    Amount
+                    <input
+                        type="number"
+                        id="transactionAmount"
+                        placeholder="₹0.00"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Type
+                    <select id="transactionType">
+                        <option value="expense">Expense</option>
+                        <option value="income">Income</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <label>
+                Category
+
+                <select id="transactionCategory">
+                    <option>Food & Dining</option>
+                    <option>Shopping</option>
+                    <option>Entertainment</option>
+                    <option>Transport</option>
+                    <option>Housing</option>
+                    <option>Salary</option>
+                    <option>Other</option>
+                </select>
+
+            </label>
+
+            <label>
+                Date
+
+                <input
+                    type="date"
+                    id="transactionDate"
+                    required
+                >
+
+            </label>
+
+            <button class="submit-button" type="submit">
+                <i class="fa-solid fa-check"></i>
+                Save Transaction
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+
+    <div class="toast-check">
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div>
+        <strong>Transaction added</strong>
+        <span>Your transaction was saved successfully.</span>
+    </div>
+
+</div>
+
+
+<script>
+
+const cashFlowChart = new Chart(
+    document.getElementById("cashFlowChart"),
+    {
+        type: "line",
+
+        data: {
+            labels: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+
+            datasets: [
+                {
+                    label: "Income",
+                    data: [28000, 32000, 30000, 35000, 38000, 42000],
+                    borderWidth: 3,
+                    tension: 0.45,
+                    pointRadius: 4,
+                    pointHoverRadius: 7
+                },
+                {
+                    label: "Expenses",
+                    data: [12000, 14000, 11000, 16000, 14500, 13840],
+                    borderWidth: 3,
+                    tension: 0.45,
+                    pointRadius: 4,
+                    pointHoverRadius: 7
+                }
+            ]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+
+            interaction: {
+                intersect: false,
+                mode: "index"
+            },
+
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+
+            scales: {
+                y: {
+                    beginAtZero: true,
+
+                    ticks: {
+                        color: "#85877d",
+                        padding: 10,
+
+                        callback: function(value) {
+                            return "₹" + value / 1000 + "K";
+                        }
+                    },
+
+                    grid: {
+                        color: "rgba(255,255,255,.06)",
+                        drawBorder: false
+                    }
+                },
+
+                x: {
+                    ticks: {
+                        color: "#85877d",
+                        padding: 10
+                    },
+
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    }
+);
+
+
+new Chart(
+    document.getElementById("spendingChart"),
+    {
+        type: "doughnut",
+
+        data: {
+            labels: [
+                "Housing",
+                "Food",
+                "Shopping",
+                "Transport",
+                "Other"
+            ],
+
+            datasets: [
+                {
+                    data: [32, 24, 18, 14, 12],
+                    borderWidth: 0,
+                    hoverOffset: 6
+                }
+            ]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: "77%",
+
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    }
+);
+
+
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("show");
+});
+
+
+const modalOverlay =
+    document.getElementById("modalOverlay");
+
+const addTransactionBtn =
+    document.getElementById("addTransactionBtn");
+
+const closeModal =
+    document.getElementById("closeModal");
+
+addTransactionBtn.addEventListener("click", () => {
+    modalOverlay.classList.add("show");
+});
+
+
+closeModal.addEventListener("click", () => {
+    modalOverlay.classList.remove("show");
+});
+
+
+modalOverlay.addEventListener("click", (event) => {
+
+    if (event.target === modalOverlay) {
+        modalOverlay.classList.remove("show");
+    }
+
+});
+
+
+const transactionForm =
+    document.getElementById("transactionForm");
+
+const transactionsList =
+    document.getElementById("transactionsList");
+
+const toast =
+    document.getElementById("toast");
+
+transactionForm.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("transactionName").value;
+
+    const amount =
+        document.getElementById("transactionAmount").value;
+
+    const type =
+        document.getElementById("transactionType").value;
+
+    const category =
+        document.getElementById("transactionCategory").value;
+
+    const transaction =
+        document.createElement("div");
+
+    transaction.className = "transaction";
+
+    transaction.innerHTML = `
+        <div class="transaction-brand nova">
+            <i class="fa-solid fa-receipt"></i>
+        </div>
+
+        <div class="transaction-info">
+            <strong>${name}</strong>
+            <span>${category} • Just now</span>
+        </div>
+
+        <div class="transaction-status ${type === "income" ? "received" : "completed"}">
+            ${type === "income" ? "Received" : "Completed"}
+        </div>
+
+        <strong class="amount ${type}">
+            ${type === "income" ? "+" : "-"}₹${Number(amount).toLocaleString("en-IN")}
+        </strong>
+    `;
+
+    transactionsList.prepend(transaction);
+
+    modalOverlay.classList.remove("show");
+
+    transactionForm.reset();
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+
+});
+
+</script>
+
+</body>
+</html>
+
