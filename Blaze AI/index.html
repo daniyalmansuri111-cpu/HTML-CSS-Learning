@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLAZE — AI Productivity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-bolt"></i></span>
+            <span>BLAZE</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#tasks">Tasks</a>
+            <a href="#ai">AI Assistant</a>
+            <a href="#goals">Goals</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="profile-btn">
+                <img src="photo.png" alt="Profile">
+                <span>Daniyal</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="dashboard">
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span class="pulse"></span>
+                    Your intelligent workspace
+                </div>
+
+                <h1>Work smarter.<br><span>Think bigger.</span></h1>
+
+                <p>
+                    BLAZE brings your tasks, goals, ideas and AI tools
+                    together in one beautifully focused workspace.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn" id="startBtn">
+                        Start Creating
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <button class="secondary-btn" id="demoBtn">
+                        <i class="fa-solid fa-play"></i>
+                        See how it works
+                    </button>
+                </div>
+
+                <div class="hero-users">
+                    <div class="avatars">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80" alt="">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80" alt="">
+                        <span>+</span>
+                    </div>
+                    <div>
+                        <strong>12k+</strong>
+                        <small>productive minds</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-dashboard">
+                <div class="floating-card floating-card-one">
+                    <div class="mini-icon orange"><i class="fa-solid fa-check"></i></div>
+                    <div>
+                        <strong>Task completed</strong>
+                        <small>Design homepage</small>
+                    </div>
+                </div>
+
+                <div class="dashboard-window">
+                    <div class="window-top">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Today, September 2</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="dashboard-heading">
+                        <div>
+                            <small>GOOD EVENING, DANIYAL</small>
+                            <h3>Let's get things done.</h3>
+                        </div>
+                        <div class="productivity-score">
+                            <span>87%</span>
+                            <small>Focus score</small>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card purple-card">
+                            <div class="stat-icon"><i class="fa-solid fa-list-check"></i></div>
+                            <span>Tasks</span>
+                            <strong id="taskCount">12</strong>
+                            <small><b>+24%</b> this week</small>
+                        </div>
+
+                        <div class="stat-card orange-card">
+                            <div class="stat-icon"><i class="fa-solid fa-fire"></i></div>
+                            <span>Focus streak</span>
+                            <strong>14</strong>
+                            <small>days active</small>
+                        </div>
+
+                        <div class="stat-card lime-card">
+                            <div class="stat-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <span>Goals</span>
+                            <strong>7</strong>
+                            <small>2 completed</small>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <div>
+                                <span>Productivity</span>
+                                <strong>Weekly activity</strong>
+                            </div>
+                            <select id="chartSelect">
+                                <option>Last 7 days</option>
+                                <option>This month</option>
+                            </select>
+                        </div>
+
+                        <div class="chart">
+                            <div class="chart-line line-one"></div>
+                            <div class="chart-line line-two"></div>
+                            <div class="chart-line line-three"></div>
+                            <div class="bars">
+                                <i style="height:35%"></i>
+                                <i style="height:52%"></i>
+                                <i style="height:45%"></i>
+                                <i style="height:76%"></i>
+                                <i style="height:61%"></i>
+                                <i style="height:88%"></i>
+                                <i style="height:70%"></i>
+                            </div>
+                        </div>
+
+                        <div class="days">
+                            <span>M</span>
+                            <span>T</span>
+                            <span>W</span>
+                            <span>T</span>
+                            <span>F</span>
+                            <span>S</span>
+                            <span>S</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tasks">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">TASK MANAGEMENT</span>
+                    <h2>Everything you need to <em>move forward.</em></h2>
+                </div>
+
+                <button class="outline-btn" id="addTaskBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add task
+                </button>
+            </div>
+
+            <div class="task-layout">
+                <div class="task-list-card">
+                    <div class="task-tabs">
+                        <button class="active" data-filter="all">All</button>
+                        <button data-filter="pending">Pending</button>
+                        <button data-filter="completed">Completed</button>
+                    </div>
+
+                    <div class="tasks" id="taskList">
+
+                        <div class="task-item" data-status="pending">
+                            <button class="check-task"></button>
+                            <div class="task-info">
+                                <strong>Finish portfolio website</strong>
+                                <small><i class="fa-regular fa-clock"></i> Today · 6:00 PM</small>
+                            </div>
+                            <span class="priority high">High</span>
+                            <button class="delete-task"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+
+                        <div class="task-item" data-status="pending">
+                            <button class="check-task"></button>
+                            <div class="task-info">
+                                <strong>Review project documentation</strong>
+                                <small><i class="fa-regular fa-clock"></i> Today · 8:00 PM</small>
+                            </div>
+                            <span class="priority medium">Medium</span>
+                            <button class="delete-task"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+
+                        <div class="task-item completed-task" data-status="completed">
+                            <button class="check-task checked"><i class="fa-solid fa-check"></i></button>
+                            <div class="task-info">
+                                <strong>Complete UI research</strong>
+                                <small><i class="fa-solid fa-check"></i> Completed</small>
+                            </div>
+                            <span class="priority low">Done</span>
+                            <button class="delete-task"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+
+                        <div class="task-item" data-status="pending">
+                            <button class="check-task"></button>
+                            <div class="task-info">
+                                <strong>Prepare GitHub README</strong>
+                                <small><i class="fa-regular fa-clock"></i> Tomorrow · 10:00 AM</small>
+                            </div>
+                            <span class="priority medium">Medium</span>
+                            <button class="delete-task"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-top">
+                        <span>FOCUS SESSION</span>
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div class="timer" id="timer">25:00</div>
+                    <p>Deep work session</p>
+
+                    <div class="timer-controls">
+                        <button id="timerBtn"><i class="fa-solid fa-play"></i></button>
+                        <button id="resetTimer"><i class="fa-solid fa-rotate-left"></i></button>
+                    </div>
+
+                    <div class="timer-progress">
+                        <span id="timerProgress"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-section" id="ai">
+            <div class="ai-copy">
+                <div class="section-label">BLAZE AI</div>
+                <h2>Your personal<br><span>thinking partner.</span></h2>
+                <p>
+                    Brainstorm ideas, break down complex projects,
+                    summarize information and plan your next move.
+                </p>
+
+                <div class="ai-features">
+                    <div>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Smart suggestions</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Context-aware answers</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>Creative brainstorming</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-card">
+                <div class="chat-header">
+                    <div class="ai-avatar"><i class="fa-solid fa-sparkles"></i></div>
+                    <div>
+                        <strong>BLAZE AI</strong>
+                        <small><span></span> Online</small>
+                    </div>
+                    <button><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <span>AI</span>
+                        <p>Hey Daniyal 👋 What are we working on today?</p>
+                    </div>
+
+                    <div class="message user-message">
+                        <p>Help me plan my portfolio.</p>
+                    </div>
+
+                    <div class="message ai-message">
+                        <span>AI</span>
+                        <p>Absolutely. Let's build something impressive. Start with your strongest projects, then add a clean introduction and skills section.</p>
+                    </div>
+                </div>
+
+                <form class="chat-input" id="chatForm">
+                    <input type="text" id="chatInput" placeholder="Ask BLAZE anything..." autocomplete="off">
+                    <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="goals">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">YOUR GOALS</span>
+                    <h2>Turn ambition into <em>progress.</em></h2>
+                </div>
+            </div>
+
+            <div class="goals-grid">
+
+                <div class="goal-card">
+                    <div class="goal-icon purple"><i class="fa-solid fa-code"></i></div>
+                    <div class="goal-content">
+                        <div class="goal-title">
+                            <strong>Master Frontend Development</strong>
+                            <span>72%</span>
+                        </div>
+                        <p>Build 10 portfolio projects</p>
+                        <div class="goal-bar"><span style="width:72%"></span></div>
+                        <small>7 of 10 projects completed</small>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-icon orange"><i class="fa-solid fa-book"></i></div>
+                    <div class="goal-content">
+                        <div class="goal-title">
+                            <strong>Learn JavaScript</strong>
+                            <span>48%</span>
+                        </div>
+                        <p>Complete advanced concepts</p>
+                        <div class="goal-bar"><span style="width:48%"></span></div>
+                        <small>24 of 50 lessons completed</small>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-icon lime"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="goal-content">
+                        <div class="goal-title">
+                            <strong>Launch Portfolio</strong>
+                            <span>85%</span>
+                        </div>
+                        <p>Get ready for opportunities</p>
+                        <div class="goal-bar"><span style="width:85%"></span></div>
+                        <small>Almost there 🚀</small>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div>
+                <span class="section-label">READY?</span>
+                <h2>Make your next<br><span>great move.</span></h2>
+            </div>
+
+            <button class="primary-btn" id="ctaBtn">
+                Create workspace
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-bolt"></i></span>
+            <span>BLAZE</span>
+        </div>
+        <p>Think better. Work smarter. © 2026 BLAZE.</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div class="modal" id="taskModal">
+        <div class="modal-box">
+            <button class="close-modal" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+            <span class="section-label">NEW TASK</span>
+            <h2>Add a task</h2>
+
+            <form id="taskForm">
+                <label>Task name</label>
+                <input type="text" id="newTaskName" placeholder="What needs to be done?" required>
+
+                <label>Priority</label>
+                <select id="taskPriority">
+                    <option value="high">High</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <button class="primary-btn full-btn" type="submit">
+                    Add task
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Task added successfully</span>
+    </div>
+
+<script>
+const body = document.body;
+const themeBtn = document.getElementById("themeBtn");
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.querySelector(".nav-links");
+
+themeBtn.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+    themeBtn.innerHTML = body.classList.contains("light-mode")
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+});
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("show"));
+});
+
+const modal = document.getElementById("taskModal");
+const addTaskBtn = document.getElementById("addTaskBtn");
+const startBtn = document.getElementById("startBtn");
+const ctaBtn = document.getElementById("ctaBtn");
+const closeModal = document.getElementById("closeModal");
+const taskForm = document.getElementById("taskForm");
+const taskList = document.getElementById("taskList");
+const taskCount = document.getElementById("taskCount");
+const toast = document.getElementById("toast");
+
+function openModal() {
+    modal.classList.add("active");
+    document.getElementById("newTaskName").focus();
+}
+
+function closeTaskModal() {
+    modal.classList.remove("active");
+}
+
+addTaskBtn.addEventListener("click", openModal);
+startBtn.addEventListener("click", openModal);
+ctaBtn.addEventListener("click", openModal);
+closeModal.addEventListener("click", closeTaskModal);
+
+modal.addEventListener("click", e => {
+    if (e.target === modal) closeTaskModal();
+});
+
+function showToast(message) {
+    toast.querySelector("span").textContent = message;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2500);
+}
+
+taskForm.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const name = document.getElementById("newTaskName").value.trim();
+    const priority = document.getElementById("taskPriority").value;
+
+    if (!name) return;
+
+    const task = document.createElement("div");
+    task.className = "task-item";
+    task.dataset.status = "pending";
+
+    task.innerHTML = `
+        <button class="check-task"></button>
+        <div class="task-info">
+            <strong>${name}</strong>
+            <small><i class="fa-regular fa-clock"></i> Added just now</small>
+        </div>
+        <span class="priority ${priority}">${priority.charAt(0).toUpperCase() + priority.slice(1)}</span>
+        <button class="delete-task"><i class="fa-solid fa-trash"></i></button>
+    `;
+
+    taskList.prepend(task);
+
+    taskForm.reset();
+    closeTaskModal();
+    updateTaskCount();
+    showToast("Task added successfully");
+});
+
+function updateTaskCount() {
+    const pending = document.querySelectorAll(".task-item[data-status='pending']").length;
+    taskCount.textContent = pending + 8;
+}
+
+taskList.addEventListener("click", e => {
+    const check = e.target.closest(".check-task");
+    const deleteBtn = e.target.closest(".delete-task");
+
+    if (check) {
+        const task = check.closest(".task-item");
+
+        if (task.dataset.status === "completed") {
+            task.dataset.status = "pending";
+            task.classList.remove("completed-task");
+            check.innerHTML = "";
+        } else {
+            task.dataset.status = "completed";
+            task.classList.add("completed-task");
+            check.innerHTML = '<i class="fa-solid fa-check"></i>';
+        }
+
+        updateTaskCount();
+        showToast(task.dataset.status === "completed" ? "Task completed 🎉" : "Task reopened");
+    }
+
+    if (deleteBtn) {
+        deleteBtn.closest(".task-item").remove();
+        updateTaskCount();
+        showToast("Task deleted");
+    }
+});
+
+document.querySelectorAll(".task-tabs button").forEach(button => {
+    button.addEventListener("click", () => {
+        document.querySelectorAll(".task-tabs button").forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filter = button.dataset.filter;
+
+        document.querySelectorAll(".task-item").forEach(task => {
+            if (filter === "all" || task.dataset.status === filter) {
+                task.style.display = "flex";
+            } else {
+                task.style.display = "none";
+            }
+        });
+    });
+});
+
+let seconds = 1500;
+let timerRunning = false;
+let timerInterval;
+
+const timerDisplay = document.getElementById("timer");
+const timerBtn = document.getElementById("timerBtn");
+const resetTimer = document.getElementById("resetTimer");
+const timerProgress = document.getElementById("timerProgress");
+
+function updateTimer() {
+    const minutes = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+
+    timerDisplay.textContent =
+        `${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+
+    timerProgress.style.width = `${((1500 - seconds) / 1500) * 100}%`;
+
+    if (seconds <= 0) {
+        clearInterval(timerInterval);
+        timerRunning = false;
+        timerBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+        showToast("Focus session completed 🎉");
+    }
+}
+
+timerBtn.addEventListener("click", () => {
+    if (timerRunning) {
+        clearInterval(timerInterval);
+        timerRunning = false;
+        timerBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+    } else {
+        timerRunning = true;
+        timerBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+
+        timerInterval = setInterval(() => {
+            if (seconds > 0) {
+                seconds--;
+                updateTimer();
+            }
+        }, 1000);
+    }
+});
+
+resetTimer.addEventListener("click", () => {
+    clearInterval(timerInterval);
+    seconds = 1500;
+    timerRunning = false;
+    timerBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+    updateTimer();
+});
+
+updateTimer();
+
+const chatForm = document.getElementById("chatForm");
+const chatInput = document.getElementById("chatInput");
+const chatMessages = document.getElementById("chatMessages");
+
+const aiReplies = [
+    "That's a great direction. Break it into smaller tasks and tackle the most important one first.",
+    "I'd suggest starting with the highest-impact task. Momentum will make the rest easier.",
+    "Interesting idea! Try turning that into a clear goal with a measurable outcome.",
+    "Let's simplify it. What is the single most important result you want today?",
+    "You're making progress. Keep your next step small, specific and achievable."
+];
+
+chatForm.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const text = chatInput.value.trim();
+
+    if (!text) return;
+
+    const userMessage = document.createElement("div");
+    userMessage.className = "message user-message";
+    userMessage.innerHTML = `<p>${text}</p>`;
+
+    chatMessages.appendChild(userMessage);
+    chatInput.value = "";
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    setTimeout(() => {
+        const aiMessage = document.createElement("div");
+        aiMessage.className = "message ai-message";
+        aiMessage.innerHTML = `
+            <span>AI</span>
+            <p>${aiReplies[Math.floor(Math.random() * aiReplies.length)]}</p>
+        `;
+
+        chatMessages.appendChild(aiMessage);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }, 700);
+});
+
+document.getElementById("demoBtn").addEventListener("click", () => {
+    document.getElementById("ai").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("chartSelect").addEventListener("change", e => {
+    showToast(e.target.value === "This month"
+        ? "Monthly activity loaded"
+        : "Weekly activity loaded");
+});
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".section, .ai-section, .cta-section").forEach(section => {
+    observer.observe(section);
+});
+</script>
+
+</body>
+</html>
