@@ -137,9 +137,7 @@ BLAZE AI was created as a portfolio project to demonstrate modern frontend devel
 
 ## 👨‍💻 Author
 
-**Daniyal Mansuri**
-
-Frontend Developer • UI Enthusiast • Computer Science Student
+**Daniyal Pinjari**
 
 ## 🔥 Live Demo
 
