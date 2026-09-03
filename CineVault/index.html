@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineVault | Movie Discovery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">🎬</span>
+            <span>CineVault</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#regions">Regions</a>
+            <a href="#favorites">Favorites</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="icon-btn" id="themeToggle">
+                ☀️
+            </button>
+
+            <button class="profile-btn">
+                👤
+            </button>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-tag">
+                    🔥 #1 MOVIE DISCOVERY PLATFORM
+                </div>
+
+                <h1>
+                    Discover Your Next
+                    <span>Favorite Movie.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore movies from around the world. Discover Korean,
+                    Indian, Hollywood, Japanese, Chinese and British cinema
+                    all in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" id="exploreBtn">
+                        Explore Movies
+                        <span>→</span>
+                    </button>
+
+                    <button class="secondary-btn" id="surpriseBtn">
+                        🎲 Surprise Me
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="movie-poster poster-one">
+                    <div class="poster-overlay"></div>
+                </div>
+
+                <div class="movie-poster poster-two">
+                    <div class="poster-overlay"></div>
+                </div>
+
+                <div class="movie-poster poster-three">
+                    <div class="poster-overlay"></div>
+                </div>
+
+                <div class="floating-rating">
+
+                    <span>⭐</span>
+
+                    <div>
+                        <strong>9.2</strong>
+                        <small>Average Rating</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search movies..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="movies-section" id="movies">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        DISCOVER
+                    </div>
+
+                    <h2 id="movieSectionTitle">
+                        Popular Movies
+                    </h2>
+
+                </div>
+
+                <button class="view-all" id="viewAllBtn">
+                    View All →
+                </button>
+
+            </div>
+
+            <div class="movie-grid" id="movieGrid"></div>
+
+            <div class="no-results" id="noResults">
+                😔 No movies found.
+            </div>
+
+        </section>
+
+
+        <section class="genres-section" id="regions">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        EXPLORE
+                    </div>
+
+                    <h2>
+                        Browse By Region
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="region-grid">
+
+                <button
+                    class="region-card"
+                    data-region-filter="all"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🌍</span>
+
+                        <strong>
+                            All Movies
+                        </strong>
+
+                        <small>
+                            Worldwide Cinema
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="region-card"
+                    data-region-filter="korean"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🇰🇷</span>
+
+                        <strong>
+                            Korean
+                        </strong>
+
+                        <small>
+                            K-Cinema
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="region-card"
+                    data-region-filter="indian"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mnEQXYRYO_cmZ6jZNo-y2qixa8sI5B1cXxGKAZsr-w&s=10');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🇮🇳</span>
+
+                        <strong>
+                            Indian
+                        </strong>
+
+                        <small>
+                            Bollywood & Indian Cinema
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="region-card"
+                    data-region-filter="american"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🇺🇸</span>
+
+                        <strong>
+                            Hollywood
+                        </strong>
+
+                        <small>
+                            American Cinema
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="region-card"
+                    data-region-filter="japanese"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🇯🇵</span>
+
+                        <strong>
+                            Japanese
+                        </strong>
+
+                        <small>
+                            J-Cinema & Anime
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="region-card"
+                    data-region-filter="chinese"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://image.tmdb.org/t/p/w500/pR858ihc6Ls9xohpdRJVjV787ml.jpg');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🇨🇳</span>
+
+                        <strong>
+                            Chinese
+                        </strong>
+
+                        <small>
+                            Chinese Cinema
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="region-card"
+                    data-region-filter="british"
+                >
+
+                    <div
+                        class="region-image"
+                        style="background-image: url('https://image.tmdb.org/t/p/w500/fbxQ44VRdM2PVzHSNajUseUteem.jpg');"
+                    ></div>
+
+                    <div class="region-overlay"></div>
+
+                    <div class="region-content">
+
+                        <span>🇬🇧</span>
+
+                        <strong>
+                            British
+                        </strong>
+
+                        <small>
+                            UK Cinema
+                        </small>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer id="favorites">
+
+        <div class="footer-logo">
+            🎬 <span>CineVault</span>
+        </div>
+
+        <p>
+            Discover cinema from every corner of the world.
+        </p>
+
+        <div class="copyright">
+            © 2026 CineVault. Built By Daniyal Pinjari ❤️.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
