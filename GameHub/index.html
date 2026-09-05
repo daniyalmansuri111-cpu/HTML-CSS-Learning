@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GameHub | Gaming Universe</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo.png"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div
+        class="overlay"
+        id="overlay"
+    ></div>
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <div class="brand">
+
+            <a href="#home">
+
+                <img
+                    src="logo.png"
+                    alt="GameHub"
+                    class="brand-logo"
+                >
+
+            </a>
+
+        </div>
+
+        <div class="menu-section">
+
+            <p class="menu-title">
+                MENU
+            </p>
+
+            <a
+                href="#home"
+                class="menu-link active"
+            >
+                <span>⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a
+                href="#discover"
+                class="menu-link"
+            >
+                <span>◈</span>
+                <span>Discover</span>
+            </a>
+
+            <a
+                href="#categories"
+                class="menu-link"
+            >
+                <span>▦</span>
+                <span>Categories</span>
+            </a>
+
+            <a
+                href="#wishlist"
+                class="menu-link"
+                id="wishlistLink"
+            >
+                <span>♡</span>
+                <span>Wishlist</span>
+                <b id="wishlistCount">0</b>
+            </a>
+
+        </div>
+
+        <div class="menu-section">
+
+            <p class="menu-title">
+                LIBRARY
+            </p>
+
+            <a
+                href="#discover"
+                class="menu-link"
+            >
+                <span>◉</span>
+                <span>Recently Played</span>
+            </a>
+
+            <a
+                href="#discover"
+                class="menu-link"
+            >
+                <span>★</span>
+                <span>Top Rated</span>
+            </a>
+
+            <a
+                href="#discover"
+                class="menu-link"
+            >
+                <span>♧</span>
+                <span>Free Games</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-card">
+
+                <div class="card-glow"></div>
+
+                <span class="mini-icon">
+                    ⚡
+                </span>
+
+                <h3>
+                    Level Up
+                </h3>
+
+                <p>
+                    Discover new worlds,
+                    challenges and adventures.
+                </p>
+
+                <button id="exploreButton">
+                    EXPLORE NOW
+                </button>
+
+            </div>
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    D
+                </div>
+
+                <div class="profile-info">
+
+                    <strong>
+                        Gamer
+                    </strong>
+
+                    <span>
+                        Level 24
+                    </span>
+
+                </div>
+
+                <span class="profile-more">
+                    •••
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main
+        class="main"
+        id="home"
+    >
+
+        <header class="topbar">
+
+            <button
+                class="mobile-menu"
+                id="mobileMenu"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+            <div class="search">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search games, genres..."
+                    autocomplete="off"
+                >
+
+                <kbd>
+                    CTRL K
+                </kbd>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button
+                    class="icon-button"
+                    aria-label="Messages"
+                >
+                    ♢
+                </button>
+
+                <button
+                    class="icon-button notification"
+                    aria-label="Notifications"
+                >
+                    ♧
+                    <i></i>
+                </button>
+
+                <div class="top-profile">
+
+                    <div class="profile-avatar">
+                        D
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Danni
+                        </strong>
+
+                        <span>
+                            Gamer
+                        </span>
+
+                    </div>
+
+                    <span>
+                        ⌄
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="hero">
+
+            <div class="hero-video">
+
+                <video
+                    id="heroVideo"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                >
+
+                    <source
+                        src="cyberpunk.mp4"
+                        type="video/mp4"
+                    >
+
+                </video>
+
+            </div>
+
+            <div class="hero-video-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="featured-label">
+
+                    <span></span>
+
+                    FEATURED GAME
+
+                </div>
+
+                <h1>
+                    CYBERPUNK
+                    <strong>
+                        2077
+                    </strong>
+                </h1>
+
+                <p>
+                    Night City awaits. Explore a massive
+                    open world, customize your character
+                    and experience a story where every
+                    choice matters.
+                </p>
+
+                <div class="hero-meta">
+
+                    <span>
+                        <b>★</b> 4.8
+                    </span>
+
+                    <span>
+                        2020
+                    </span>
+
+                    <span>
+                        RPG
+                    </span>
+
+                    <span>
+                        18+
+                    </span>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="details-button"
+                        id="heroDetailsButton"
+                    >
+                        VIEW DETAILS
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="video-label">
+
+                <span class="pulse"></span>
+
+                NOW PLAYING
+
+            </div>
+
+            <div class="hero-side">
+
+                <span>
+                    01
+                </span>
+
+                <div class="hero-line">
+                    <i></i>
+                </div>
+
+                <span>
+                    04
+                </span>
+
+            </div>
+
+        </section>
+
+        <section
+            class="content"
+            id="discover"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        EXPLORE
+                    </span>
+
+                    <h2>
+                        Discover Games
+                    </h2>
+
+                </div>
+
+                <button
+                    class="see-all"
+                    id="seeAllButton"
+                >
+                    See all →
+                </button>
+
+            </div>
+
+            <div
+                class="categories"
+                id="categories"
+            >
+
+                <button
+                    class="category active"
+                    data-category="All"
+                >
+                    <span>✦</span>
+                    All Games
+                </button>
+
+                <button
+                    class="category"
+                    data-category="Action"
+                >
+                    🔥 Action
+                </button>
+
+                <button
+                    class="category"
+                    data-category="Adventure"
+                >
+                    🗺 Adventure
+                </button>
+
+                <button
+                    class="category"
+                    data-category="RPG"
+                >
+                    ⚔ RPG
+                </button>
+
+                <button
+                    class="category"
+                    data-category="Racing"
+                >
+                    🏎 Racing
+                </button>
+
+                <button
+                    class="category"
+                    data-category="Sports"
+                >
+                    🏆 Sports
+                </button>
+
+            </div>
+
+            <div
+                class="game-grid"
+                id="gameGrid"
+            ></div>
+
+            <div
+                class="empty-state"
+                id="emptyState"
+            >
+
+                <div>
+                    🎮
+                </div>
+
+                <h3>
+                    No games found
+                </h3>
+
+                <p>
+                    Try searching for another
+                    game or category.
+                </p>
+
+            </div>
+
+            <section class="trending-banner">
+
+                <div class="trending-text">
+
+                    <span class="eyebrow">
+                        THIS WEEK
+                    </span>
+
+                    <h2>
+                        Gaming is better
+                        <span>
+                            with friends.
+                        </span>
+                    </h2>
+
+                    <p>
+                        Find your next multiplayer
+                        obsession and jump into the action.
+                    </p>
+
+                    <button
+                        class="play-button"
+                        id="multiplayerButton"
+                    >
+                        EXPLORE MULTIPLAYER →
+                    </button>
+
+                </div>
+
+                <div class="controller">
+                    🎮
+                </div>
+
+            </section>
+
+        </section>
+
+        <footer>
+
+            <div class="footer-brand">
+
+                GAME<span>HUB</span>
+
+            </div>
+
+            <p>
+                Your gateway to the gaming universe.
+            </p>
+
+            <div class="footer-links">
+
+                <span>
+                    About
+                </span>
+
+                <span>
+                    Privacy
+                </span>
+
+                <span>
+                    Contact
+                </span>
+
+                <span>
+                    Community
+                </span>
+
+            </div>
+
+            <small>
+                © 2026 GameHub.
+                Built with HTML, CSS & JavaScript.
+            </small>
+
+        </footer>
+
+    </main>
+
+    <div
+        class="modal"
+        id="gameModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div
+                class="modal-image"
+                id="modalImage"
+            ></div>
+
+            <div class="modal-body">
+
+                <span
+                    class="eyebrow"
+                    id="modalCategory"
+                >
+                    RPG
+                </span>
+
+                <h2 id="modalTitle">
+                    Cyberpunk 2077
+                </h2>
+
+                <div class="modal-meta">
+
+                    <span id="modalRating">
+                        ★ 4.8
+                    </span>
+
+                    <span id="modalYear">
+                        2020
+                    </span>
+
+                    <span id="modalPrice">
+                        $59.99
+                    </span>
+
+                </div>
+
+                <p id="modalDescription">
+                    Experience an open-world action RPG
+                    set in the futuristic Night City.
+                </p>
+
+                <div class="modal-buttons">
+
+                    <button
+                        class="play-button"
+                        id="modalWishlist"
+                    >
+                        ♡ ADD TO WISHLIST
+                    </button>
+
+                    <button class="details-button">
+                        MORE INFORMATION
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
