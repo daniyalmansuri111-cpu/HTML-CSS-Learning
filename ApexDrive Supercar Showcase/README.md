@@ -1,4 +1,4 @@
-# 🚗 ApexDrive — Supercar Showcase
+# 🚗 ApexDrive — Supercar Showcase.
 
 A modern futuristic supercar showcase website built with HTML, CSS, Bootstrap, and Tailwind CSS.
 
