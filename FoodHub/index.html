@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub — Fresh Food, Fast Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-loader">
+        <div class="loader-logo">
+            <img src="logo.png" alt="FoodHub">
+        </div>
+    </div>
+
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="brand-logo">
+            <img src="logo.png" alt="FoodHub">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">Our Story</a>
+            <a href="#offers">Offers</a>
+        </nav>
+
+        <div class="nav-right">
+
+            <button class="nav-search" id="openSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="cart-icon" id="openCart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="mobile-menu" id="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#offers">Offers</a>
+    </div>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span></span>
+                    FRESH · FAST · FLAVORFUL
+                </div>
+
+                <h1>
+                    Good food
+                    <em>speaks</em>
+                    for itself.
+                </h1>
+
+                <p>
+                    Crafted with fresh ingredients, bold flavors
+                    and delivered straight to your door.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="primary-btn">
+                        Explore Menu
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <button class="play-btn" id="scrollStory">
+                        <span>
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        Discover FoodHub
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <div class="scroll-indicator">
+                    <span></span>
+                    Scroll to explore
+                </div>
+
+                <div class="hero-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Delivering across your city
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="intro">
+
+            <div class="intro-top">
+                <span>01 — THE FOOD</span>
+                <span>MADE FOR CRAVINGS</span>
+            </div>
+
+            <div class="intro-content">
+
+                <h2>
+                    Not just food.
+                    <br>
+                    <span>An experience.</span>
+                </h2>
+
+                <p>
+                    From the first bite to the last, FoodHub brings
+                    restaurant-quality food to your doorstep.
+                    Every dish is prepared with care, passion and
+                    ingredients that actually matter.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-number">02 — MENU</span>
+                    <h2>Made to <em>crave.</em></h2>
+                </div>
+
+                <div class="menu-filters">
+
+                    <button class="filter active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter" data-filter="burger">
+                        Burgers
+                    </button>
+
+                    <button class="filter" data-filter="pizza">
+                        Pizza
+                    </button>
+
+                    <button class="filter" data-filter="pasta">
+                        Pasta
+                    </button>
+
+                    <button class="filter" data-filter="dessert">
+                        Desserts
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="food-grid" id="foodGrid"></div>
+
+        </section>
+
+        <section class="visual-story" id="story">
+
+            <video autoplay muted loop playsinline>
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+
+            <div class="visual-overlay"></div>
+
+            <div class="visual-content">
+
+                <span>03 — OUR STORY</span>
+
+                <h2>
+                    Simple ingredients.
+                    <br>
+                    <em>Serious flavor.</em>
+                </h2>
+
+                <p>
+                    We believe great food doesn't need to be complicated.
+                    Just honest ingredients, thoughtful preparation and
+                    a whole lot of love.
+                </p>
+
+                <a href="#offers" class="outline-btn">
+                    Our philosophy
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+
+                <span>01</span>
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <h3>Fresh Ingredients</h3>
+
+                <p>
+                    Quality ingredients selected every single day.
+                </p>
+
+            </div>
+
+            <div class="feature">
+
+                <span>02</span>
+
+                <i class="fa-solid fa-fire"></i>
+
+                <h3>Made Fresh</h3>
+
+                <p>
+                    Every order is prepared fresh when you order.
+                </p>
+
+            </div>
+
+            <div class="feature">
+
+                <span>03</span>
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+                    Hot food delivered while it's still at its best.
+                </p>
+
+            </div>
+
+            <div class="feature">
+
+                <span>04</span>
+
+                <i class="fa-solid fa-heart"></i>
+
+                <h3>Made With Love</h3>
+
+                <p>
+                    Because food should always make you feel good.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="offer-section" id="offers">
+
+            <div class="offer-left">
+
+                <span>04 — SPECIAL OFFER</span>
+
+                <h2>
+                    Your first bite
+                    <br>
+                    is <em>30% off.</em>
+                </h2>
+
+                <p>
+                    New to FoodHub? Use our welcome offer
+                    and discover your new favorite meal.
+                </p>
+
+                <div class="coupon">
+
+                    <strong>WELCOME30</strong>
+
+                    <button id="copyCode">
+                        COPY
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="offer-right">
+
+                <div class="offer-circle">
+
+                    <span>30</span>
+
+                    <small>% OFF</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="brand-logo footer-logo">
+                    <img src="logo.png" alt="FoodHub">
+                </a>
+
+                <p>
+                    Great food.
+                    <br>
+                    Delivered with love.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+
+                    <h4>Explore</h4>
+
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#story">Our Story</a>
+                    <a href="#offers">Offers</a>
+
+                </div>
+
+                <div>
+
+                    <h4>Follow</h4>
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+
+                </div>
+
+                <div>
+
+                    <h4>Contact</h4>
+
+                    <a href="mailto:hello@foodhub.com">
+                        hello@foodhub.com
+                    </a>
+
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 FoodHub
+            </span>
+
+            <span>
+                Made for food lovers.
+            </span>
+
+        </div>
+
+    </footer>
+
+    <div class="search-panel" id="searchPanel">
+
+        <button class="close-search" id="closeSearch">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="search-inner">
+
+            <span>SEARCH FOOD</span>
+
+            <div class="big-search">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="What are you craving?"
+                >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div id="searchResults"></div>
+
+        </div>
+
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-head">
+
+            <div>
+
+                <span>YOUR ORDER</span>
+
+                <h2>Cart</h2>
+
+            </div>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="cart-content" id="cartContent"></div>
+
+        <div class="cart-footer">
+
+            <div class="subtotal">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+            <button class="checkout" id="checkout">
+
+                Place Order
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div class="order-modal" id="orderModal">
+
+        <div class="order-box">
+
+            <button class="close-order" id="closeOrder">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="order-check">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <span>ORDER CONFIRMED</span>
+
+            <h2>
+                You're going to
+                <br>
+                <em>love this.</em>
+            </h2>
+
+            <p>
+                Your order has been received and is being prepared.
+            </p>
+
+            <button id="doneOrder">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
