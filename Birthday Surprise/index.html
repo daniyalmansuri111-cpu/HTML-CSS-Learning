@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise 🎂</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section id="introScreen" class="intro-screen">
+
+    <div class="intro-content">
+
+        <div class="intro-icon">
+            🎁
+        </div>
+
+        <p class="small-title">
+            A LITTLE SURPRISE
+        </p>
+
+        <h1>
+            Something
+            <span>Special</span>
+            Awaits You
+        </h1>
+
+        <p class="intro-text">
+            Before we begin, tell us your name.
+        </p>
+
+        <div class="name-box">
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Enter your name..."
+                maxlength="30"
+                autocomplete="off"
+            >
+
+            <button id="startButton">
+                Continue →
+            </button>
+
+        </div>
+
+        <p id="errorMessage" class="error-message">
+            Please enter your name ❤️
+        </p>
+
+        <div class="intro-decoration">
+            ✦　♡　✦
+        </div>
+
+    </div>
+
+</section>
+
+<main id="birthdayPage" class="birthday-page hidden">
+
+    <div class="birthday-video-background">
+
+        <video
+            id="birthdayVideo"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        >
+            <source
+                src="birthday-wishes.mp4"
+                type="video/mp4"
+            >
+        </video>
+
+        <div class="birthday-video-overlay"></div>
+
+    </div>
+
+    <audio
+        id="birthdayMusic"
+        preload="auto"
+        loop
+    >
+        <source
+            src="birthday-music.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+    <button
+        id="musicButton"
+        class="music-button"
+        aria-label="Toggle music"
+    >
+        🔇
+    </button>
+
+    <div class="balloons">
+
+        <div class="balloon balloon-1">
+            🎈
+        </div>
+
+        <div class="balloon balloon-2">
+            🎈
+        </div>
+
+        <div class="balloon balloon-3">
+            🎈
+        </div>
+
+        <div class="balloon balloon-4">
+            🎈
+        </div>
+
+        <div class="balloon balloon-5">
+            🎈
+        </div>
+
+    </div>
+
+    <div id="confettiContainer"></div>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                ✨ TODAY IS ALL ABOUT YOU ✨
+            </p>
+
+            <h1 class="birthday-title">
+                Happy Birthday
+                <span id="personName">
+                    Friend
+                </span>
+                <span class="heart">
+                    ♥
+                </span>
+            </h1>
+
+            <p class="hero-description">
+                Today isn't just another day.
+                It's a celebration of the wonderful
+                person you are.
+            </p>
+
+            <button
+                id="surpriseButton"
+                class="surprise-button"
+            >
+                🎁 Open Your Surprise ✨
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+
+            <span>
+                Scroll to discover
+            </span>
+
+            <div>
+                ↓
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cake-section">
+
+        <div class="section-heading">
+
+            <p>
+                MAKE A WISH
+            </p>
+
+            <h2>
+                A Cake Made
+                <span>
+                    Just For You
+                </span>
+            </h2>
+
+        </div>
+
+        <div class="cake-scene">
+
+            <div class="cake-glow"></div>
+
+            <div class="cake">
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+                <div class="cake-top">
+
+                    <div class="cake-cream cream-1"></div>
+                    <div class="cake-cream cream-2"></div>
+                    <div class="cake-cream cream-3"></div>
+                    <div class="cake-cream cream-4"></div>
+
+                </div>
+
+                <div class="cake-body">
+
+                    <div class="cake-drip drip-1"></div>
+                    <div class="cake-drip drip-2"></div>
+                    <div class="cake-drip drip-3"></div>
+                    <div class="cake-drip drip-4"></div>
+                    <div class="cake-drip drip-5"></div>
+
+                </div>
+
+                <div class="cake-plate"></div>
+
+            </div>
+
+        </div>
+
+        <p class="wish-text">
+            Close your eyes, make a wish,
+            and let your dreams come true. 🕯️
+        </p>
+
+        <button
+            id="cakeWishButton"
+            class="small-button"
+        >
+            ✨ Make a Wish
+        </button>
+
+    </section>
+
+    <section class="wishes-section">
+
+        <div class="wish-card">
+
+            <div class="card-decoration">
+                ✦
+            </div>
+
+            <p class="card-label">
+                💌 A SPECIAL MESSAGE
+            </p>
+
+            <h2>
+                Dear
+                <span id="wishName">
+                    Friend
+                </span>,
+            </h2>
+
+            <p class="wish-message">
+                May your special day be filled with
+                happiness, laughter, love, and countless
+                beautiful moments.
+
+                <br><br>
+
+                May this new chapter of your life bring
+                you closer to your dreams. May every
+                challenge make you stronger, every
+                experience make you wiser, and every
+                day give you another reason to smile.
+
+                <br><br>
+
+                Keep shining, keep dreaming, and never
+                stop being the amazing person you are.
+
+                <br><br>
+
+                Here's to new adventures, unforgettable
+                memories, endless happiness, and a year
+                filled with everything your heart wishes for.
+            </p>
+
+            <div class="signature">
+                With lots of love ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="memories-section">
+
+        <div class="section-heading">
+
+            <p>
+                BEAUTIFUL MOMENTS
+            </p>
+
+            <h2>
+                Memories Worth
+                <span>
+                    Celebrating
+                </span>
+            </h2>
+
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+
+                <img
+                    src="https://i.pinimg.com/564x/12/8b/5d/128b5d38e6a90a0731888ac1f9073cb4.jpg"
+                    alt="Birthday cake celebration"
+                >
+
+                <div class="photo-overlay">
+                    🎂
+                </div>
+
+            </div>
+
+            <div class="photo-card photo-two">
+
+                <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20240928/pngtree-wish-happy-birthday-to-a-friend-4k-free-image-download-wishes-image_16255180.jpg"
+                    alt="Birthday balloons"
+                >
+
+                <div class="photo-overlay">
+                    🎈
+                </div>
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTYVTZFs3IR2RzeCstqOd-gagQ2Ae6vS_g359ut8whZ21fyhqGism9dw&s=10"
+                    alt="Birthday celebration"
+                >
+
+                <div class="photo-overlay">
+                    🎉
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="online-images-note">
+            Birthday memories and celebrations ✨
+        </p>
+
+    </section>
+
+    <section class="gift-section">
+
+        <p class="card-label">
+            ONE LAST SURPRISE
+        </p>
+
+        <h2>
+            Something
+            <span>
+                Special Is Waiting
+            </span>
+        </h2>
+
+        <div
+            id="giftBox"
+            class="gift-box"
+        >
+
+            <div class="gift-lid">
+
+                <div class="gift-ribbon"></div>
+
+            </div>
+
+            <div class="gift-body">
+
+                <div class="gift-ribbon vertical"></div>
+
+            </div>
+
+        </div>
+
+        <p id="giftHint">
+            Click the gift 🎁
+        </p>
+
+        <div
+            id="bouquetOverlay"
+            class="bouquet-overlay"
+        >
+
+            <div class="bouquet-card">
+
+                <button
+                    id="closeBouquet"
+                    class="close-bouquet"
+                >
+                    ×
+                </button>
+
+                <div class="sparkles">
+                    ✦　✧　✦
+                </div>
+
+                <div class="bouquet">
+
+                    <div class="flower flower-one">
+                        🌹
+                    </div>
+
+                    <div class="flower flower-two">
+                        🌷
+                    </div>
+
+                    <div class="flower flower-three">
+                        🌸
+                    </div>
+
+                    <div class="flower flower-four">
+                        🌹
+                    </div>
+
+                    <div class="flower flower-five">
+                        🌺
+                    </div>
+
+                    <div class="flower flower-six">
+                        🌷
+                    </div>
+
+                    <div class="green-leaf leaf-one">
+                        🌿
+                    </div>
+
+                    <div class="green-leaf leaf-two">
+                        🌿
+                    </div>
+
+                    <div class="bouquet-wrap"></div>
+
+                    <div class="bouquet-ribbon">
+                        🎀
+                    </div>
+
+                </div>
+
+                <p class="bouquet-label">
+                    A LITTLE FLOWER FOR YOU
+                </p>
+
+                <h3>
+                    For You,
+                    <span id="bouquetName">
+                        Friend
+                    </span>
+                    ❤️
+                </h3>
+
+                <p class="bouquet-message">
+                    May every flower in this bouquet
+                    represent a beautiful moment,
+                    a reason to smile, and a dream
+                    waiting to come true.
+                </p>
+
+                <button
+                    id="bouquetWishButton"
+                    class="wish-grant-button"
+                >
+                    ✨ Make a Wish
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+        id="fireworksSection"
+        class="fireworks-section"
+    >
+
+        <div class="fireworks-video-background">
+
+            <video
+                id="fireworksVideo"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+            >
+                <source
+                    src="fireworks.mp4"
+                    type="video/mp4"
+                >
+            </video>
+
+            <div class="fireworks-video-overlay"></div>
+
+        </div>
+
+        <div id="fireworksContainer"></div>
+
+        <div class="fireworks-content">
+
+            <p>
+                YOUR WISH HAS BEEN HEARD
+            </p>
+
+            <h2>
+                Let The
+                <span>
+                    Celebration Begin!
+                </span>
+            </h2>
+
+            <div class="firework-emoji">
+                🎆
+            </div>
+
+            <h3>
+                Happy Birthday,
+                <span id="finalName">
+                    Friend
+                </span>!
+            </h3>
+
+            <p>
+                May your year ahead be absolutely
+                magical. ✨
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Made with ❤️ for
+            <span id="footerName">
+                you
+            </span>
+        </p>
+
+        <span class="footer-stars">
+            ✦ ✧ ✦
+        </span>
+
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
