@@ -48,3 +48,7 @@ Birthday Surprise/
 ## 📌 Notes
 
 The website uses local video and audio files along with online image resources for the memories section.
+
+## 👨‍💻 Made By
+
+**DANIYAL PINJARI**
