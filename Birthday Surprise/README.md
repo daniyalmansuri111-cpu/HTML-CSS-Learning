@@ -1,14 +1,14 @@
 # 🎂 Birthday Surprise
 
-A beautiful interactive birthday website with animations, music, birthday wishes, a gift surprise, and a fireworks celebration.
+An interactive birthday website made with HTML, CSS, and JavaScript, featuring personalized wishes, animations, background videos, music, a gift surprise, and a fireworks celebration.
 
 ## ✨ Features
 
 - Personalized birthday greeting
-- Background birthday video
-- Birthday music
-- Interactive cake and wishes
-- Gift box surprise
+- Birthday video background
+- Background birthday music
+- Interactive birthday cake and wishes
+- Gift box surprise with bouquet message
 - Fireworks video celebration
 - Responsive design
 
@@ -16,8 +16,18 @@ A beautiful interactive birthday website with animations, music, birthday wishes
 
 [View Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Birthday%20Surprise/)
 
-## 🛠️ Technologies
+## 🛠️ Built With
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
+- HTML5 Video & Audio
+
+## 📁 Project Files
+
+- `index.html` — Website structure
+- `style.css` — Styling and animations
+- `script.js` — Interactions and effects
+- `birtday-wishes.mp4` — Birthday video
+- `fireworks.mp4` — Fireworks video
+- `birthday-music.mp3` — Background music
