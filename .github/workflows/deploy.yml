@@ -27,7 +27,7 @@ jobs:
       - name: Build Smart Quiz
         working-directory: Smart Quiz App
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Prepare GitHub Pages
@@ -36,7 +36,6 @@ jobs:
           mkdir -p pages
           cp -r "Smart Quiz App/dist/." pages/
 
-          # Keep the existing site root available and expose Smart Quiz at a stable subpath.
           mkdir -p pages/Smart-Quiz-App
           cp -r "Smart Quiz App/dist/." pages/Smart-Quiz-App/
 
