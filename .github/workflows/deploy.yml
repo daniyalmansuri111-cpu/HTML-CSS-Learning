@@ -34,20 +34,11 @@ jobs:
         run: |
           set -e
           mkdir -p pages
+          cp -r "Smart Quiz App/dist/." pages/
 
-          rsync -av \
-            --exclude='.git' \
-            --exclude='node_modules' \
-            --exclude='dist' \
-            --exclude='Noir-Fragrance' \
-            --exclude='job-application-tracker' \
-            --exclude='CosmoExplorer' \
-            --exclude='Smart Quiz App' \
-            --exclude='pages' \
-            ./ pages/
-
+          # Keep the existing site root available and expose Smart Quiz at a stable subpath.
           mkdir -p pages/Smart-Quiz-App
-          cp -r 'Smart Quiz App/dist/.' pages/Smart-Quiz-App/
+          cp -r "Smart Quiz App/dist/." pages/Smart-Quiz-App/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
