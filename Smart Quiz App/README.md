@@ -15,7 +15,7 @@ An interactive React quiz application featuring timed logic and brain-teaser que
 
 ## 🚀 Live Demo
 
-https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Smart%20Quiz%20App/
+👉 **[Play Smart Quiz](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Smart-Quiz-App/)**
 
 ## 🛠️ Tech Stack
 
