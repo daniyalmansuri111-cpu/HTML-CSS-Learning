@@ -49,6 +49,14 @@ jobs:
         working-directory: CosmoExplorer
         run: npm run build
 
+      - name: Install Smart Quiz dependencies
+        working-directory: Smart Quiz App
+        run: npm ci
+
+      - name: Build Smart Quiz
+        working-directory: Smart Quiz App
+        run: npm run build
+
       - name: Prepare GitHub Pages
         run: |
           mkdir pages
@@ -60,6 +68,7 @@ jobs:
             --exclude='Noir-Fragrance' \
             --exclude='job-application-tracker' \
             --exclude='CosmoExplorer' \
+            --exclude='Smart Quiz App' \
             --exclude='pages' \
             ./ pages/
 
@@ -71,6 +80,9 @@ jobs:
 
           mkdir -p pages/CosmoExplorer
           cp -r CosmoExplorer/dist/. pages/CosmoExplorer/
+
+          mkdir -p pages/Smart-Quiz-App
+          cp -r 'Smart Quiz App/dist/.'. pages/Smart-Quiz-App/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
