@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -24,42 +23,36 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Install Noir-Fragrance dependencies
-        working-directory: Noir-Fragrance
-        run: npm ci
+          cache: npm
 
       - name: Build Noir-Fragrance
         working-directory: Noir-Fragrance
-        run: npm run build
-
-      - name: Install JobTrack dependencies
-        working-directory: job-application-tracker
-        run: npm ci
+        run: |
+          npm ci
+          npm run build
 
       - name: Build JobTrack
         working-directory: job-application-tracker
-        run: npm run build
-
-      - name: Install CosmoExplorer dependencies
-        working-directory: CosmoExplorer
-        run: npm ci
+        run: |
+          npm ci
+          npm run build
 
       - name: Build CosmoExplorer
         working-directory: CosmoExplorer
-        run: npm run build
-
-      - name: Install Smart Quiz dependencies
-        working-directory: Smart Quiz App
-        run: npm ci
+        run: |
+          npm ci
+          npm run build
 
       - name: Build Smart Quiz
         working-directory: Smart Quiz App
-        run: npm run build
+        run: |
+          npm ci
+          npm run build
 
       - name: Prepare GitHub Pages
         run: |
-          mkdir pages
+          set -e
+          mkdir -p pages
 
           rsync -av \
             --exclude='.git' \
@@ -82,7 +75,7 @@ jobs:
           cp -r CosmoExplorer/dist/. pages/CosmoExplorer/
 
           mkdir -p pages/Smart-Quiz-App
-          cp -r 'Smart Quiz App/dist/.'. pages/Smart-Quiz-App/
+          cp -r 'Smart Quiz App/dist/.' pages/Smart-Quiz-App/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
