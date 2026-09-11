@@ -23,25 +23,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-
-      - name: Build Noir-Fragrance
-        working-directory: Noir-Fragrance
-        run: |
-          npm ci
-          npm run build
-
-      - name: Build JobTrack
-        working-directory: job-application-tracker
-        run: |
-          npm ci
-          npm run build
-
-      - name: Build CosmoExplorer
-        working-directory: CosmoExplorer
-        run: |
-          npm ci
-          npm run build
 
       - name: Build Smart Quiz
         working-directory: Smart Quiz App
@@ -64,15 +45,6 @@ jobs:
             --exclude='Smart Quiz App' \
             --exclude='pages' \
             ./ pages/
-
-          mkdir -p pages/Noir-Fragrance
-          cp -r Noir-Fragrance/dist/. pages/Noir-Fragrance/
-
-          mkdir -p pages/job-application-tracker
-          cp -r job-application-tracker/dist/. pages/job-application-tracker/
-
-          mkdir -p pages/CosmoExplorer
-          cp -r CosmoExplorer/dist/. pages/CosmoExplorer/
 
           mkdir -p pages/Smart-Quiz-App
           cp -r 'Smart Quiz App/dist/.' pages/Smart-Quiz-App/
