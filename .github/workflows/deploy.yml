@@ -30,30 +30,55 @@ jobs:
           npm install
           npm run build
 
+      - name: Build CosmoExplorer
+        working-directory: CosmoExplorer
+        run: |
+          npm install
+          npm run build
+
+      - name: Build Noir-Fragrance
+        working-directory: Noir-Fragrance
+        run: |
+          npm install
+          npm run build
+
+      - name: Build Job Application Tracker
+        working-directory: job-application-tracker
+        run: |
+          npm install
+          npm run build
+
       - name: Prepare GitHub Pages
         run: |
           set -e
           rm -rf pages
           mkdir -p pages
 
-          # Copy all static projects and files so their existing folder URLs
-          # continue to work on GitHub Pages.
+          # Copy repository content first so README/source folders remain available.
           for item in *; do
             case "$item" in
-              pages|"Smart Quiz App"|node_modules) continue ;;
+              pages|"Smart Quiz App"|CosmoExplorer|Noir-Fragrance|job-application-tracker|node_modules) continue ;;
             esac
             cp -r "$item" pages/
           done
 
-          # Deploy the production build for Smart Quiz at both the original
-          # folder name and the clean URL used in the README.
+          # Deploy production builds at their project paths.
           mkdir -p "pages/Smart Quiz App"
           cp -r "Smart Quiz App/dist/." "pages/Smart Quiz App/"
 
           mkdir -p pages/Smart-Quiz-App
           cp -r "Smart Quiz App/dist/." pages/Smart-Quiz-App/
 
-          # Prevent Jekyll from changing the structure of static projects.
+          mkdir -p pages/CosmoExplorer
+          cp -r CosmoExplorer/dist/. pages/CosmoExplorer/
+
+          mkdir -p pages/Noir-Fragrance
+          cp -r Noir-Fragrance/dist/. pages/Noir-Fragrance/
+
+          mkdir -p pages/job-application-tracker
+          cp -r job-application-tracker/dist/. pages/job-application-tracker/
+
+          # Prevent Jekyll from changing static project structure.
           touch pages/.nojekyll
 
       - name: Setup Pages
