@@ -67,10 +67,10 @@ Learnify intentionally uses a **light, classic and modern editorial aesthetic**:
 - Rounded cards with restrained shadows
 - Spacious layouts and strong visual hierarchy
 
-The interface was designed around real e-learning patterns such as progress tracking, course discovery, instructor credibility and focused continuation flows. Modern education-product references commonly emphasize role-specific journeys, clear course discovery and measurable learning progress. citeturn0search12turn0search14
+The interface is inspired by modern learning-product patterns such as clear course discovery, measurable progress, instructor credibility and focused learning flows.
 
 ## Images
-Course and instructor imagery uses remote Unsplash assets selected for education, technology and collaborative-learning contexts. Unsplash provides large collections of online-learning and education imagery suitable for this visual direction. citeturn0search0turn0search4
+Course and instructor imagery uses remote Unsplash assets selected for education, technology and collaborative-learning contexts.
 
 ## How to Run Locally
 1. Clone the repository.
