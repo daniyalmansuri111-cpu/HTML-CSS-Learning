@@ -4,7 +4,9 @@
 
 ## 🚀 Live Demo
 
-**[Open Evently Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/evently/)**
+**[Open Evently Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/)**
+
+> GitHub Pages uploads the `evently` folder as the deployed artifact, so `index.html` becomes the root of the live site. The site is therefore **not** served from `/evently/` in the deployed URL.
 
 ## ✨ Features
 
@@ -44,9 +46,11 @@ Open `evently/index.html` in a browser, or use the **Live Server** extension in 
 
 ## 🌐 Deployment
 
-This project is designed for GitHub Pages and lives inside the `HTML-CSS-Learning` repository. The deployed path is:
+Evently is deployed using GitHub Pages through `.github/workflows/evently-pages.yml`. The workflow uploads `./evently` as the Pages artifact, making `evently/index.html` the root `index.html` of the deployed website.
 
-`/evently/`
+**Live URL:**
+
+`https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/`
 
 ## 🎯 Portfolio Highlights
 
