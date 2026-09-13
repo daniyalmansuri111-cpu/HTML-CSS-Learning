@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Evently — discover memorable events, save favourites, and build your perfect event schedule." />
+  <title>Evently — Discover What's Next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Evently home"><span class="brand-mark">E</span><span>evently</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="active" href="#discover">Discover</a>
+      <a href="#categories">Categories</a>
+      <a href="#calendar">My Schedule</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+      <button class="profile-btn" id="profileBtn" aria-label="Open profile"><span class="avatar">DP</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="discover">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR NEXT GREAT MEMORY</p>
+        <h1>Find something<br /><span>worth showing up for.</span></h1>
+        <p class="hero-text">Curated concerts, workshops, festivals, meetups and experiences — all in one place.</p>
+        <div class="search-panel">
+          <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search events, artists, venues..." aria-label="Search events" /></label>
+          <select id="locationFilter" aria-label="Location filter">
+            <option value="All">Any location</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Delhi">Delhi</option>
+          </select>
+          <button class="primary-btn" id="searchBtn">Explore events <span>→</span></button>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <div class="hero-card main-feature">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=85" alt="Crowd enjoying a live concert" />
+          <div class="feature-overlay">
+            <span class="pill">TRENDING NOW</span>
+            <div>
+              <p class="feature-date">FRI · 18 SEP</p>
+              <h2>Neon Nights Festival</h2>
+              <p>Riverfront Arena · Pune</p>
+            </div>
+          </div>
+        </div>
+        <div class="floating-stat"><strong>12k+</strong><span>events this month</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE YOUR WAY</p><h2>Browse by category</h2></div><button class="text-btn" id="clearCategory">View all <span>→</span></button></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section event-section">
+      <div class="section-heading"><div><p class="eyebrow">HANDPICKED FOR YOU</p><h2>Popular near you</h2></div><span class="result-count" id="resultCount"></span></div>
+      <div class="filter-row">
+        <button class="filter-chip active" data-category="All">All</button>
+        <button class="filter-chip" data-category="Music">Music</button>
+        <button class="filter-chip" data-category="Tech">Tech</button>
+        <button class="filter-chip" data-category="Lifestyle">Lifestyle</button>
+        <button class="filter-chip" data-category="Sports">Sports</button>
+      </div>
+      <div class="event-grid" id="eventGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><div class="empty-icon">⌁</div><h3>No events found</h3><p>Try another search or clear the filters.</p><button class="primary-btn" id="resetFilters">Reset filters</button></div>
+    </section>
+
+    <section class="schedule-banner" id="calendar">
+      <div><p class="eyebrow">YOUR PERSONAL PLAN</p><h2>Build a weekend worth remembering.</h2><p>Save events you love and keep your plans in one beautiful place.</p></div>
+      <button class="secondary-btn" id="scheduleBtn">Open my schedule <span>→</span></button>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="modal" id="eventModal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <dialog class="modal profile-modal" id="profileModal">
+    <button class="modal-close" id="profileClose" aria-label="Close">×</button>
+    <p class="eyebrow">YOUR EVENTLY PROFILE</p><h2>Daniyal</h2>
+    <div class="profile-stats"><div><strong id="savedStat">0</strong><span>Saved</span></div><div><strong>4</strong><span>Categories</span></div><div><strong>3</strong><span>This month</span></div></div>
+    <button class="secondary-btn full" id="profileDone">Done</button>
+  </dialog>
+
+  <script src="./app.js"></script>
+</body>
+</html>
