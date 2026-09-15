@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MIRROR — an interactive internet time machine exploring how technology and the web evolved." />
+  <meta name="theme-color" content="#0b0d12" />
+  <title>MIRROR — Internet Time Machine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body data-era="2026">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="MIRROR home"><span class="brand-mark">M</span><span>MIRROR</span></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#timeline">Timeline</a>
+      <a href="#era">Era</a>
+      <a href="#compare">Compare</a>
+      <a href="#archive">Archive</a>
+    </nav>
+    <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle visual mode" title="Toggle visual mode">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot"></span> DIGITAL ARCHIVE / LIVE</p>
+        <h1>The internet<br /><em>remembers.</em></h1>
+        <p class="hero-lede">Travel through the visual language of the web, from hand-coded homepages to the AI-native era.</p>
+        <div class="hero-actions">
+          <button class="primary-button" id="exploreBtn" type="button">Enter the archive <span>↗</span></button>
+          <button class="ghost-button" id="randomEraBtn" type="button">Surprise me</button>
+        </div>
+      </div>
+
+      <div class="hero-terminal" aria-label="Live archive status">
+        <div class="terminal-bar"><span></span><span></span><span></span><strong>mirror://archive</strong></div>
+        <div class="terminal-body">
+          <p><span class="terminal-key">STATUS</span> <span class="terminal-value">ONLINE</span></p>
+          <p><span class="terminal-key">INDEXED</span> 06 ERAS</p>
+          <p><span class="terminal-key">MODE</span> <span id="terminalMode">PRESENT DAY</span></p>
+          <div class="terminal-divider"></div>
+          <p class="terminal-quote">“Every interface leaves a trace.”</p>
+          <div class="terminal-scan"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section" id="timeline">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE TIMELINE</p><h2>Choose a year.</h2></div><p class="section-note">Scroll horizontally. The interface changes with the era.</p></div>
+      <div class="timeline" id="timelineRail" role="list" aria-label="Internet eras"></div>
+    </section>
+
+    <section class="era-section" id="era">
+      <div class="era-header">
+        <div><p class="eyebrow" id="eraEyebrow">ERA 06 / 2026</p><h2 id="eraTitle">The AI-Native Web</h2><p id="eraDescription">Interfaces become adaptive, conversational and increasingly generated in real time.</p></div>
+        <div class="era-meta"><span id="eraGenre">Generative / Platform</span><span id="eraSignal">∞</span></div>
+      </div>
+
+      <div class="era-stage" id="eraStage">
+        <div class="browser-window" id="browserWindow">
+          <div class="browser-chrome"><div class="traffic"><i></i><i></i><i></i></div><div class="address">https://mirror.archive/<span id="browserYear">2026</span></div><div class="browser-controls">↶ ↷ ⋮</div></div>
+          <div class="browser-content" id="browserContent"></div>
+        </div>
+        <aside class="era-card">
+          <span class="card-label">ERA SIGNAL</span>
+          <strong id="eraTagline">The web starts talking back.</strong>
+          <div class="stat-row"><span>DEVICE</span><b id="eraDevice">Every screen</b></div>
+          <div class="stat-row"><span>DEFAULT</span><b id="eraDefault">Adaptive UI</b></div>
+          <div class="stat-row"><span>VIBE</span><b id="eraVibe">Intent-first</b></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="compare-section" id="compare">
+      <div class="section-heading"><div><p class="eyebrow">02 / THEN VS NOW</p><h2>Watch the web transform.</h2></div><p class="section-note">Compare a remembered interaction pattern with the way it works today.</p></div>
+      <div class="compare-grid">
+        <article class="compare-panel old"><span class="compare-year">2001</span><h3>The Portal</h3><p>Bookmark-heavy, link-dense and optimized for desktop.</p><div class="compare-demo old-demo"><div class="old-logo">HOME<span>.NET</span></div><div class="old-nav">NEWS&nbsp;&nbsp;MAIL&nbsp;&nbsp;CHAT&nbsp;&nbsp;SEARCH</div><div class="old-columns"><i></i><i></i><i></i></div></div></article>
+        <div class="compare-arrow" aria-hidden="true">→</div>
+        <article class="compare-panel new"><span class="compare-year">2026</span><h3>The Context Layer</h3><p>Personalized, semantic and designed around intent.</p><div class="compare-demo new-demo"><span class="ai-orb"></span><div><strong>What would you like to know?</strong><small>Ask in your own words.</small></div></div></article>
+      </div>
+    </section>
+
+    <section class="archive-section" id="archive">
+      <div class="section-heading"><div><p class="eyebrow">03 / ARCHIVE NOTES</p><h2>Small details. Big shifts.</h2></div><button class="ghost-button" id="shuffleFactBtn" type="button">Shuffle note</button></div>
+      <div class="fact-card"><span id="factIndex">01</span><p id="factText">The visual rules of a decade often reveal more about available technology than the content itself.</p><button id="nextFactBtn" type="button" aria-label="Next archive note">↗</button></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>MIRROR / INTERNET TIME MACHINE</span><span>BUILT AS A FRONTEND STUDY · 2026</span></footer>
+</body>
+</html>
