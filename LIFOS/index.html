@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LIFOS — an interactive decision simulator for exploring how choices change your future." />
+  <meta name="theme-color" content="#080a12" />
+  <title>LIFOS — Decision Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar shell">
+    <a class="brand" href="#top"><span class="brand-mark">L</span><span>LIFOS</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#simulator">Simulator</a>
+      <a href="#compare">Compare</a>
+      <a href="#insights">Insights</a>
+    </nav>
+    <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div>
+        <p class="eyebrow"><span class="live-dot"></span> DECISION ENGINE / READY</p>
+        <h1>Your future has<br /><span>multiple versions.</span></h1>
+        <p class="lede">Build a decision, change the variables, and watch the next 12 months evolve in real time.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#simulator">Start simulating <span>↗</span></a>
+          <button class="button ghost" id="randomScenarioBtn" type="button">Load sample</button>
+        </div>
+      </div>
+      <div class="hero-orbit">
+        <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit-core"><span>?</span></div>
+        <div class="orbit-label label-a">OPTION A</div><div class="orbit-label label-b">OPTION B</div><div class="orbit-label label-c">12 MO</div>
+      </div>
+    </section>
+
+    <section class="dashboard shell" id="simulator">
+      <div class="section-head"><div><p class="eyebrow">01 / DECISION BUILDER</p><h2>Change the inputs.</h2></div><span class="status-pill">LIVE CALCULATION</span></div>
+      <div class="builder-grid">
+        <aside class="panel input-panel">
+          <div class="panel-title"><span>SCENARIO</span><span id="scenarioState">CUSTOM</span></div>
+          <label>Decision title<input id="decisionTitle" value="Buy a laptop or save the money?" maxlength="80" /></label>
+          <div class="two-col">
+            <label>Starting cash<input id="startingCash" type="number" min="0" step="1000" value="120000" /></label>
+            <label>Monthly income<input id="monthlyIncome" type="number" min="0" step="1000" value="45000" /></label>
+          </div>
+          <div class="two-col">
+            <label>Monthly expenses<input id="monthlyExpenses" type="number" min="0" step="1000" value="25000" /></label>
+            <label>Time horizon<input id="horizon" type="number" min="3" max="24" value="12" /></label>
+          </div>
+          <div class="option-block"><div class="option-heading"><span>OPTION A</span><strong>Spend now</strong></div><input id="optionAAmount" type="number" min="0" step="1000" value="70000" /><input id="optionAName" value="Buy the laptop" maxlength="40" /></div>
+          <div class="option-block"><div class="option-heading"><span>OPTION B</span><strong>Keep it</strong></div><input id="optionBAmount" type="number" min="0" step="1000" value="0" /><input id="optionBName" value="Save the money" maxlength="40" /></div>
+          <button class="button primary full" id="simulateBtn" type="button">Run simulation <span>↗</span></button>
+        </aside>
+
+        <section class="panel future-panel">
+          <div class="panel-title"><span>FUTURE SNAPSHOT</span><span id="forecastLabel">12 MONTH FORECAST</span></div>
+          <div class="headline-row"><div><p class="muted">Projected cash gap</p><strong id="cashGap">₹70,000</strong></div><div class="confidence"><span>STABILITY</span><b id="stabilityScore">82</b><small>/100</small></div></div>
+          <div class="chart-wrap"><canvas id="forecastChart" aria-label="Projected cash over time"></canvas><div class="chart-tooltip" id="chartTooltip"></div></div>
+          <div class="timeline-row"><span>TODAY</span><span>3 MO</span><span>6 MO</span><span>9 MO</span><span id="endLabel">12 MO</span></div>
+          <div class="metrics-grid">
+            <div class="metric"><span>OPTION A ENDING CASH</span><strong id="endA">₹310k</strong><small id="deltaA">+₹190k</small></div>
+            <div class="metric"><span>OPTION B ENDING CASH</span><strong id="endB">₹380k</strong><small id="deltaB">+₹260k</small></div>
+            <div class="metric"><span>MONTHLY FLEXIBILITY</span><strong id="flexibility">₹20k</strong><small>free cash / month</small></div>
+            <div class="metric"><span>SCENARIO SHIFT</span><strong id="shiftValue">18%</strong><small>estimated impact</small></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="compare shell" id="compare">
+      <div class="section-head"><div><p class="eyebrow">02 / SIDE-BY-SIDE</p><h2>Two possible futures.</h2></div><button class="button ghost" id="reverseBtn" type="button">Reverse view</button></div>
+      <div class="future-cards">
+        <article class="future-card card-a"><div class="future-top"><span>OPTION A</span><span class="tag">UPFRONT</span></div><h3 id="cardATitle">Buy the laptop</h3><div class="big-value" id="cardAValue">₹310,000</div><div class="mini-chart"><div style="height:72%"></div><div style="height:61%"></div><div style="height:52%"></div><div style="height:48%"></div><div style="height:44%"></div><div style="height:40%"></div></div><p>Higher immediate spend, same recurring savings capacity.</p><button class="text-btn" data-focus="a">Explore path ↗</button></article>
+        <article class="future-card card-b"><div class="future-top"><span>OPTION B</span><span class="tag">RESERVE</span></div><h3 id="cardBTitle">Save the money</h3><div class="big-value" id="cardBValue">₹380,000</div><div class="mini-chart"><div style="height:88%"></div><div style="height:83%"></div><div style="height:78%"></div><div style="height:70%"></div><div style="height:64%"></div><div style="height:58%"></div></div><p>Preserves liquidity and creates a wider buffer.</p><button class="text-btn" data-focus="b">Explore path ↗</button></article>
+      </div>
+    </section>
+
+    <section class="insights shell" id="insights">
+      <div class="section-head"><div><p class="eyebrow">03 / INSIGHT LAYER</p><h2>What actually changed?</h2></div><button class="button ghost" id="shuffleInsightBtn" type="button">Shuffle insight</button></div>
+      <div class="insight-grid">
+        <article class="insight featured"><span class="insight-number">01</span><h3 id="insightTitle">Liquidity is your hidden variable.</h3><p id="insightText">A large upfront purchase changes the flexibility of every decision that follows. The simulation isolates that effect instead of treating the purchase as a one-time event.</p><div class="pulse-line"></div></article>
+        <article class="insight"><span class="kicker">SENSITIVITY</span><strong id="sensitivityValue">+₹10k / month</strong><p>Increase monthly income by ₹10,000 and rerun the forecast.</p></article>
+        <article class="insight"><span class="kicker">RULE OF THUMB</span><strong id="bufferMonths">4.8 months</strong><p>Approximate expense coverage after the selected scenario.</p></article>
+      </div>
+    </section>
+
+    <section class="how shell">
+      <div class="section-head"><div><p class="eyebrow">04 / HOW IT WORKS</p><h2>No magic. Just visible assumptions.</h2></div></div>
+      <div class="steps"><div><span>01</span><h3>Define</h3><p>Describe the choice and its immediate financial impact.</p></div><div><span>02</span><h3>Simulate</h3><p>Project both paths across the same time horizon.</p></div><div><span>03</span><h3>Stress-test</h3><p>Change income, expenses, or timing to see the model react.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer shell"><span>LIFOS / PERSONAL DECISION SIMULATOR</span><span>FRONTEND STUDY · VANILLA JS · 2026</span></footer>
+</body>
+</html>
