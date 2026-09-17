@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Roomify — a modern interior design studio for visualizing rooms, furniture, colors and budgets." />
+  <title>Roomify — Design Your Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">R</span><span>Roomify</span></a>
+    <nav>
+      <a href="#home">Home</a><a href="#styles">Styles</a><a href="#catalog">Catalog</a><a href="#studio">Studio</a>
+    </nav>
+    <button class="saved-top" id="savedTop">♡ Saved <span id="savedCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">INTERIOR DESIGN, REIMAGINED</span>
+        <h1>Design a space<br><em>that feels like you.</em></h1>
+        <p>Mix furniture, explore palettes, build a room and see your vision come together — all in one place.</p>
+        <div class="hero-actions"><a class="btn primary" href="#studio">Start designing <span>↗</span></a><a class="text-btn" href="#styles">Explore styles</a></div>
+        <div class="hero-meta"><div><strong>120+</strong><span>Furniture pieces</span></div><div><strong>12</strong><span>Design styles</span></div><div><strong>∞</strong><span>Possibilities</span></div></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="https://nipponpaint.com.vn/sites/default/files/2025-08/010ce2617f5cdc11013e8943297540.png" alt="Serene modern minimalist living room" />
+        <div class="floating-card"><span>✦</span><div><small>EDITOR'S PICK</small><b>Warm Minimal</b></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="styles">
+      <div class="section-head"><div><span class="eyebrow">FIND YOUR MOOD</span><h2>Explore room styles</h2></div><a href="#studio">Open studio →</a></div>
+      <div class="style-grid">
+        <button class="style-card active" data-style="Minimalist"><img src="https://nipponpaint.com.vn/sites/default/files/2025-08/010ce2617f5cdc11013e8943297540.png" alt="Minimalist room"><span>01 · Minimalist</span></button>
+        <button class="style-card" data-style="Japandi"><img src="https://i.pinimg.com/originals/6b/1f/af/6b1faf199c4db9472dcdf52f3a32e0e1.jpg" alt="Japandi bedroom"><span>02 · Japandi</span></button>
+        <button class="style-card" data-style="Modern Office"><img src="https://cdn.shopify.com/s/files/1/0914/6997/1839/files/13._Serene_Light_Oak_Office_with_Backlit_Shelves_-_Home_office_Ideas.jpg?v=1746856281" alt="Modern home office"><span>03 · Modern Office</span></button>
+      </div>
+    </section>
+
+    <section class="studio section" id="studio">
+      <div class="section-head"><div><span class="eyebrow">ROOMIFY STUDIO</span><h2>Build your room</h2></div><span class="studio-note">Click furniture to add · click placed items to remove</span></div>
+      <div class="studio-shell">
+        <aside class="panel catalog-panel">
+          <div class="panel-title"><span>Furniture</span><span class="pill" id="itemCount">0 items</span></div>
+          <div class="filter-row" id="categoryFilters"><button class="filter active" data-category="all">All</button><button class="filter" data-category="seating">Seating</button><button class="filter" data-category="tables">Tables</button><button class="filter" data-category="decor">Decor</button></div>
+          <div class="furniture-list" id="furnitureList"></div>
+        </aside>
+        <section class="canvas-wrap">
+          <div class="canvas-toolbar"><div><span class="room-label" id="roomStyleLabel">Warm Minimal</span><small>Living room · 168 sq ft</small></div><div class="toolbar-actions"><button id="undoBtn">↶</button><button id="clearBtn">Clear</button><button id="saveBtn" class="save-btn">♡ Save design</button></div></div>
+          <div class="room-canvas" id="roomCanvas">
+            <div class="window"></div><div class="wall-art art-one"></div><div class="wall-art art-two"></div><div class="rug"></div>
+            <div class="room-label-canvas">YOUR ROOM</div>
+          </div>
+          <div class="canvas-help">Tip: select a furniture card to place it. Select placed furniture to remove it.</div>
+        </section>
+        <aside class="panel details-panel">
+          <div class="panel-title">Your design <button class="icon-btn" id="resetBtn">↺</button></div>
+          <div class="score-card"><div><small>DESIGN SCORE</small><strong id="designScore">72</strong><span>/100</span></div><div class="score-ring" id="scoreRing">✦</div></div>
+          <div class="metric"><div><span>Color harmony</span><b id="harmony">82%</b></div><div class="bar"><i id="harmonyBar" style="width:82%"></i></div></div>
+          <div class="metric"><div><span>Space balance</span><b id="balance">68%</b></div><div class="bar"><i id="balanceBar" style="width:68%"></i></div></div>
+          <div class="divider"></div>
+          <div class="panel-title small-title">Palette</div>
+          <div class="palette" id="palette"><button class="swatch active" data-color="#e6ddd2" style="background:#e6ddd2"></button><button class="swatch" data-color="#d7d8d2" style="background:#d7d8d2"></button><button class="swatch" data-color="#c5b29d" style="background:#c5b29d"></button><button class="swatch" data-color="#7f8b81" style="background:#7f8b81"></button><button class="swatch" data-color="#33302d" style="background:#33302d"></button></div>
+          <div class="budget"><div><span>Estimated budget</span><strong id="budgetTotal">₹0</strong></div><div class="budget-track"><i id="budgetBar"></i></div><div class="budget-range"><span>₹0</span><span>₹2.5L</span></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section before-after">
+      <div class="section-head"><div><span class="eyebrow">VISUALIZE THE CHANGE</span><h2>Before → after</h2></div></div>
+      <div class="compare"><div class="compare-image"><img src="https://i.pinimg.com/originals/6b/1f/af/6b1faf199c4db9472dcdf52f3a32e0e1.jpg" alt="Before room inspiration"><span>BEFORE</span></div><div class="compare-image"><img src="https://nipponpaint.com.vn/sites/default/files/2025-08/010ce2617f5cdc11013e8943297540.png" alt="After room inspiration"><span>AFTER</span></div><div class="compare-arrow">→</div></div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">R</span><span>Roomify</span></div><p>Design your space. Visualize your future.</p><small>Built with HTML · CSS · JavaScript</small></footer>
+  <div class="toast" id="toast">Design saved locally</div>
+  <script src="script.js"></script>
+</body>
+</html>
