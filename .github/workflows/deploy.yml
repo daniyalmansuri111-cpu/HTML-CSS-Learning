@@ -54,7 +54,7 @@ jobs:
           rm -rf pages
           mkdir -p pages
 
-          # Copy repository content first so README/source folders remain available.
+          # Copy static/source projects into the Pages artifact.
           for item in *; do
             case "$item" in
               pages|"Smart Quiz App"|CosmoExplorer|Noir-Fragrance|job-application-tracker|node_modules) continue ;;
@@ -78,7 +78,7 @@ jobs:
           mkdir -p pages/job-application-tracker
           cp -r job-application-tracker/dist/. pages/job-application-tracker/
 
-          # Prevent Jekyll from changing static project structure.
+          # Roomify is plain HTML/CSS/JS and is copied above as-is.
           touch pages/.nojekyll
 
       - name: Setup Pages
