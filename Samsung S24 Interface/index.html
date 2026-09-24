@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy S24 Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="phone" aria-label="Samsung Galaxy S24 mock interface">
+      <div class="speaker"></div>
+      <div class="camera-cutout"></div>
+      <div class="screen" id="screen">
+        <div class="wallpaper"></div>
+        <header class="status-bar">
+          <span id="statusTime">12:45</span>
+          <div class="status-icons"><span>⌁</span><span>◔</span><span>▰</span></div>
+        </header>
+
+        <section class="home" id="home">
+          <div class="widget weather-widget">
+            <div><strong>Tuesday</strong><span>September 24</span></div>
+            <div class="temperature">26°</div>
+          </div>
+
+          <div class="apps-grid">
+            <button class="app" data-app="phone"><span class="icon green">☎</span><small>Phone</small></button>
+            <button class="app" data-app="messages"><span class="icon blue">💬</span><small>Messages</small></button>
+            <button class="app" data-app="internet"><span class="icon cyan">🌐</span><small>Internet</small></button>
+            <button class="app" data-app="camera"><span class="icon dark">◉</span><small>Camera</small></button>
+            <button class="app" data-app="gallery"><span class="icon purple">▧</span><small>Gallery</small></button>
+            <button class="app" data-app="settings"><span class="icon gray">⚙</span><small>Settings</small></button>
+            <button class="app" data-app="calculator"><span class="icon orange">＋</span><small>Calculator</small></button>
+            <button class="app" data-app="calendar"><span class="icon red">24</span><small>Calendar</small></button>
+          </div>
+
+          <div class="dock">
+            <button class="dock-app" data-app="phone">☎</button>
+            <button class="dock-app" data-app="messages">💬</button>
+            <button class="dock-app" data-app="camera">◉</button>
+            <button class="dock-app" data-app="internet">🌐</button>
+          </div>
+        </section>
+
+        <section class="shade" id="shade">
+          <div class="shade-handle"></div>
+          <div class="shade-top"><strong id="shadeTime">12:45</strong><button id="closeShade">×</button></div>
+          <div class="quick-grid">
+            <button class="quick active">Wi-Fi</button>
+            <button class="quick active">Bluetooth</button>
+            <button class="quick">Sound</button>
+            <button class="quick">Auto rotate</button>
+            <button class="quick active">Flashlight</button>
+            <button class="quick">Airplane mode</button>
+          </div>
+          <div class="brightness"><span>☀</span><input type="range" min="20" max="100" value="78" id="brightness"></div>
+          <div class="notification"><strong>Weather</strong><span>26° · Partly cloudy</span></div>
+          <div class="notification"><strong>Messages</strong><span>2 unread messages</span></div>
+        </section>
+
+        <section class="app-window" id="appWindow">
+          <div class="app-header">
+            <button id="backBtn">‹</button>
+            <strong id="appTitle">App</strong>
+            <button aria-label="More options">⋮</button>
+          </div>
+          <div class="app-content" id="appContent"></div>
+        </section>
+
+        <nav class="nav-bar">
+          <button id="recentBtn">▢</button>
+          <button id="homeBtn">●</button>
+          <button id="shadeBtn">⌄</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
