@@ -62,3 +62,4 @@ body{min-height:100vh;display:grid;place-items:center;background:#0b0d10;font-fa
 .photo:nth-child(3){background:linear-gradient(135deg,#9de3cb,#37647d)}
 .photo:nth-child(4){background:linear-gradient(135deg,#e6b7ff,#5c54a8)}
 @media(max-width:430px){.stage{padding:0}.phone{width:100vw;height:100vh;border:0;border-radius:0}.screen{border-radius:0}}
+.icon img{width:31px;height:31px;display:block;filter:brightness(0) invert(1)}.logo-text{font-weight:800;font-size:22px;line-height:1}.dock-app{font-family:system-ui}
