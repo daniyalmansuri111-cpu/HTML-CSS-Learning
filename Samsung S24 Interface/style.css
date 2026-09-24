@@ -1,0 +1,64 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;display:grid;place-items:center;background:#0b0d10;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#fff}
+.stage{padding:24px}
+.phone{width:390px;height:844px;position:relative;border:8px solid #1b1d20;border-radius:48px;background:#101214;box-shadow:0 30px 80px #0009,0 0 0 2px #34373c;overflow:hidden}
+.screen{position:relative;height:100%;overflow:hidden;border-radius:39px;background:#10131a}
+.speaker{position:absolute;z-index:20;top:9px;left:50%;transform:translateX(-50%);width:82px;height:6px;border-radius:9px;background:#111}
+.camera-cutout{position:absolute;z-index:20;top:7px;left:50%;transform:translateX(74px);width:10px;height:10px;border-radius:50%;background:#050505;box-shadow:0 0 0 1px #3a3a3a}
+.wallpaper{position:absolute;inset:0;background:radial-gradient(circle at 25% 15%,#33476b 0,#1c283e 25%,transparent 48%),radial-gradient(circle at 80% 80%,#5b304e 0,#1b1824 31%,transparent 60%),linear-gradient(145deg,#08111d,#161c2a 55%,#120b18)}
+.status-bar{position:absolute;z-index:4;top:0;left:0;right:0;height:33px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font-size:12px}
+.status-icons{display:flex;gap:7px;opacity:.9}
+.home{position:absolute;inset:35px 0 55px;padding:18px 16px;z-index:2;transition:opacity .2s}
+.widget{background:#ffffff18;border:1px solid #ffffff20;backdrop-filter:blur(15px);border-radius:24px;box-shadow:inset 0 1px #ffffff18}
+.weather-widget{display:flex;align-items:center;justify-content:space-between;padding:17px 18px;margin-top:12px}
+.weather-widget div{display:flex;flex-direction:column;gap:4px}
+.weather-widget span{font-size:12px;opacity:.72}
+.temperature{font-size:32px;font-weight:600}
+.apps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:23px 11px;margin-top:36px}
+.app,.dock-app,.nav-bar button,.app-header button,.quick,.shade-top button{border:0;background:transparent;color:inherit;cursor:pointer}
+.app{display:flex;flex-direction:column;align-items:center;gap:8px}
+.icon{width:55px;height:55px;border-radius:17px;display:grid;place-items:center;font-size:24px;box-shadow:0 9px 18px #0003,inset 0 1px #ffffff30}
+.icon.green{background:linear-gradient(145deg,#38d178,#16834b)}
+.icon.blue{background:linear-gradient(145deg,#4a96ff,#265bc4)}
+.icon.cyan{background:linear-gradient(145deg,#55dcff,#197ca9)}
+.icon.dark{background:linear-gradient(145deg,#5a606a,#1c2129)}
+.icon.purple{background:linear-gradient(145deg,#b48cff,#6a48b7)}
+.icon.gray{background:linear-gradient(145deg,#9199a3,#505761)}
+.icon.orange{background:linear-gradient(145deg,#ffba52,#e2682b)}
+.icon.red{background:linear-gradient(145deg,#ff7171,#c73838);font-size:14px;font-weight:700}
+.app small{font-size:11px;text-shadow:0 1px 2px #000}
+.dock{position:absolute;left:18px;right:18px;bottom:14px;height:66px;border-radius:23px;background:#ffffff18;border:1px solid #ffffff18;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;backdrop-filter:blur(18px)}
+.dock-app{font-size:24px}
+.nav-bar{position:absolute;z-index:8;bottom:0;left:0;right:0;height:48px;display:flex;align-items:center;justify-content:space-evenly;background:#080a0f38;backdrop-filter:blur(12px)}
+.nav-bar button{font-size:16px;width:70px;height:38px;opacity:.88}
+.shade,.app-window{position:absolute;inset:0;z-index:12;transform:translateY(-105%);transition:transform .28s ease;background:#0f1319f2;backdrop-filter:blur(22px)}
+.shade.open,.app-window.open{transform:translateY(0)}
+.shade{padding:38px 18px}
+.shade-handle{width:42px;height:4px;background:#777;border-radius:10px;margin:0 auto 10px}
+.shade-top{display:flex;align-items:center;justify-content:space-between;font-size:28px}
+.shade-top button{font-size:28px;color:#aaa}
+.quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:24px}
+.quick{padding:15px;border-radius:18px;background:#252a33;color:#ddd;font-weight:600;text-align:left}
+.quick.active{background:#d9e9ff;color:#142034}
+.brightness{display:flex;align-items:center;gap:10px;margin:20px 4px}
+.brightness input{flex:1}
+.notification{padding:15px;background:#ffffff0d;border:1px solid #ffffff12;border-radius:18px;margin-top:12px;display:flex;flex-direction:column;gap:5px}
+.notification span{opacity:.7;font-size:13px}
+.app-window{z-index:13;background:#f6f7f8;color:#111}
+.app-header{height:62px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ddd;background:#fff}
+.app-header button{font-size:30px;color:#333;width:45px}
+.app-content{height:calc(100% - 62px);padding:20px;overflow:auto}
+.app-content h2{font-size:24px;margin-bottom:16px}
+.card{background:#fff;border:1px solid #e4e6ea;border-radius:20px;padding:17px;margin-bottom:12px;box-shadow:0 4px 15px #0000000a}
+.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.keypad button{padding:17px;border:0;border-radius:16px;background:#eef0f3;font-size:20px;cursor:pointer}
+.messages-list .card{display:flex;gap:12px;align-items:center}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#ddeaff}
+.camera-view{height:520px;border-radius:26px;background:linear-gradient(160deg,#303740,#0c1015 54%,#17232f);display:flex;align-items:flex-end;justify-content:center;padding:24px;color:#fff}
+.shutter{width:75px;height:75px;border-radius:50%;border:5px solid #fff;background:#ffffff33}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.photo{height:150px;border-radius:18px;background:linear-gradient(135deg,#a6c7ff,#6d4d8f)}
+.photo:nth-child(2){background:linear-gradient(135deg,#ffd08f,#b8485b)}
+.photo:nth-child(3){background:linear-gradient(135deg,#9de3cb,#37647d)}
+.photo:nth-child(4){background:linear-gradient(135deg,#e6b7ff,#5c54a8)}
+@media(max-width:430px){.stage{padding:0}.phone{width:100vw;height:100vh;border:0;border-radius:0}.screen{border-radius:0}}
