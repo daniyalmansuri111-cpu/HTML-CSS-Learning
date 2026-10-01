@@ -4,7 +4,7 @@ A polished responsive weather dashboard using **HTML, CSS and vanilla JavaScript
 
 ## 🚀 Live Demo
 
-👉 **[View SkyCast Weather Live](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/)**
+👉 **[View SkyCast Weather Live](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Weather%20App/)**
 
 ## ✨ Features
 
