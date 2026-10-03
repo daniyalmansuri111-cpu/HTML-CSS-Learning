@@ -1,39 +1,73 @@
 # Roomify 🏠
 
-A polished interior-design frontend where users can explore room styles, add furniture to a visual room canvas, change palettes, track an estimated budget, and save a design locally.
+Roomify is a small interactive interior-design studio made for the browser. It lets you explore room styles, choose furniture, build a simple room layout, change the palette, see an estimated budget, and save your design locally.
 
-## ✨ Features
+## 2. Live Demo
 
-- Modern responsive landing page
+👉 **[Open Roomify Live](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Roomify/)**
+
+## 1. What is Roomify?
+
+The project is built around the idea of making room planning feel visual and interactive. Instead of only showing furniture cards, Roomify lets you place furniture on a room canvas and immediately see how the design metrics and estimated cost change.
+
+It is a frontend concept, so the saved design is stored in the browser rather than on a server.
+
+## 3. Features
+
+- Responsive interior-design landing page
 - Room style explorer
-- Furniture catalog with category filters
+- Minimalist, Japandi, and Modern Office styles
+- Furniture catalog
+- Furniture category filters
 - Interactive room canvas
-- Add/remove furniture pieces
-- Live design score and balance metrics
-- Color palette switching
-- Real-time budget calculator
-- Before/after inspiration section
-- LocalStorage-powered saved design
-- Mobile-friendly responsive UI
+- Add furniture to the room
+- Remove placed furniture
+- Undo the most recently added item
+- Clear the current room
+- Design score
+- Color harmony and space balance indicators
+- Multiple color palettes
+- Live estimated furniture budget
+- Save design locally with localStorage
+- Before-and-after inspiration section
+- Responsive desktop and mobile layout
 
-## 🛠️ Built With
+## 4. Built With
 
-HTML5 · CSS3 · Vanilla JavaScript · Google Fonts · Remote image URLs · LocalStorage
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts
+- Remote image URLs
+- Browser localStorage
+- GitHub Pages
 
-## 🚀 Live Demo
+## 5. How it works
 
-[Open Roomify](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Roomify/)
+Furniture items are defined in JavaScript with their names, categories, prices, images, and display sizes. Selecting a furniture card creates an item on the room canvas.
 
-## 📁 Folder
+As furniture is added or removed, Roomify recalculates the item count, estimated budget, design score, color harmony, and space balance.
 
-`Roomify/`
+The current room can be saved locally, so the browser can restore the design when the page is opened again.
 
-## 🖼️ Image Sources
+## 6. Project Structure
 
-The project uses remote image URLs so the repository stays lightweight. Inspiration/room imagery was selected from public web results, including Pexels, Pinterest-hosted images, Nippon Paint and Shopify CDN-hosted imagery. Always review the source site's current license/usage terms before reusing imagery outside this portfolio project.
+    Roomify/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
 
-## 👨‍💻 Author
+## 7. Run Locally
 
-**Daniyal Pinjari**
+Open Roomify/index.html in a browser, or use any simple static web server.
 
-GitHub: [daniyalmansuri111-cpu](https://github.com/daniyalmansuri111-cpu)
+An internet connection is required for the remote furniture and inspiration images.
+
+## 8. Image Sources
+
+The project uses remote images from sources including Unsplash and other publicly hosted image URLs. Check the current license or usage terms of the original source before reusing an image outside this portfolio project.
+
+## 9. Author
+
+**Made by Daniyal Pinjari**
