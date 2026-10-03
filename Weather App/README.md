@@ -47,6 +47,8 @@ No installation or build process is needed.
 
 You can also serve the folder with any simple local web server.
 
+**Tip:** If you use the browser location button, allow location access when the browser asks for permission.
+
 ## 7. Project Structure
 
     Weather App/
