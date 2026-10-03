@@ -1,66 +1,83 @@
-# ResumeForge
+# ResumeForge 📄
 
-> **A portfolio-grade career workspace for building, analyzing, tailoring and tracking resumes.**
-
-## 1. Overview
-ResumeForge is a polished front-end product concept combining a resume builder, practical ATS-style checks, job-description matching, resume templates and an application tracker in one career workspace.
+ResumeForge is a frontend career workspace that brings several parts of a job search into one place. The idea is simple: build a resume, check how it reads, compare it with a job description, and keep track of applications without jumping between different screens.
 
 ## 2. Live Demo
-**Live Demo:** https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/ResumeForge/
 
-## 3. Highlights
-- Large SaaS-style dashboard with resume health, target-role match, application pipeline and opportunity radar.
-- Multi-section resume builder with live preview.
-- Personal, Summary, Experience, Education, Skills and Projects editing.
-- Local persistence using browser `localStorage`.
-- Resume analysis with ATS structure, content quality, readability and priority fixes.
-- Job Matcher for comparing a pasted job description with resume skills.
-- Application tracker with Saved, Applied, Interview and Offer columns.
-- Template gallery and career-insight workspace.
-- Dark/light theme, mobile sidebar, toast notifications and print/PDF-friendly resume preview.
-- Responsive layouts across desktop, tablet and mobile.
+👉 **[Open ResumeForge Live](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/ResumeForge/)**
 
-## 4. Tech Stack
-HTML5 · CSS3 · Vanilla JavaScript · Google Fonts · Browser localStorage
+## 1. What is ResumeForge?
 
-## 5. Structure
-```
-ResumeForge/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+ResumeForge is designed like a small career-management dashboard. Instead of being only a resume editor, it combines resume creation with analysis, job matching, templates, career insights, and an application tracker.
 
-## 6. Run Locally
-No build step is required.
+The current version is a frontend project, so the information is handled inside the browser rather than through a backend account system.
 
-```bash
-git clone https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning.git
-cd HTML-CSS-Learning/ResumeForge
-```
+## 3. Main Features
 
-Open `index.html` in a browser or serve the folder with any static server.
+### Resume Builder
+- Edit personal information, summary, experience, education, skills, and projects
+- Work with a live resume preview
+- Create resume versions for different roles
+- Print or save the resume through the browser
 
-## 7. Product Roadmap
-This version is intentionally a front-end demo. A natural full-stack phase is:
+### Resume Analyzer
+- Checks resume structure and content
+- Highlights areas that can be improved
+- Gives an easy-to-read resume health view
 
-```
-Browser UI
-   ↓
-React / API layer
-   ↓
-Spring Boot REST API
-   ↓
-MySQL
-   ↓
-AI-assisted resume analysis + job matching
-```
+### Job Matcher
+- Compare resume skills with a job description
+- Identify useful keywords and possible skill gaps
+- Tailor the resume toward a target role
 
-Potential additions: authenticated profiles, PDF parsing, cloud resume storage, real application records, job APIs, analytics and AI-assisted bullet rewriting.
+### Application Tracker
+- Keep job applications organized
+- Track stages such as saved, applied, interview, and offer
+- View the job-search pipeline from the dashboard
 
-## 8. Honesty Note
-The analyzer and matcher are **demo rule-based experiences**, not a claim of a production ATS or AI system. This keeps the portfolio project technically honest while demonstrating the product workflow.
+### Workspace Features
+- Dashboard with career and resume information
+- Template gallery
+- Career insights section
+- Dark/light theme
+- Responsive sidebar and mobile layout
+- Browser-based autosave using localStorage
 
-## 9. Portfolio Value
-ResumeForge demonstrates dashboard design, responsive UI, forms, live previews, client-side state, browser persistence, interaction design and product-oriented information architecture.
+## 4. Built With
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts
+- Browser localStorage
+- GitHub Pages
+
+No frontend framework or build process is required.
+
+## 5. How it works
+
+Most of the application runs directly in the browser. JavaScript controls the navigation between workspace sections, updates the resume preview, handles the tracker, and stores relevant data locally.
+
+The analyzer and matcher are frontend demo logic. They are intended to demonstrate the workflow and user experience rather than represent a production ATS or an AI recruitment system.
+
+## 6. Project Structure
+
+    ResumeForge/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
+
+## 7. Run Locally
+
+Open the ResumeForge folder and launch index.html in a browser.
+
+For the best experience, you can also run it through a simple static server.
+
+## 8. Future Ideas
+
+A full version could connect the interface to a backend for user accounts, cloud resume storage, real application records, PDF parsing, job APIs, analytics, and AI-assisted resume improvements.
+
+## 9. Author
+
+**Made by Daniyal Pinjari**
