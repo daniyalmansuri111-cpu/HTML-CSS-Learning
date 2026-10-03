@@ -56,7 +56,7 @@ Clicking a photograph opens it in the lightbox with its title and category.
 
 Open Photo-Library/index.html directly in a browser, or serve the folder with a simple static server.
 
-An internet connection is needed for the remote demo images.
+An internet connection is needed for the remote demo images. If the images do not appear when running locally, check that the browser has network access.
 
 ## 8. Image Credits
 
