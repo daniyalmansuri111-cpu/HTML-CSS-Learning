@@ -10,7 +10,7 @@ ResumeForge is a frontend career workspace that brings several parts of a job se
 
 ResumeForge is designed like a small career-management dashboard. Instead of being only a resume editor, it combines resume creation with analysis, job matching, templates, career insights, and an application tracker.
 
-The current version is a frontend project, so the information is handled inside the browser rather than through a backend account system.
+The current version is a frontend project, so the information is handled inside the browser rather than through a backend account system. Resume data saved with localStorage stays in that browser unless the user clears the site's stored data.
 
 ## 3. Main Features
 
