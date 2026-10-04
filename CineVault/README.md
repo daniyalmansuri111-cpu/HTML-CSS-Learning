@@ -31,3 +31,5 @@ A modern and responsive movie discovery website where users can explore movies b
 **Daniyal Pinjari**
 
 ⭐ If you like this project, consider giving the repository a star!
+
+......
