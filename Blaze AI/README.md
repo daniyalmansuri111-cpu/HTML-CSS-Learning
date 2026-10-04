@@ -146,3 +146,5 @@ BLAZE AI was created as a portfolio project to demonstrate modern frontend devel
 ---
 
 ⭐ If you like this project, consider giving the repository a star!
+
+......
