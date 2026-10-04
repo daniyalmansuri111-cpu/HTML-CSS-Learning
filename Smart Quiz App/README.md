@@ -48,3 +48,5 @@ Smart Quiz App/
 ## 📌 Note
 
 The application is included in the main HTML-CSS-Learning repository as a React-based interactive project.
+
+......
