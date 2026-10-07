@@ -198,3 +198,4 @@ If you like this project, consider giving the repository a ⭐ on GitHub!
 ### 📌 Note
 
 This is a front-end learning project. The student information, marks, attendance, assignments, and timetable shown in the dashboard are sample data.
+..
