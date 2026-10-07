@@ -33,3 +33,4 @@ A modern and responsive movie discovery website where users can explore movies b
 ⭐ If you like this project, consider giving the repository a star!
 
 ......
+..
