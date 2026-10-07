@@ -92,3 +92,4 @@ Built as a frontend development project to practice HTML, CSS, Bootstrap, and Ta
 ---
 
 ⭐ If you like this project, consider giving the repository a star!
+..
