@@ -1,81 +1,60 @@
-# ✈️ Travello — Travel Beyond Ordinary 🌍
-A modern and responsive **travel company landing page** designed to showcase beautiful destinations, unique travel experiences, and curated holiday packages. 🌴🏔️
+# ✈️ Travello — Travel Beyond Ordinary
+
+A modern, responsive travel-company landing page that showcases destinations, travel experiences, and curated holiday packages.
 
 ## 🌐 Live Demo
-👉 [View Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Travel%20Web%20Landing%20Page/)
+
+[Explore Travello](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Travel%20Web%20Landing%20Page/)
 
 ## ✨ Features
 
-* 🌍 Modern travel landing page
-* 📱 Fully responsive design
-* 🏖️ Beautiful destination showcase
-* 🔎 Travel search interface
-* 🎒 Different travel experiences
-* 🧳 Curated travel packages
-* 👥 About Travello section
-* ⭐ Customer testimonial
-* 📩 Newsletter subscription
-* 🎨 Smooth hover effects
-* 📱 Mobile-friendly layout
+- 🌍 Modern travel landing page
+- 📱 Responsive layout
+- 🏖️ Destination showcase
+- 🔎 Travel search interface
+- 🎒 Travel experiences and holiday packages
+- 👥 About section and customer testimonial
+- 📩 Newsletter subscription interface
+- 🎨 Smooth hover effects and mobile-friendly styling
 
 ## 🛠️ Technologies Used
 
-* 🌐 **HTML5**
-* 🎨 **CSS3**
-* 💨 **Tailwind CSS**
-* 🔤 **Google Fonts**
-
-  * DM Sans
-  * Playfair Display
+- HTML5
+- CSS3
+- Tailwind CSS
+- Google Fonts: DM Sans and Playfair Display
 
 ## 📂 Project Structure
 
 ```text
-Travello/
-│
-├── 📄 index.html
-└── 🎨 style.css
+Travel Web Landing Page/
+├── index.html
+├── style.css
+└── README.md
 ```
 
-## 🗺️ Destinations
+## 🗺️ Featured Destinations
 
-Explore some of the most beautiful destinations around the world:
-
-* 🌴 **Bali, Indonesia**
-* 🏔️ **Swiss Alps, Switzerland**
-* 🗼 **Paris, France**
-* 🌊 **Amalfi Coast, Italy**
-* 🌅 **Santorini, Greece**
+- 🌴 **Bali, Indonesia**
+- 🏔️ **Swiss Alps, Switzerland**
+- 🗼 **Paris, France**
+- 🌊 **Amalfi Coast, Italy**
+- 🌅 **Santorini, Greece**
 
 ## 🎒 Travel Experiences
 
-### 🌴 Slow Escapes
-
-Beautiful beaches, peaceful mornings, and relaxing experiences.
-
-### 🏔️ Wild Adventures
-
-Mountains, trails, and exciting outdoor adventures.
-
-### 🏙️ City Stories
-
-Discover local food, culture, architecture, and city life.
-
-## 🧳 Travel Packages
-
-The website features curated travel packages including:
-
-* 🌴 **Island of Dreams — Bali**
-* 🏔️ **Swiss Alpine Escape — Switzerland**
-* 🗼 **Parisian Moments — Paris**
+- **Slow Escapes** — Beaches, peaceful mornings, and relaxing stays
+- **Wild Adventures** — Mountains, trails, and outdoor activities
+- **City Stories** — Local food, culture, architecture, and city life
 
 ## 🚀 How to Run
 
-1. Clone or download this repository.
-2. Open the project folder.
+1. Clone or download the repository.
+2. Open the `Travel Web Landing Page` folder.
 3. Open `index.html` in your browser.
-4. Enjoy exploring **Travello!** 🌍
 
-No additional installation is required.
+No installation is required for this static page.
 
-### 🌎 Discover More. Travel Further. Make Memories That Last. ✈️
+---
+
+⭐ If you like this project, consider giving the repository a star.
