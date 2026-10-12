@@ -1,37 +1,34 @@
 # 🎬 CineVault — Movie Discovery Platform
 
-A modern and responsive movie discovery website where users can explore movies by region, search for movies, save favorites, and switch between dark and light themes.
+CineVault is a modern, responsive movie discovery website for exploring films by region, searching titles, saving favorites, and switching between dark and light themes.
 
 ## 🌐 Live Demo
-👉 https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CineVault/
 
+[Open CineVault](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CineVault/)
 
 ## ✨ Features
+
 - 🌍 Region-based movie filtering
-- 🇮🇳 Indian, 🇺🇸 Hollywood, 🇰🇷 Korean, 🇯🇵 Japanese, 🇨🇳 Chinese & 🇬🇧 British movies
+- 🇮🇳 Indian, 🇺🇸 Hollywood, 🇰🇷 Korean, 🇯🇵 Japanese, 🇨🇳 Chinese, and 🇬🇧 British movie collections
 - 🔍 Movie search
-- ❤️ Favorite movies with LocalStorage
-- 🌙 Dark / Light mode
-- 🎲 Surprise Me feature
-- ⭐ Movie ratings
-- 📱 Fully responsive design
-- ✨ Smooth animations and hover effects
-- 🖼️ Online movie posters
+- ❤️ Favorite movies saved with LocalStorage
+- 🌙 Dark and light themes
+- 🎲 “Surprise Me” feature
+- ⭐ Movie ratings and online posters
+- 📱 Responsive design with smooth animations and hover effects
 
 ## 🛠️ Technologies
 
 - HTML5
 - CSS3
 - JavaScript
-- LocalStorage
-- TMDB Images
+- Browser LocalStorage
+- TMDB images
 
 ## 👨‍💻 Developer
 
 **Daniyal Pinjari**
 
-⭐ If you like this project, consider giving the repository a star!
+---
 
-......
-..
-..
+⭐ If you like this project, consider giving the repository a star.
