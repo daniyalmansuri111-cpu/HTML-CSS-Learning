@@ -1,6 +1,6 @@
-# 🚗 ApexDrive — Supercar Showcase.
+# 🚗 ApexDrive — Supercar Showcase
 
-A modern futuristic supercar showcase website built with HTML, CSS, Bootstrap, and Tailwind CSS.
+A modern, futuristic supercar showcase website built with HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript.
 
 ## 🌐 Live Demo
 
@@ -12,45 +12,28 @@ A modern futuristic supercar showcase website built with HTML, CSS, Bootstrap, a
 - 🎬 Cinematic video background
 - 🌌 Futuristic dark UI
 - 🧊 3D hover and tilt effects
-- 🖱️ Smooth mouse interactions
-- ✨ Smooth scroll animations
-- 🔍 Interactive car search
-- 🏷️ Car category filters
-- ❤️ Favorite car system
-- ⚖️ Car comparison section
+- 🖱️ Smooth mouse interactions and scroll animations
+- 🔍 Interactive car search and category filters
+- ❤️ Favorite cars and car comparison
 - 📊 Performance statistics
-- 📱 Fully responsive design
-- 🎨 Colorful realistic car imagery
-- 🚀 Animated loading screen
-- 🎯 Interactive car details modal
-- ❤️ Made with love by Daniyal Pinjari
+- 📱 Responsive design
+- 🎯 Interactive car-details modal
 
 ## 🛠️ Technologies
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- Tailwind CSS
+- HTML5 and CSS3
+- Bootstrap 5 and Tailwind CSS
 - JavaScript
-- Font Awesome
-- Google Fonts
+- Font Awesome and Google Fonts
 
-## 🎨 Design
+## 🎨 Design & Experience
 
-ApexDrive uses a premium monochrome-inspired interface with colorful automotive imagery, cinematic backgrounds, glass effects, subtle gradients, 3D interactions, and smooth animations.
-
-## 🚘 Experience
-
-Explore high-performance cars through an interactive interface designed to feel more like a digital automotive showroom than a traditional website.
-
-Browse cars, filter collections, view specifications, add favorites, and compare different models.
+ApexDrive combines a premium dark interface with colorful automotive imagery, cinematic backgrounds, subtle gradients, glass effects, and smooth animations. Browse the collection, filter cars, view specifications, save favorites, and compare models in a digital showroom-style experience.
 
 ## 👨‍💻 Author
 
 Made with ❤️ by **Daniyal Pinjari**
 
-⭐ If you like the project, consider giving the repository a star!..
+---
 
-......
-..
-..
+⭐ If you enjoyed this project, consider giving the repository a star.
