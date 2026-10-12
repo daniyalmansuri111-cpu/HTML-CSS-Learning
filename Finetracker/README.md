@@ -1,158 +1,67 @@
-# 💰 FinTrack
+# 💰 FinTrack — Personal Finance Dashboard
 
-### Personal Finance Dashboard
+[🚀 **View the Live Demo**](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Finetracker/)
 
-[🚀 **Live Demo — View FinTrack**](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Finetracker/)
-
-FinTrack is a modern and responsive personal finance dashboard designed to provide a clear overview of financial activity. It combines a clean dark interface with colorful visual elements, interactive charts, and easy-to-use transaction management.
-
-The project focuses on creating a **professional UI/UX experience** using modern frontend technologies.
+FinTrack is a modern personal finance dashboard designed to show financial activity through a clean dark interface, visual summaries, interactive charts, and transaction-management interactions.
 
 ## 🌟 Highlights
 
-* 📊 Complete financial overview
-* 💰 Total balance tracking
-* 📥 Income monitoring
-* 📤 Expense monitoring
-* 🌱 Savings rate tracking
-* 📈 Interactive cash flow visualization
-* 🥧 Category-based spending analysis
-* 💳 Recent transaction history
-* 👥 Finance team management section
-* 🏢 Connected company accounts
-* ➕ Add new transactions through an interactive modal
-* 🔔 Notification interface
-* 🔎 Search interface
-* 📱 Responsive layout for desktop, tablet and mobile
-* 🎨 Premium dark interface
-* ✨ Smooth hover and transition effects
-* ⚡ Fast and lightweight frontend
+- 📊 Financial overview and balance summary
+- 💰 Income, expense, and savings indicators
+- 📈 Cash-flow visualization and spending-category chart
+- 💳 Recent transaction history
+- ➕ Modal interface for adding transactions
+- 🔔 Notification and search interfaces
+- 👥 Finance team and connected-account sections
+- 📱 Responsive layout for desktop, tablet, and mobile
+- 🎨 Dark UI with colorful accents and smooth transitions
 
 ## 🎨 Design
 
-FinTrack uses a modern **dark finance-inspired interface** with multiple accent colors instead of relying on traditional blue dashboards.
+FinTrack uses a dark finance-inspired interface with lime, orange, red, purple, and yellow accents. Rounded cards, subtle gradients, and clear visual hierarchy give the dashboard a polished SaaS-style appearance.
 
-### Color Theme
+## 📊 Dashboard Overview
 
-* 🟢 Lime Green — Balance, growth and positive financial activity
-* 🟠 Orange — Income and highlights
-* 🔴 Red — Expenses and warnings
-* 🟣 Purple — Savings and team features
-* 🟡 Yellow — Secondary financial indicators
-
-The interface uses rounded cards, subtle gradients, glass-style elements, visual hierarchy and responsive spacing to create a polished SaaS-style experience.
-
-## 📊 Dashboard
-
-The dashboard provides a quick snapshot of important financial information:
-
-* **Total Balance:** ₹24,580
-* **Total Income:** ₹38,420
-* **Total Expenses:** ₹13,840
-* **Savings Rate:** 64.1%
-
-Interactive charts provide additional insight into monthly cash flow and spending categories.
+The dashboard displays example financial figures, including balance, income, expenses, and savings rate. The charts provide a visual summary of cash flow and category-based spending.
 
 ## 💳 Transaction Management
 
-Users can add new transactions directly from the dashboard.
-
-Each transaction includes:
-
-* Transaction name
-* Amount
-* Income or expense type
-* Category
-* Date
-* Transaction status
-
-New transactions are dynamically added to the recent transactions section without refreshing the page.
-
-## 📈 Data Visualization
-
-FinTrack uses **Chart.js** to create interactive financial visualizations.
-
-### Cash Flow
-
-Displays income and expenses across the previous six months, making it easier to understand financial trends.
-
-### Spending
-
-A doughnut chart visualizes spending across categories such as:
-
-* Housing
-* Food & Dining
-* Shopping
-* Transport
-* Other
-
-## 📱 Responsive Experience
-
-The interface adapts to different screen sizes, including:
-
-* 🖥️ Desktop
-* 💻 Laptop
-* 📱 Mobile
-* 📟 Tablet
-
-The sidebar automatically adapts for smaller screens with a mobile navigation menu.
+The interface supports adding a transaction with details such as its name, amount, type, category, date, and status. Newly added transactions appear in the recent-transactions section without a page refresh.
 
 ## 🛠️ Technologies Used
 
 **Frontend**
 
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 **Libraries & Tools**
 
-* Chart.js
-* Font Awesome
-* Google Fonts
-* Unsplash
+- Chart.js
+- Font Awesome
+- Google Fonts
+- Unsplash images
 
 ## ⚡ Interactive Features
 
-FinTrack is more than a static UI. Several elements are interactive:
+- Add-transaction modal
+- Dynamic transaction creation
+- Responsive sidebar and mobile menu
+- Search interface
+- Interactive charts
+- Notification feedback and hover animations
 
-* Add transaction modal
-* Dynamic transaction creation
-* Responsive sidebar navigation
-* Search interface
-* Interactive charts
-* Hover animations
-* Notification indicator
-* Responsive mobile menu
-* Transaction success notification
+## 🎯 Project Purpose
 
-## 🎯 Purpose
-
-This project was created as a **frontend portfolio project** to demonstrate skills in:
-
-* Responsive web design
-* UI/UX development
-* CSS layouts
-* Modern dashboard design
-* JavaScript DOM manipulation
-* Data visualization
-* Interactive components
-* Mobile-first responsiveness
-
-## 🚀 Live Demo
-
-[🔗 **Open FinTrack**](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Finetracker/)
+This portfolio project demonstrates responsive web design, dashboard UI/UX, JavaScript DOM manipulation, data visualization, and interactive frontend components.
 
 ## 👨‍💻 Author
 
-### Daniyal
-
-Frontend Developer & Computer Applications Student
+**Daniyal Pinjari**
 
 [GitHub Profile](https://github.com/daniyalmansuri111-cpu)
 
 ---
 
-⭐ If you like this project, consider giving the repository a star!
-
-......
+⭐ If you like this project, consider giving the repository a star.
