@@ -1,64 +1,48 @@
 # 🌌 CosmoExplorer
 
-An interactive space exploration website designed to bring the universe closer through a cinematic and immersive web experience.
+An interactive space exploration website that brings the universe closer through a cinematic, immersive web experience.
 
 ## 🚀 Live Demo
 
-👉 https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CosmoExplorer/
+[Explore CosmoExplorer](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CosmoExplorer/)
 
 ## ✨ Features
 
-- 🌍 Interactive Solar System
-- 🪐 Explore planets and their characteristics
-- 🌙 Explore moons including Earth's Moon, Europa and Titan
-- ⭐ Discover famous stars
-- 🌌 Explore galaxies and deep-space objects
-- 🕳️ Learn about cosmic phenomena
-- ☄️ Animated comets and asteroid belt
-- 🛰️ Explore famous space missions
-- 🔭 Interactive space laboratory
-- 🎥 NASA cinematic space visuals
-- ⭐ Dynamic animated starfield
-- 🖱️ Drag to orbit and scroll to zoom
-- 🎯 Click planets and objects to focus on them
-- ▶️ Play / pause space animations
-- ⚡ Adjustable simulation speed
-- 🔄 Reset camera and simulation
-- 📱 Responsive design
-- 🧊 Liquid-glass interface
-- 🎨 Smooth animations and transitions
-- 🔎 Search and category filtering
-- 📖 Detailed information panels for space objects
+- 🌍 Explore the solar system, planets, and moons
+- ⭐ Discover famous stars, galaxies, and deep-space objects
+- 🕳️ Learn about cosmic phenomena and space missions
+- ☄️ Animated comets, an asteroid belt, and a dynamic starfield
+- 🔭 Interactive space laboratory and information panels
+- 🖱️ Drag to orbit, scroll to zoom, and click an object to focus
+- ▶️ Play or pause animations and adjust simulation speed
+- 🔎 Search and filter space objects by category
+- 📱 Responsive liquid-glass interface with smooth transitions
 
 ## 🛠️ Tech Stack
 
-- React
-- TypeScript
+- React and TypeScript
 - Vite
 - Tailwind CSS
 - Framer Motion
 - Lucide React
 - HTML5 Canvas
-- NASA imagery and visualizations
-- Wikimedia Commons imagery
+- NASA and Wikimedia Commons imagery
 
 ## 🌠 Space Categories
-
-The explorer includes:
 
 - 🌍 Planets
 - ⭐ Stars
 - 🌌 Galaxies
 - 🌙 Moons
-- 🕳️ Cosmic Phenomena
-- 🚀 Space Missions
+- 🕳️ Cosmic phenomena
+- 🚀 Space missions
 
 ## 🎮 Interactive Controls
 
 - **Drag** — Orbit around the solar system
-- **Scroll** — Zoom in and out
+- **Scroll** — Zoom in or out
 - **Click** — Focus on a planet or object
-- **Space** — Play / Pause
+- **Space** — Play or pause
 - **R** — Reset
 - **S** — Solar System mode
 - **G** — Galaxy Viewer mode
@@ -70,7 +54,12 @@ git clone https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning.git
 cd HTML-CSS-Learning/CosmoExplorer
 npm install
 npm run dev
+```
 
-......
-..
-..
+## 👨‍💻 Author
+
+**Daniyal Pinjari**
+
+---
+
+⭐ If you enjoyed exploring the universe, consider giving the repository a star.
