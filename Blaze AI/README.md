@@ -42,9 +42,15 @@ Blaze AI/
 └── README.md
 ```
 
+## ▶️ Run Locally
+
+1. Clone or download the [HTML-CSS-Learning repository](https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning).
+2. Open the `Blaze AI` folder.
+3. Open `index.html` in your browser, or use VS Code Live Server for a local development server.
+
 ## 🎯 Project Purpose
 
-This portfolio project demonstrates responsive frontend development, DOM interactions, animation, and a modern SaaS-inspired interface.
+This portfolio project demonstrates responsive frontend development, DOM interactions, animation, and a modern SaaS-inspired interface. The assistant is an interface concept, not a claim of a connected production AI service.
 
 ## 👨‍💻 Author
 
