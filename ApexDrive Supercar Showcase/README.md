@@ -30,6 +30,16 @@ A modern, futuristic supercar showcase website built with HTML, CSS, Bootstrap, 
 
 ApexDrive combines a premium dark interface with colorful automotive imagery, cinematic backgrounds, subtle gradients, glass effects, and smooth animations. Browse the collection, filter cars, view specifications, save favorites, and compare models in a digital showroom-style experience.
 
+## 🚀 Getting Started
+
+1. Open the live demo above, or download/clone this repository.
+2. Navigate to the `ApexDrive Supercar Showcase` folder.
+3. Open `index.html` in a browser. If the project uses local assets, keep the original folder structure intact.
+
+## 💡 What This Project Demonstrates
+
+This project showcases responsive layouts, interactive filtering, modal interfaces, motion effects, and visual presentation for a premium automotive catalog.
+
 ## 👨‍💻 Author
 
 Made with ❤️ by **Daniyal Pinjari**
