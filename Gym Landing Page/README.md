@@ -1,7 +1,9 @@
 # IRONCORE - Gym & Fitness Landing Page
+
 IRONCORE is a modern, responsive gym and fitness landing page built with **HTML5 and CSS3**. The project uses a bold dark design with neon-lime highlights, large typography, trainer profiles, workout programs, membership plans, testimonials, and contact information.
 
 ## 🌐 Live Demo
+
 👉 [View Live Website](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Gym%20Landing%20Page/)
 
 ## Preview
@@ -36,7 +38,6 @@ The website includes:
 
 ```text
 IRONCORE/
-│
 ├── index.html
 ├── style.css
 ├── trainer1.jpg.png
@@ -110,7 +111,7 @@ The contact area contains:
 
 The footer contains the IRONCORE logo, copyright information, and social media links.
 
-## Trainer Images
+## 🖼️ Trainer Images
 
 The trainer images are stored in the project folder and connected through CSS:
 
@@ -130,23 +131,15 @@ The trainer images are stored in the project folder and connected through CSS:
 
 Keep the image filenames exactly the same unless you also update the CSS.
 
-## Responsive Design
+## 📱 Responsive Design
 
 The website adapts to different screen sizes using CSS media queries.
 
-### Desktop
+- **Desktop:** Multi-column layouts for features, programs, trainers, and pricing.
+- **Tablet:** Navigation and content layouts adjust for smaller screens.
+- **Mobile:** Single-column layouts and reduced spacing help improve usability.
 
-The main sections use multi-column layouts for features, programs, trainers, and pricing.
-
-### Tablet
-
-The navigation and content layouts adjust for smaller screens.
-
-### Mobile
-
-The website switches to single-column layouts and reduces spacing and typography sizes for better usability.
-
-## How to Run
+## ▶️ How to Run
 
 1. Download or clone the repository.
 2. Open the project folder in VS Code.
@@ -155,53 +148,16 @@ The website switches to single-column layouts and reduces spacing and typography
 
 For the best development experience, use the **Live Server** extension in VS Code.
 
-## How to Upload to GitHub
+## 🎯 Learning Goals
 
-Create a new GitHub repository and upload:
+This project demonstrates practical use of semantic HTML, CSS Grid and Flexbox, responsive layouts, background images, hover effects, CSS animations, typography, navigation links, pricing cards, and mobile-first adjustments.
 
-```text
-index.html
-style.css
-trainer1.jpg.png
-trainer2.jpg.jpg
-trainer3.jpg.png
-README.md
-```
+## 🔮 Future Improvements
 
-Make sure the image filenames match the names used in `style.css`.
-
-## Learning Goals
-
-This project demonstrates practical use of:
-
-- Semantic HTML structure
-- CSS Grid and Flexbox
-- Responsive layouts
-- Background images
-- Hover effects
-- CSS animations
-- Typography
-- Navigation links
-- Pricing cards
-- Image-based profile cards
-- Mobile-first adjustments
-
-## Future Improvements
-
-Possible future upgrades include:
-
-- JavaScript navigation menu
-- Working membership registration
-- Contact form
-- Login and signup system
-- Workout calculator
-- BMI calculator
-- Trainer booking system
-- Membership payment integration
-- Dark/light theme switcher
-- Scroll animations
-- Backend database
+Possible future upgrades include a JavaScript navigation menu, working membership registration, a contact form, login and signup, workout and BMI calculators, trainer booking, payment integration, and a backend database.
 
 ## Author
+
 Daniyal Pinjari
+
 Created as part of a daily web development project series.
