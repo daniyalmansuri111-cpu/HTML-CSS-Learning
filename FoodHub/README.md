@@ -1,7 +1,9 @@
 # 🍔 FoodHub
+
 FoodHub is a modern and responsive food ordering website built using HTML, CSS, and JavaScript. It provides an attractive interface for browsing food items and interacting with a simple online food ordering experience.
 
 ## 🚀 Live Demo
+
 [FoodHub Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/FoodHub/)
 
 ## ✨ Features
@@ -42,21 +44,33 @@ FoodHub/
 └── video2.mp4
 ```
 
-🎯 Purpose
+## 🍽️ How to Explore
+
+1. Open the live demo above.
+2. Browse the menu and explore the food cards.
+3. Try the search or cart interactions available in the interface.
+4. Resize the browser window to check the responsive layout.
+
+## 🧩 Technologies & Learning Goals
 
 This project was created to practice frontend web development concepts including:
 
-Website layout and design
-Responsive CSS
-JavaScript interactions
-Multimedia integration
-User interface development
-Git and GitHub workflow
-GitHub Pages deployment
+- Website layout and visual hierarchy
+- Responsive CSS
+- JavaScript interactions and DOM updates
+- Multimedia integration
+- User interface development
+- Git and GitHub workflow
+- GitHub Pages deployment
 
-👨‍💻 Project
+## 💻 Run Locally
+
+Download or clone the repository, open the FoodHub folder, and launch `index.html` in a browser. If you change the code, VS Code Live Server can help with local testing.
+
+## 👨‍💻 Project
+
 Part of the HTML-CSS-Learning repository.
 
-⭐ If you like this project, consider giving the repository a star!
+---
 
-......
+⭐ If you like this project, consider giving the repository a star!
