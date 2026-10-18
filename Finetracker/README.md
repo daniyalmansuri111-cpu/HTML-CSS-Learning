@@ -22,7 +22,7 @@ FinTrack uses a dark finance-inspired interface with lime, orange, red, purple, 
 
 ## 📊 Dashboard Overview
 
-The dashboard displays example financial figures, including balance, income, expenses, and savings rate. The charts provide a visual summary of cash flow and category-based spending.
+The dashboard displays example financial figures, including balance, income, expenses, and savings rate. The charts provide a visual summary of cash flow and category-based spending. Treat displayed figures as sample/demo data unless the application is connected to a real data source.
 
 ## 💳 Transaction Management
 
@@ -31,13 +31,11 @@ The interface supports adding a transaction with details such as its name, amoun
 ## 🛠️ Technologies Used
 
 **Frontend**
-
 - HTML5
 - CSS3
 - JavaScript
 
 **Libraries & Tools**
-
 - Chart.js
 - Font Awesome
 - Google Fonts
@@ -51,6 +49,12 @@ The interface supports adding a transaction with details such as its name, amoun
 - Search interface
 - Interactive charts
 - Notification feedback and hover animations
+
+## ▶️ Run Locally
+
+1. Clone or download the [HTML-CSS-Learning repository](https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning).
+2. Open the `Finetracker` folder.
+3. Open `index.html` in a browser. If you are editing the project, use VS Code with Live Server.
 
 ## 🎯 Project Purpose
 
