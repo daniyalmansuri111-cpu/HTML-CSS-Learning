@@ -45,18 +45,29 @@ Smart Quiz App/
         └── questions.js
 ```
 
-## 🚀 Run Locally
+## ▶️ Run Locally
+
+Run these commands from the `Smart Quiz App` directory:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Run these commands from the `Smart Quiz App` directory.
+Open the local URL printed by Vite in your browser.
+
+## 🎮 Playing the Quiz
+
+1. Start the quiz from the start screen.
+2. Read each question and select an answer before the timer ends.
+3. Review the immediate feedback and final score.
+4. Restart to try again and improve your result.
+
+The best score is stored in LocalStorage in the current browser and is not automatically shared between devices.
 
 ## 📌 Project Note
 
-Smart Quiz App is a React-based interactive project included in the main HTML-CSS-Learning repository.
+Smart Quiz App is a React-based interactive project included in the main HTML-CSS-Learning repository. It demonstrates component-based UI development, timed interactions, score calculation, and browser-side persistence.
 
 ---
 
