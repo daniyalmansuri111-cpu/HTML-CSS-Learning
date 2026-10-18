@@ -49,12 +49,18 @@ An interactive space exploration website that brings the universe closer through
 
 ## 📂 Run Locally
 
+Run the commands from the CosmoExplorer folder:
+
 ```bash
-git clone https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning.git
-cd HTML-CSS-Learning/CosmoExplorer
 npm install
 npm run dev
 ```
+
+Open the local URL printed by Vite in your browser. To make a production build, run `npm run build`.
+
+## 🧭 Tips for Exploring
+
+Try selecting different space-object categories, using the search control to find an object, and adjusting simulation speed to see how the scene changes. Controls may vary with the active viewer mode.
 
 ## 👨‍💻 Author
 
