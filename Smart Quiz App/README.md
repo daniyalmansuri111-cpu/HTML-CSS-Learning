@@ -72,3 +72,5 @@ Smart Quiz App is a React-based interactive project included in the main HTML-CS
 ---
 
 ⭐ If you enjoyed the quiz, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
