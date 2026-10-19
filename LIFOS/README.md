@@ -68,3 +68,5 @@ The goal is to make the assumptions visible and interactive rather than pretend 
 ## Author
 
 Daniyal Mansuri
+
+Made by Daniel Pinjari. ❤️
