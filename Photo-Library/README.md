@@ -65,3 +65,5 @@ The demo uses remotely hosted Unsplash image URLs. The images are included to de
 ## 9. Author
 
 **Made by Daniyal Pinjari**
+
+Made by Daniel Pinjari. ❤️
