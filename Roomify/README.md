@@ -71,3 +71,5 @@ The project uses remote images from sources including Unsplash and other publicl
 ## 9. Author
 
 **Made by Daniyal Pinjari**
+
+Made by Daniel Pinjari. ❤️
