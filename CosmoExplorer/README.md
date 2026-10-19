@@ -69,3 +69,5 @@ Try selecting different space-object categories, using the search control to fin
 ---
 
 ⭐ If you enjoyed exploring the universe, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
