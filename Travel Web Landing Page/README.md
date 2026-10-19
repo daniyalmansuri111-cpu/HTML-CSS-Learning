@@ -58,3 +58,5 @@ No installation is required for this static page.
 ---
 
 ⭐ If you like this project, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
