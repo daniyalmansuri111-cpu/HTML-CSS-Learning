@@ -69,3 +69,5 @@ This portfolio project demonstrates responsive web design, dashboard UI/UX, Java
 ---
 
 ⭐ If you like this project, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
