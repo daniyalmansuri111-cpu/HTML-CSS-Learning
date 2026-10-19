@@ -82,3 +82,5 @@ Created as a front-end HTML & CSS learning project.
 ---
 
 ⭐ If you like this project, feel free to star the repository!
+
+Made by Daniel Pinjari. ❤️
