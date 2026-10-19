@@ -81,3 +81,5 @@ A full version could connect the interface to a backend for user accounts, cloud
 ## 9. Author
 
 **Made by Daniyal Pinjari**
+
+Made by Daniel Pinjari. ❤️
