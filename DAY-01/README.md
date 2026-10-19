@@ -128,3 +128,5 @@ BCA Graduate | Future Full Stack Developer
 
 **Built with ❤️ using HTML & CSS**
 ..
+
+Made by Daniel Pinjari. ❤️
