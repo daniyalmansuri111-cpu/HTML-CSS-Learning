@@ -161,3 +161,5 @@ Possible future upgrades include a JavaScript navigation menu, working membershi
 Daniyal Pinjari
 
 Created as part of a daily web development project series.
+
+Made by Daniel Pinjari. ❤️
