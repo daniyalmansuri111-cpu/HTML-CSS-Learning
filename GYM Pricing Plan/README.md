@@ -76,3 +76,5 @@ Add contact section
 
 👨‍💻 Author
 Daniyal  Pinjari
+
+Made by Daniel Pinjari. ❤️
