@@ -92,3 +92,5 @@ Created by Daniyal Pinjari as a frontend web development project.
 🔗 Repository
 
 HTML-CSS-Learning
+
+Made by Daniel Pinjari. ❤️
