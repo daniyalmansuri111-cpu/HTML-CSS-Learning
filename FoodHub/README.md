@@ -74,3 +74,5 @@ Part of the HTML-CSS-Learning repository.
 ---
 
 ⭐ If you like this project, consider giving the repository a star!
+
+Made by Daniel Pinjari. ❤️
