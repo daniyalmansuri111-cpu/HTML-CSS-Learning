@@ -19,3 +19,5 @@ An interactive Samsung Galaxy S24-inspired mobile interface with a phone frame, 
 **Source:** [Samsung S24 Interface](./Samsung%20S24%20Interface/)
 
 > GitHub Pages deployment is configured with a workflow for the Photo-Library folder.
+
+Made by Daniel Pinjari. ❤️
