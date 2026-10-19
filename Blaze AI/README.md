@@ -59,3 +59,5 @@ This portfolio project demonstrates responsive frontend development, DOM interac
 ---
 
 ⭐ If you like the project, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
