@@ -60,3 +60,5 @@ Open index.html in a web browser.
 👨‍💻 Author
 Daniyal Pinjari
 ..
+
+Made by Daniel Pinjari. ❤️
