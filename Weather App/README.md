@@ -64,3 +64,5 @@ This is a frontend project using demo weather data rather than a live weather AP
 ## 9. Author
 
 **Made by Daniyal Pinjari**
+
+Made by Daniel Pinjari. ❤️
