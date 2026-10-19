@@ -85,3 +85,5 @@ It helped me practice:
 BCA Graduate | Future Full Stack Developer
 
 ⭐ If you like this project, don't forget to star the repository!
+
+Made by Daniel Pinjari. ❤️
