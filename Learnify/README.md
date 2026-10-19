@@ -100,3 +100,5 @@ Images: Unsplash
 ---
 
 ⭐ If you like the project, consider starring the repository.
+
+Made by Daniel Pinjari. ❤️
