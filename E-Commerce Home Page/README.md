@@ -56,3 +56,5 @@ ShopEase includes a clean storefront layout with a hero banner, product cards, c
 ---
 
 ⭐ If you like the project, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
