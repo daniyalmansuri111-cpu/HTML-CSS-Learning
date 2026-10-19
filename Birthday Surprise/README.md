@@ -54,3 +54,5 @@ The website uses local video and audio files along with online image resources f
 **DANIYAL PINJARI**
 ..
 ..
+
+Made by Daniel Pinjari. ❤️
