@@ -56,3 +56,5 @@ Made by **Daniyal Pinjari**
 
 Free to use and modify — this is a learning project.
 ..
+
+Made by Daniel Pinjari. ❤️
