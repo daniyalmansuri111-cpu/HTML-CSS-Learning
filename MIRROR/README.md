@@ -62,3 +62,5 @@ The archive is a creative visual interpretation for frontend practice, not a his
 ## Author
 
 Daniyal Mansuri
+
+Made by Daniel Pinjari. ❤️
