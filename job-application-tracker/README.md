@@ -261,3 +261,5 @@ git commit -m "Improve JobTrack README"
 git push origin main
 
 ......
+
+Made by Daniel Pinjari. ❤️
