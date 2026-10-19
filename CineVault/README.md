@@ -45,3 +45,5 @@ CineVault demonstrates search and filter interactions, client-side persistence, 
 ---
 
 ⭐ If you like this project, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
