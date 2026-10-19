@@ -70,3 +70,5 @@ This is an independent frontend concept inspired by Samsung's One UI design lang
 ## 9. Author
 
 **Made by Daniyal Pinjari**
+
+Made by Daniel Pinjari. ❤️
