@@ -83,3 +83,5 @@ No additional installation is required.
 
 
 ### 🌎 Discover More. Travel Further. Make Memories That Last. ✈️
+
+Made by Daniel Pinjari. ❤️
