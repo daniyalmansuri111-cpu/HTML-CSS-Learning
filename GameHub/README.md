@@ -41,3 +41,5 @@ A modern gaming website built using **HTML, CSS, and JavaScript**.
 **Daniyal Pinjari**
 
 MCA Student | Frontend Developer
+
+Made by Daniel Pinjari. ❤️
