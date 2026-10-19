@@ -65,3 +65,5 @@ This is a frontend-only project. Event listings, profile information and saved s
 **Daniyal Pinjari**
 
 GitHub: [@daniyalmansuri111-cpu](https://github.com/daniyalmansuri111-cpu)
+
+Made by Daniel Pinjari. ❤️
