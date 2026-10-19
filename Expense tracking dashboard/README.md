@@ -59,3 +59,5 @@ The interface uses a dark theme, a gradient balance card, dashboard panels, inco
 ---
 
 ⭐ If you like this project, consider giving the repository a star.
+
+Made by Daniel Pinjari. ❤️
