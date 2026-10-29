@@ -21,3 +21,16 @@ An interactive Samsung Galaxy S24-inspired mobile interface with a phone frame, 
 > GitHub Pages deployment is configured with a workflow for the Photo-Library folder.
 
 Made by Daniel Pinjari. ❤️
+
+## More Projects ❤️
+
+1. [ApexDrive Supercar Showcase](./ApexDrive%20Supercar%20Showcase/) ❤️
+2. [Blaze AI](./Blaze%20AI/) ❤️
+3. [CineVault](./CineVault/) ❤️
+4. [CosmoExplorer](./CosmoExplorer/) ❤️
+5. [E-Commerce Home Page](./E-Commerce%20Home%20Page/) ❤️
+6. [Finetracker](./Finetracker/) ❤️
+7. [FoodHub](./FoodHub/) ❤️
+8. [Smart Quiz App](./Smart%20Quiz%20App/) ❤️
+9. [Weather App](./Weather%20App/) ❤️
+
