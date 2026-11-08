@@ -1,39 +1,48 @@
-# 🔥 BLAZE AI
+# 🔥 BLAZE AI — Productivity Workspace
 
-### AI-Powered Productivity Workspace
+> **Plan smarter. Focus deeper. Get things done.**
 
-BLAZE AI is a modern, interactive productivity web application for managing tasks, focus sessions, goals, and an AI-style assistant in one workspace.
+BLAZE AI is a modern productivity dashboard concept that brings task management, focus sessions, goal tracking, and an AI-style assistant into one workspace.
 
-## 🚀 Live Demo
+## 1. ✨ Project Overview
 
-[🔥 Open BLAZE AI](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Blaze%20AI/)
+A SaaS-inspired workspace designed to help users organise daily priorities, monitor progress, and stay focused through a clean and interactive dashboard.
 
-## ✨ Features
+## 2. 🌐 Live Demo
 
-- 🤖 Interactive AI-style assistant
-- ✅ Add, complete, reopen, delete, and filter tasks
+**[🚀 Open BLAZE AI](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Blaze%20AI/)**
+
+## 3. ⚡ Key Features
+
+- 🤖 Interactive AI-style assistant interface
+- ✅ Create, complete, reopen, delete, and filter tasks
 - ⏱️ 25-minute focus timer with start, pause, and reset controls
 - 📊 Productivity overview and analytics
 - 🎯 Goal tracking with progress indicators
 - 🌙 Dark and light themes
-- 🔔 Toast notifications
+- 🔔 Toast notifications and interaction feedback
 - 📱 Responsive layout and interactive navigation
 - ✨ Gradients, glassmorphism, and smooth animations
 
-## 🧠 Workspace Highlights
+## 4. 🛠️ Built With
 
-The dashboard brings together task management, goal progress, focus sessions, and a chat-style productivity assistant. It is designed to provide a clear snapshot of daily priorities and activity.
+- **HTML5** — application structure
+- **CSS3** — responsive styling, visual effects, and animation
+- **JavaScript** — task, timer, theme, and interface interactions
+- **Font Awesome** — icons
+- **Google Fonts** — typography
 
-## 🛠️ Technologies
+## 5. 🧭 Workspace Modules
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
-- Google Fonts
-- Unsplash images
+| Module | What it does |
+|---|---|
+| Tasks | Organise and update daily tasks |
+| Focus | Run a structured focus session |
+| Goals | View goal progress |
+| Insights | Review productivity summaries |
+| Assistant | Explore a chat-style assistant interface |
 
-## 📁 Project Structure
+## 6. 📁 Project Structure
 
 ```text
 Blaze AI/
@@ -42,22 +51,23 @@ Blaze AI/
 └── README.md
 ```
 
-## ▶️ Run Locally
+## 7. 💻 Run Locally
 
-1. Clone or download the [HTML-CSS-Learning repository](https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning.git
+   ```
 2. Open the `Blaze AI` folder.
-3. Open `index.html` in your browser, or use VS Code Live Server for a local development server.
+3. Launch `index.html` in a browser, or use the VS Code Live Server extension.
 
-## 🎯 Project Purpose
+## 8. 📝 Project Note
 
-This portfolio project demonstrates responsive frontend development, DOM interactions, animation, and a modern SaaS-inspired interface. The assistant is an interface concept, not a claim of a connected production AI service.
+This is a frontend productivity-interface project. The assistant is an AI-style UI concept and should not be mistaken for a connected production AI service.
 
-## 👨‍💻 Author
+## 9. 👨‍💻 Author
 
-**Daniyal Pinjari**
+**Daniyal Pinjari** · [GitHub](https://github.com/daniyalmansuri111-cpu)
 
 ---
 
-⭐ If you like the project, consider giving the repository a star.
-
-Made by Daniel Pinjari. ❤️
+<p align="center">Built with 🔥 and ❤️</p>
