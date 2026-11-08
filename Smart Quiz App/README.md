@@ -1,31 +1,40 @@
-# 🧠 Smart Quiz App
+# 🧠 Smart Quiz App — Interactive Knowledge Challenge
 
-An interactive React quiz application with timed logic and brain-teaser questions, instant answer feedback, score tracking, and best-score persistence.
+> **Think fast. Choose wisely. Beat your best score.**
 
-## ✨ Features
+Smart Quiz App is a React-based quiz experience featuring timed questions, instant answer feedback, score calculation, and browser-side best-score persistence.
+
+## 1. ✨ Project Overview
+
+A lightweight quiz application designed around short logic and brain-teaser questions, with a clear start-to-results flow.
+
+## 2. 🌐 Live Demo
+
+**[🎮 Play Smart Quiz App](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Smart%20Quiz%20App/)**
+
+## 3. ⚡ Key Features
 
 - 🧠 10 mind and logic questions
 - ⏱️ 30-second timer for each question
-- ✅ Correct and incorrect answer feedback
+- ✅ Instant correct/incorrect answer feedback
 - 📊 Score and percentage calculation
-- 🏆 Best score saved in browser LocalStorage
+- 🏆 Best score saved using LocalStorage
 - 🔄 Restart quiz functionality
 - 📱 Responsive interface
-- ⚛️ Built with React and Vite
+- ⚛️ React component-based architecture
+- ⚡ Vite development workflow
 
-## 🚀 Live Demo
+## 4. 🛠️ Technology Stack
 
-[🎮 Play Smart Quiz](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/Smart-Quiz-App/)
+| Technology | Purpose |
+|---|---|
+| React | Component-based interface |
+| JavaScript | Quiz logic and interactions |
+| CSS | Application styling |
+| Vite | Development server and build tooling |
+| LocalStorage | Best-score persistence |
 
-## 🛠️ Tech Stack
-
-- React
-- JavaScript
-- CSS
-- Vite
-- Browser LocalStorage
-
-## 📁 Project Structure
+## 5. 🗂️ Project Structure
 
 ```text
 Smart Quiz App/
@@ -33,6 +42,7 @@ Smart Quiz App/
 ├── index.html
 ├── package.json
 ├── package-lock.json
+├── vite.config.js
 └── src/
     ├── App.css
     ├── App.jsx
@@ -45,7 +55,7 @@ Smart Quiz App/
         └── questions.js
 ```
 
-## ▶️ Run Locally
+## 6. 💻 Run Locally
 
 Run these commands from the `Smart Quiz App` directory:
 
@@ -54,23 +64,32 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite in your browser.
+Open the local URL printed by Vite. To create a production build:
 
-## 🎮 Playing the Quiz
+```bash
+npm run build
+```
 
-1. Start the quiz from the start screen.
-2. Read each question and select an answer before the timer ends.
-3. Review the immediate feedback and final score.
-4. Restart to try again and improve your result.
+## 7. 🎮 How to Play
 
-The best score is stored in LocalStorage in the current browser and is not automatically shared between devices.
+1. Start the quiz from the welcome screen.
+2. Read each question carefully.
+3. Select an answer before the timer expires.
+4. Review the feedback and final score.
+5. Restart the quiz and try to improve your result.
 
-## 📌 Project Note
+## 8. 💾 Score Storage
 
-Smart Quiz App is a React-based interactive project included in the main HTML-CSS-Learning repository. It demonstrates component-based UI development, timed interactions, score calculation, and browser-side persistence.
+The best score is stored in LocalStorage in the current browser. It is not automatically synchronised between devices or browsers.
+
+## 9. 🧠 What This Project Demonstrates
+
+React components, timed state management, conditional rendering, score calculation, user feedback, and browser-side persistence.
+
+## 10. 👨‍💻 Author
+
+**Daniyal Pinjari** · [GitHub](https://github.com/daniyalmansuri111-cpu)
 
 ---
 
-⭐ If you enjoyed the quiz, consider giving the repository a star.
-
-Made by Daniel Pinjari. ❤️
+<p align="center">Keep learning, keep improving — 🧠❤️</p>
