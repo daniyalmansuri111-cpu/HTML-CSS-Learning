@@ -1,24 +1,48 @@
-# 🌌 CosmoExplorer
+# 🌌 CosmoExplorer — Interactive Space Experience
 
-An interactive space exploration website that brings the universe closer through a cinematic, immersive web experience.
+> **Explore the universe, one orbit at a time.**
 
-## 🚀 Live Demo
+CosmoExplorer is an immersive space-exploration website that brings planets, stars, galaxies, moons, and cosmic phenomena into an interactive digital universe.
 
-[Explore CosmoExplorer](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CosmoExplorer/)
+## 1. ✨ Project Overview
 
-## ✨ Features
+A cinematic space laboratory with animated celestial scenes, searchable objects, interactive controls, and an interface built for curious explorers.
 
-- 🌍 Explore the solar system, planets, and moons
-- ⭐ Discover famous stars, galaxies, and deep-space objects
-- 🕳️ Learn about cosmic phenomena and space missions
-- ☄️ Animated comets, an asteroid belt, and a dynamic starfield
+## 2. 🌐 Live Demo
+
+**[🚀 Launch CosmoExplorer](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CosmoExplorer/)**
+
+## 3. 🪐 Explore the Universe
+
+- 🌍 Planets and moons
+- ⭐ Stars and stellar objects
+- 🌌 Galaxies and deep-space objects
+- 🕳️ Cosmic phenomena
+- 🚀 Space missions
+
+## 4. ⚡ Key Features
+
+- ☄️ Animated comets, asteroid belt, and dynamic starfield
 - 🔭 Interactive space laboratory and information panels
-- 🖱️ Drag to orbit, scroll to zoom, and click an object to focus
-- ▶️ Play or pause animations and adjust simulation speed
+- 🖱️ Drag to orbit, scroll to zoom, and click to focus
+- ▶️ Play/pause animations and adjust simulation speed
 - 🔎 Search and filter space objects by category
-- 📱 Responsive liquid-glass interface with smooth transitions
+- 📱 Responsive liquid-glass interface
+- ✨ Smooth transitions and immersive motion
 
-## 🛠️ Tech Stack
+## 5. 🎮 Interactive Controls
+
+| Control | Action |
+|---|---|
+| Drag | Orbit around the scene |
+| Scroll | Zoom in or out |
+| Click | Focus on a celestial object |
+| Space | Play or pause |
+| R | Reset |
+| S | Solar System mode |
+| G | Galaxy Viewer mode |
+
+## 6. 🛠️ Technology Stack
 
 - React and TypeScript
 - Vite
@@ -28,46 +52,29 @@ An interactive space exploration website that brings the universe closer through
 - HTML5 Canvas
 - NASA and Wikimedia Commons imagery
 
-## 🌠 Space Categories
+## 7. 💻 Run Locally
 
-- 🌍 Planets
-- ⭐ Stars
-- 🌌 Galaxies
-- 🌙 Moons
-- 🕳️ Cosmic phenomena
-- 🚀 Space missions
-
-## 🎮 Interactive Controls
-
-- **Drag** — Orbit around the solar system
-- **Scroll** — Zoom in or out
-- **Click** — Focus on a planet or object
-- **Space** — Play or pause
-- **R** — Reset
-- **S** — Solar System mode
-- **G** — Galaxy Viewer mode
-
-## 📂 Run Locally
-
-Run the commands from the CosmoExplorer folder:
+Run the following commands from the `CosmoExplorer` directory:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite in your browser. To make a production build, run `npm run build`.
+Open the local URL printed by Vite. To create a production build:
 
-## 🧭 Tips for Exploring
+```bash
+npm run build
+```
 
-Try selecting different space-object categories, using the search control to find an object, and adjusting simulation speed to see how the scene changes. Controls may vary with the active viewer mode.
+## 8. 🧠 Project Highlights
 
-## 👨‍💻 Author
+This project explores interactive visualisation, component-based frontend development, animation controls, search and filtering, and immersive interface design.
 
-**Daniyal Pinjari**
+## 9. 👨‍💻 Author
+
+**Daniyal Pinjari** · [GitHub](https://github.com/daniyalmansuri111-cpu)
 
 ---
 
-⭐ If you enjoyed exploring the universe, consider giving the repository a star.
-
-Made by Daniel Pinjari. ❤️
+<p align="center">Made with 🌠 curiosity and ❤️</p>
