@@ -1,37 +1,43 @@
-# 🍔 FoodHub
+# 🍔 FoodHub — Food Ordering Website
 
-FoodHub is a modern and responsive food ordering website built using HTML, CSS, and JavaScript. It provides an attractive interface for browsing food items and interacting with a simple online food ordering experience.
+> **Good food. Great choices. A simple online experience.**
 
-## 🚀 Live Demo
+FoodHub is a modern, responsive food-ordering website concept built with HTML, CSS, and JavaScript. It brings together food discovery, menu browsing, and cart interactions in an engaging interface.
 
-[FoodHub Live Demo](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/FoodHub/)
+## 1. ✨ Project Overview
 
-## ✨ Features
+A food-focused landing page featuring a modern homepage, menu presentation, custom visuals, and interactive ordering elements.
 
-- 🏠 Modern homepage
+## 2. 🌐 Live Demo
+
+**[🍽️ Explore FoodHub](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/FoodHub/)**
+
+## 3. ⚡ Key Features
+
+- 🏠 Modern homepage and navigation
 - 🍕 Interactive food menu
-- 🛒 Shopping cart functionality
+- 🛒 Shopping-cart interface and interactions
 - 🔍 Food browsing and search
-- 🎥 Background video
-- 🖼️ Custom FoodHub logo and images
+- 🎥 Background video sections
+- 🖼️ Custom logo and food imagery
 - 📱 Responsive design
-- ⚡ Interactive JavaScript elements
-- 🎨 Clean and modern UI
-- 💻 Works directly in the browser
+- ⚡ JavaScript-powered interface elements
+- 🎨 Clean, modern visual styling
 
-## 🛠️ Technologies Used
+## 4. 🛠️ Built With
 
 - HTML5
 - CSS3
 - JavaScript
-- Git
+- Git and GitHub
 - GitHub Pages
 
-## 📂 Project Structure
+## 5. 📁 Project Structure
 
 ```text
 FoodHub/
 ├── index.html
+├── index
 ├── style.css
 ├── script.js
 ├── logo.png
@@ -44,35 +50,34 @@ FoodHub/
 └── video2.mp4
 ```
 
-## 🍽️ How to Explore
+## 6. 🍴 How to Explore
 
-1. Open the live demo above.
-2. Browse the menu and explore the food cards.
-3. Try the search or cart interactions available in the interface.
-4. Resize the browser window to check the responsive layout.
+1. Open the live demo.
+2. Browse the food menu and item cards.
+3. Try the available search and cart interactions.
+4. Resize the browser to see the responsive layout.
 
-## 🧩 Technologies & Learning Goals
+## 7. 💻 Run Locally
 
-This project was created to practice frontend web development concepts including:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning.git
+   ```
+2. Open the `FoodHub` folder.
+3. Launch `index.html` in a modern browser. VS Code Live Server can be used for local development.
 
-- Website layout and visual hierarchy
-- Responsive CSS
-- JavaScript interactions and DOM updates
-- Multimedia integration
-- User interface development
-- Git and GitHub workflow
-- GitHub Pages deployment
+## 8. 🧠 Learning Highlights
 
-## 💻 Run Locally
+This project provides practice with responsive layouts, DOM updates, multimedia integration, user-interface design, and GitHub Pages deployment.
 
-Download or clone the repository, open the FoodHub folder, and launch `index.html` in a browser. If you change the code, VS Code Live Server can help with local testing.
+## 9. 📝 Project Note
 
-## 👨‍💻 Project
+FoodHub is a frontend demonstration. Do not assume that orders, payments, delivery, or customer accounts connect to a production backend.
 
-Part of the HTML-CSS-Learning repository.
+## 10. 👨‍💻 Author
+
+**Daniyal Pinjari** · [GitHub](https://github.com/daniyalmansuri111-cpu)
 
 ---
 
-⭐ If you like this project, consider giving the repository a star!
-
-Made by Daniel Pinjari. ❤️
+<p align="center">Made with 🍔 and ❤️</p>
