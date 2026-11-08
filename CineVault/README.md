@@ -1,49 +1,73 @@
 # 🎬 CineVault — Movie Discovery Platform
 
-CineVault is a modern, responsive movie discovery website for exploring films by region, searching titles, saving favorites, and switching between dark and light themes.
+> **Discover stories. Explore cinema. Save your favourites.**
 
-## 🌐 Live Demo
+CineVault is a responsive movie-discovery experience for browsing film collections across regions, searching titles, saving favourites, and personalising the viewing interface.
 
-[Open CineVault](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CineVault/)
+## 1. ✨ Project Overview
 
-## ✨ Features
+A cinematic catalogue interface that makes it easy to explore movies through region-based collections, search, and browser-saved favourites.
 
-- 🌍 Region-based movie filtering
-- 🇮🇳 Indian, 🇺🇸 Hollywood, 🇰🇷 Korean, 🇯🇵 Japanese, 🇨🇳 Chinese, and 🇬🇧 British movie collections
-- 🔍 Movie search
-- ❤️ Favorite movies saved with LocalStorage
+## 2. 🌐 Live Demo
+
+**[🍿 Explore CineVault](https://daniyalmansuri111-cpu.github.io/HTML-CSS-Learning/CineVault/)**
+
+## 3. ⚡ Key Features
+
+- 🌍 Region-based movie collections
+- 🇮🇳 Indian, 🇺🇸 Hollywood, 🇰🇷 Korean, 🇯🇵 Japanese, 🇨🇳 Chinese, and 🇬🇧 British selections
+- 🔍 Search movies by title
+- ❤️ Save favourite movies using LocalStorage
 - 🌙 Dark and light themes
-- 🎲 “Surprise Me” feature
-- ⭐ Movie ratings and online posters
-- 📱 Responsive design with smooth animations and hover effects
+- 🎲 “Surprise Me” discovery feature
+- ⭐ Ratings and movie posters
+- 📱 Responsive movie-card layout
+- ✨ Smooth transitions and hover effects
 
-## 🛠️ Technologies
+## 4. 🛠️ Built With
 
-- HTML5
-- CSS3
-- JavaScript
-- Browser LocalStorage
-- TMDB images
+| Technology | Role |
+|---|---|
+| HTML5 | Page structure |
+| CSS3 | Styling and responsive layout |
+| JavaScript | Search, filters, favourites, and theme controls |
+| LocalStorage | Saving favourites in the current browser |
+| TMDB imagery | Movie poster visuals |
 
-## 🧭 How to Use
+## 5. 🧭 How to Explore
 
 1. Open the live demo.
-2. Search for a movie title or choose a region to explore a collection.
-3. Use the favorites feature to save titles in your browser.
-4. Switch themes to choose a comfortable viewing style.
+2. Browse the available regional collections.
+3. Search for a movie title.
+4. Use the favourite control to save a title.
+5. Switch between dark and light themes.
+6. Try the “Surprise Me” feature to discover something new.
 
-Favorites stored in LocalStorage are saved in the current browser on the current device; they are not automatically synced across devices.
+## 6. 💾 Data & Browser Storage
 
-## 🎯 Project Highlights
+Favourite selections are stored in LocalStorage on the current browser and device. They are not automatically synchronised across browsers or devices.
 
-CineVault demonstrates search and filter interactions, client-side persistence, theme switching, responsive card layouts, and accessible movie discovery patterns.
+## 7. 💻 Run Locally
 
-## 👨‍💻 Developer
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/daniyalmansuri111-cpu/HTML-CSS-Learning.git
+   ```
+2. Open the `CineVault` folder.
+3. Launch `index.html` in a modern browser.
 
-**Daniyal Pinjari**
+## 8. 🧠 What This Project Demonstrates
+
+- Client-side search and filtering
+- Browser-side persistence
+- Theme switching
+- Responsive card-based layouts
+- Interactive discovery patterns
+
+## 9. 👨‍💻 Author
+
+**Daniyal Pinjari** · [GitHub](https://github.com/daniyalmansuri111-cpu)
 
 ---
 
-⭐ If you like this project, consider giving the repository a star.
-
-Made by Daniel Pinjari. ❤️
+<p align="center">Made for movie lovers with 🎬 and ❤️</p>
